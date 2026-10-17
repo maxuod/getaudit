@@ -28,7 +28,7 @@ Open http://127.0.0.1:4317. The routes are `/` and `/privacy/`; unknown paths re
 
 ## Configuration
 
-`src/config.mjs` supplies explicit example values for the origin, contributor label and contact email. The default is `https://example.com`, `support@example.com`, and indexing disabled. Replace these example values with the actual deployment facts and review the privacy template before publishing. `SITE_ORIGIN` and `SITE_PUBLIC=1` provide explicit build overrides; a local build does not publish anything.
+`src/config.mjs` keeps the origin and contributor label configurable and defaults to `https://example.com` with indexing disabled. The project contact is [deeyoung_ma@maxuod.com](mailto:deeyoung_ma@maxuod.com); all website contact links and both privacy translations use this setting. If you deploy a fork, set your own contact address and deployment facts, then review the privacy template before publishing. `SITE_ORIGIN` and `SITE_PUBLIC=1` provide explicit build overrides; a local build does not publish anything.
 
 `src/content.mjs` authors English first and includes the Chinese adaptation. `content/privacy.json` is an example policy with a prominent template disclosure in both languages. The shared structured-data builder follows visible feature claims and deliberately makes no legal Organization, price, rating, review or download assertion.
 

@@ -117,13 +117,17 @@ npm run website:build
 npm run review:scan
 ```
 
-The showcase has its own [setup notes](website/README.md). Its origin, operator, and contact fields are placeholders; its privacy policy is a template for the eventual operator, not a representation that another person's deployment is covered.
+The showcase has its own [setup notes](website/README.md). Its origin and operator fields are placeholders; the default contact is the project email below. Its privacy policy is a template for the eventual operator, not a representation that another person's deployment is covered.
 
 ## Keep your clues private
 
 Keep databases, answer captures, analytics exports, logs, browser sessions, OAuth metadata, tokens, signing material, and real customer fixtures outside Git. The supplied ignore rules and review scanner are guardrails, not permission to commit those files.
 
 Only synthetic examples belong in public tests, screenshots, and issues. See [SECURITY.md](SECURITY.md), [CONTRIBUTING.md](CONTRIBUTING.md), and [the release boundary](docs/RELEASE_REVIEW.md).
+
+## Contact
+
+Questions, feedback, and private security reports: [deeyoung_ma@maxuod.com](mailto:deeyoung_ma@maxuod.com). Please keep credentials and private research data out of email and public issues.
 
 ## License
 

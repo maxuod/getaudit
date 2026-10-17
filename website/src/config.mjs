@@ -1,11 +1,11 @@
-// Public example values only. Supply your own deployment facts before publication.
+// Project contact is public. Review the example deployment facts before publication.
 export const siteConfig = Object.freeze({
   origin: 'https://example.com',
   publicIndexing: false,
   productName: 'getaudit',
   wordmark: 'getaudit.si',
   contributorLabel: 'getaudit contributors',
-  contactEmail: 'support@example.com',
+  contactEmail: 'deeyoung_ma@maxuod.com',
   privacyIsTemplate: true,
 });
 

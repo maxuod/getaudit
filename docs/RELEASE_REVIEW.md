@@ -14,7 +14,7 @@ The initial public source release was authorized on 2026-10-17 after review of a
 - Original Git history, author metadata, remotes, local snapshot references, hosting bindings, and account/deployment identifiers.
 - Databases, backups, saved answers, client reports, research output, conversations, browser state, logs, and real customer fixtures.
 - Environment values, provider keys, registered OAuth client envelopes, access/refresh tokens, signing certificates, private keys, and built installers.
-- The original operator's identity, company attribution, social profiles, contact details, filesystem locations, and embedded company logo.
+- The original operator's private identity, company attribution, social profiles, private contact details, filesystem locations, and embedded company logo. The explicitly approved public project contact in the README and website configuration is intentional.
 
 ## Community build separation
 

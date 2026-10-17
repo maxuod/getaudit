@@ -112,13 +112,17 @@ npm run website:build
 npm run review:scan
 ```
 
-官网的地址、运营方、联系信息均为占位设置，部署前需自行填写。隐私政策是模板，不能直接代表其他运营者的真实处理方式。详见 [官网说明](website/README.md)。
+官网的地址和运营方为占位设置，默认联系邮箱为下方的项目邮箱。自行部署时请修改为真实配置。隐私政策是模板，不能直接代表其他运营者的真实处理方式。详见 [官网说明](website/README.md)。
 
 ## 保管好自己的数据
 
 数据库、采集原文、分析导出、日志、浏览器会话、OAuth 配置、令牌、签名资料和真实客户样例不应进入 Git。忽略规则和扫描工具只能辅助检查。
 
 公开测试、截图和 issue 仅使用合成示例。请阅读 [安全说明](SECURITY.md)、[参与说明](CONTRIBUTING.md)和[发布审查边界](docs/RELEASE_REVIEW.md)。
+
+## 联系我们
+
+问题、反馈和非公开安全报告，请发送至 [deeyoung_ma@maxuod.com](mailto:deeyoung_ma@maxuod.com)。邮件和公开 issue 中均不要附带密钥或私人研究数据。
 
 ## 许可证
 
