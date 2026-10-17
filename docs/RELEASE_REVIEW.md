@@ -30,4 +30,4 @@ Re-run privacy and credential scans on the actual files and commits immediately 
 
 ## Initial source release decisions
 
-The owner selected MIT for the project source and confirmed that integration functionality must remain, while their credentials and account information must be excluded. Native installers are outside this source-only review package; their runtime notice and signing checks remain a separate distribution step.
+The owner selected MIT for the project source and confirmed that integration functionality must remain, while their credentials and account information must be excluded. Community binary releases are a separate distribution step: follow the [community build checks](community-build.md), retain the exact runtime notices, and label ad-hoc signing, missing notarization and connection limits accurately. Private signing identities, installed workspaces and app-owner OAuth credentials remain excluded.

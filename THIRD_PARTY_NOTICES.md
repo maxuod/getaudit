@@ -34,4 +34,6 @@ These are labelled supplements, not recovered upstream license files. Upstream a
 
 No installer or downloaded runtime binary is included in this source review. Review notices and source availability for the exact runtime/native binaries before distributing an application installer. Electron and Chromium may require notices beyond an npm package license. Keep the applicable notices with any future binary release.
 
+The separate [community build workflow](docs/community-build.md) copies the exact locked Electron `LICENSE` and `LICENSES.chromium.html`, application MIT license and source dependency notices into the packaged app. Inspect the actual release artifact before publication; this source inventory alone does not establish binary coverage.
+
 This inventory covers source dependencies and notices; it does not distribute an installer or certify a deployed service. It is an evidence-backed source inventory, not a compliance certification.

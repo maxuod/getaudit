@@ -20,6 +20,7 @@
     "console:demo": "node scripts/build-console.mjs && node dist-node/console/start.js --demo",
     "console:typecheck": "tsc -p apps/console/tsconfig.json",
     "desktop:build": "npm run console:build && node scripts/build-console.mjs && node scripts/package-console.mjs",
+    "desktop:community": "node scripts/package-community.mjs",
     "console:verify": "node --experimental-strip-types --no-warnings src/console/verify-export.ts",
     "check:locales": "node scripts/check-console-locales.mjs",
     "desktop:dev": "npm run console:build && node scripts/build-console.mjs && electron desktop/main.cjs",
