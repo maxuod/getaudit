@@ -1,27 +1,9 @@
-/* Dot follows the paperwork; it never represents a percentage or a completed check. */
-.dot-helper { --dot-orange:var(--brand-orange,#f36b24);--dot-ink:var(--ink,#29251f);--dot-paper:var(--paper,#fff);position:relative;display:inline-block;width:92px;height:76px;flex:0 0 92px;isolation:isolate; }
-.dot-helper__scene { position:absolute;inset:0;width:92px;height:76px; }
-.dot-helper__shadow { position:absolute;left:8px;right:6px;bottom:4px;height:7px;border-radius:50%;background:color-mix(in srgb,var(--dot-ink) 8%,transparent); }
-.dot-helper__paper { position:absolute;right:4px;bottom:10px;width:34px;height:44px;padding:10px 6px;background:var(--dot-paper);border:1.5px solid color-mix(in srgb,var(--dot-ink) 20%,transparent);border-radius:5px;transform:rotate(9deg); }
-.dot-helper__paper>span { display:block;height:2px;border-radius:2px;background:color-mix(in srgb,var(--dot-ink) 20%,transparent);margin-bottom:5px; }
-.dot-helper__paper>span:last-child { width:65%; }
-.dot-helper__body { position:absolute;left:7px;bottom:12px;width:57px;height:49px;border-radius:24px 24px 18px 20px;background:var(--dot-orange);transform:rotate(-6deg);transform-origin:50% 80%;box-shadow:inset 0 -3px 0 #00000008; }
-.dot-helper__eyes { display:flex;gap:9px;position:absolute;left:20px;top:20px; }
-.dot-helper__eyes>span { width:4px;height:8px;border-radius:5px;background:#fff; }
-.dot-helper__cheek { position:absolute;top:29px;left:10px;width:7px;height:3px;background:#ffffff66;border-radius:50%;transform:rotate(-12deg); }
-.dot-helper__lens { position:absolute;right:11px;bottom:25px;width:22px;height:22px;border:3px solid var(--dot-ink);border-radius:50%;background:#ffffff80;transform:rotate(-24deg);transform-origin:50% 100%; }
-.dot-helper__lens::after { content:"";position:absolute;left:14px;top:14px;width:4px;height:14px;background:var(--dot-ink);border-radius:3px;transform:rotate(-35deg);transform-origin:top; }
-.dot-helper[data-phase="records"] .dot-helper__lens { display:none; }
-.dot-helper[data-phase="records"] .dot-helper__paper { right:5px;bottom:12px;transform:rotate(-8deg);box-shadow:3px 3px 0 var(--dot-paper),4px 4px 0 color-mix(in srgb,var(--dot-ink) 20%,transparent); }
-.dot-helper[data-phase="citations"] .dot-helper__body { transform:rotate(5deg); }
-.dot-helper--compact { width:58px;height:48px;flex-basis:58px; }
-.dot-helper--compact .dot-helper__scene { transform:scale(.63);transform-origin:top left; }
+/* The companion is decorative; actual state stays in LoadingHelper's text. */
+.dot-helper { display:inline-flex;align-items:center;justify-content:center;width:144px;height:96px;flex:0 0 144px;isolation:isolate; }
+.dot-helper__image { display:block;width:100%;height:100%;object-fit:contain;pointer-events:none;user-select:none;transform-origin:50% 80%; }
+.dot-helper--compact { width:72px;height:48px;flex-basis:72px; }
 @media(prefers-reduced-motion:no-preference) {
-  .dot-helper[data-motion="true"] .dot-helper__body { animation:getaudit-dot-curious 3.8s ease-in-out infinite; }
-  .dot-helper[data-motion="true"] .dot-helper__lens { animation:getaudit-dot-inspect 3.8s ease-in-out infinite; }
-  .dot-helper[data-motion="true"][data-phase="records"] .dot-helper__paper { animation:getaudit-dot-file 3.8s ease-in-out infinite; }
+  .dot-helper[data-motion="true"] .dot-helper__image { animation:getaudit-evidence-float 4.8s ease-in-out infinite; }
 }
-@keyframes getaudit-dot-curious { 0%,100%{transform:rotate(-6deg)} 36%,62%{transform:translateY(-3px) rotate(5deg)} }
-@keyframes getaudit-dot-inspect { 0%,100%{transform:translate(0,0) rotate(-24deg)} 36%,62%{transform:translate(4px,5px) rotate(-12deg)} }
-@keyframes getaudit-dot-file { 0%,100%{transform:translateY(0) rotate(-8deg)} 36%,62%{transform:translateY(-4px) rotate(3deg)} }
-@media(prefers-reduced-motion:reduce) { .dot-helper * { animation:none!important;transition:none!important; } }
+@keyframes getaudit-evidence-float { 0%,100%{transform:translateY(0)} 45%,55%{transform:translateY(-2px)} }
+@media(prefers-reduced-motion:reduce) { .dot-helper__image { animation:none!important;transition:none!important; } }

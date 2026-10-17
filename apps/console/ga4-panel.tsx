@@ -83,7 +83,7 @@ export function Ga4Panel({ brandId, onConnections }: { brandId?: string; onConne
   }
   const metrics = [{ key: 'activeUsers' as const, label: t('ga4.activeUsers') }, { key: 'sessions' as const, label: t('ga4.sessions') }, { key: 'screenPageViews' as const, label: t('ga4.pageViews') }, { key: 'keyEvents' as const, label: t('ga4.keyEvents') }];
   return <section className="ga4-desk" aria-busy={busy || loading}>
-    <header className="ga4-desk__header"><div><span className="ga4-desk__label"><BarChart3 size={16} aria-hidden="true"/>Google Analytics</span><h2>{t('ga4.title')}</h2><p>{t('ga4.description')}</p></div><DotHelper compact/></header>
+    <header className="ga4-desk__header"><div><span className="ga4-desk__label"><BarChart3 size={16} aria-hidden="true"/>Google Analytics</span><h2>{t('ga4.title')}</h2><p>{t('ga4.description')}</p></div></header>
     <div className="ga4-desk__toolbar"><div>{report && <><strong>{report.displayName || report.propertyId}</strong><span>{t('ga4.period', { start: report.startDate, end: report.endDate })}</span></>}</div><button type="button" className="ga4-desk__read" disabled={busy || loading || !propertyId} onClick={() => void readGoogle()}><RefreshCw size={15} aria-hidden="true"/>{busy ? t('ga4.reading') : t('ga4.read28Days')}</button></div>
     <p className="ga4-desk__note">{t('ga4.savedOnly')}</p>
     {loading && <p role="status" className="ga4-desk__note">{t('keywordAudit.loadingSavedMaterial')}</p>}
