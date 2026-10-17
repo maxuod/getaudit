@@ -1,0 +1,113 @@
+{
+  "name": "stackback",
+  "version": "0.0.2",
+  "resolutionStatus": "supplemented-exact-upstream-declaration-author-attribution-and-complete-MIT-terms",
+  "upstreamLicense": "MIT",
+  "upstreamAuthor": "Roman Shtylman <shtylman@gmail.com>",
+  "authorAttributionIsCopyrightOwnerAssertion": false,
+  "copyrightNoticeSupplied": false,
+  "copyrightYear": null,
+  "standaloneUpstreamNoticeRecovered": false,
+  "sourceMetadataUrl": "https://registry.npmjs.org/stackback/0.0.2",
+  "packageTarball": "https://registry.npmjs.org/stackback/-/stackback-0.0.2.tgz",
+  "registryVersionIntegrity": "sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==",
+  "tarballIntegrityVerified": true,
+  "tarballSha256": "3e663c82d1ccf9748ed446b648ec21a7dd6c5895ecf4a95310a60a320ca55858",
+  "licenseTermsSource": "https://opensource.org/license/mit",
+  "licenseTermsVerification": "Primary-source browser verified; whitespace wrapped. No source-page byte hash is claimed.",
+  "exactUpstreamRepository": "https://github.com/defunctzombie/node-stackback",
+  "exactReleaseCommit": "2963095372abf7b75ba55f01cef08ab1e62c2ff4",
+  "npmGitHead": null,
+  "releaseTag": "v0.0.2",
+  "releaseTreeUrl": "https://api.github.com/repos/defunctzombie/node-stackback/git/trees/2963095372abf7b75ba55f01cef08ab1e62c2ff4?recursive=1",
+  "publishedFiles": [
+    "package.json",
+    ".npmignore",
+    "README.md",
+    "formatstack.js",
+    "index.js",
+    "test.js",
+    ".travis.yml"
+  ],
+  "releaseTreeFiles": [
+    ".travis.yml",
+    "README.md",
+    "formatstack.js",
+    "index.js",
+    "package.json",
+    "test.js"
+  ],
+  "standaloneNoticeFilesFound": [],
+  "releaseComparisons": [
+    {
+      "file": "package.json",
+      "url": "https://raw.githubusercontent.com/defunctzombie/node-stackback/2963095372abf7b75ba55f01cef08ab1e62c2ff4/package.json",
+      "upstreamSha256": "de9168ece7ce11c0a933ee447dd907da610f1745e6dd418d7f6b23c91e29bd7c",
+      "publishedSha256": "4d984909b27d37d2f1a379b9cda7292a6e3a133c076df166d740a17514ac6e60",
+      "byteMatch": false,
+      "versionLicenseAuthorMatch": true,
+      "difference": "Published package additionally includes devDependencies.mocha=~1.6.0; version/license/author match the tag."
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/defunctzombie/node-stackback/2963095372abf7b75ba55f01cef08ab1e62c2ff4/README.md",
+      "upstreamSha256": "0ac49857291755487f92130e4e2eec3e88b8012a7e42a6549763929ba4e6a4e5",
+      "publishedSha256": "0ac49857291755487f92130e4e2eec3e88b8012a7e42a6549763929ba4e6a4e5",
+      "byteMatch": true
+    },
+    {
+      "file": "index.js",
+      "url": "https://raw.githubusercontent.com/defunctzombie/node-stackback/2963095372abf7b75ba55f01cef08ab1e62c2ff4/index.js",
+      "upstreamSha256": "bc58b3118cb8b3d1a674a7e70c2d6091de3dd31deeb3e1d1f06a54a1a452fd34",
+      "publishedSha256": "bc58b3118cb8b3d1a674a7e70c2d6091de3dd31deeb3e1d1f06a54a1a452fd34",
+      "byteMatch": true
+    },
+    {
+      "file": "formatstack.js",
+      "url": "https://raw.githubusercontent.com/defunctzombie/node-stackback/2963095372abf7b75ba55f01cef08ab1e62c2ff4/formatstack.js",
+      "upstreamSha256": "3c1191bd7094a36098418e7d1606e2a49e7ee25b5ddee54b0b2514ea1a43b8a7",
+      "publishedSha256": "3c1191bd7094a36098418e7d1606e2a49e7ee25b5ddee54b0b2514ea1a43b8a7",
+      "byteMatch": true
+    },
+    {
+      "file": "test.js",
+      "url": "https://raw.githubusercontent.com/defunctzombie/node-stackback/2963095372abf7b75ba55f01cef08ab1e62c2ff4/test.js",
+      "upstreamSha256": "bafcd0f7608bbfb56f07ab3a92fee18884dc619ef3bc06ccb207ee7fa43c75e6",
+      "publishedSha256": "bafcd0f7608bbfb56f07ab3a92fee18884dc619ef3bc06ccb207ee7fa43c75e6",
+      "byteMatch": true
+    }
+  ],
+  "limitations": [
+    "No copyright year or legal rightsholder inferred from release dates, npm publisher, or repository owner.",
+    "Supplement is not a recovered standalone upstream notice.",
+    "No unrelated later license or dependency version substituted."
+  ],
+  "releaseTagObject": {
+    "sha": "a3ebcabaf09f9df7d7cfa913cb18fa869bd2a58d",
+    "targetCommit": "2963095372abf7b75ba55f01cef08ab1e62c2ff4",
+    "url": "https://api.github.com/repos/defunctzombie/node-stackback/git/tags/a3ebcabaf09f9df7d7cfa913cb18fa869bd2a58d"
+  },
+  "installedContentComparisons": [
+    {
+      "file": "package.json",
+      "matchesPublished": true
+    },
+    {
+      "file": "README.md",
+      "matchesPublished": true
+    },
+    {
+      "file": "index.js",
+      "matchesPublished": true
+    },
+    {
+      "file": "formatstack.js",
+      "matchesPublished": true
+    },
+    {
+      "file": "test.js",
+      "matchesPublished": true
+    }
+  ],
+  "lockIntegrityLimit": "Existing lock entry has version but no resolved/integrity. Retrieved registry version integrity and installed matches are not represented as lock-bound integrity."
+}

@@ -1,0 +1,28 @@
+import type { searchReportEn } from './search-report-en.ts';
+export const searchReportZhCN: Record<keyof typeof searchReportEn, string> = {
+  "title": "搜索表现报告",
+  "heading": "搜索表现",
+  "clicks": "点击次数",
+  "impressions": "展示次数",
+  "ctr": "点击率",
+  "position": "平均排名",
+  "queries": "搜索词",
+  "pages": "页面",
+  "trend": "每日展示趋势",
+  "noTrend": "此历史快照未保存每日趋势。",
+  "scope": "来源与数据范围",
+  "capturedAt": "采集时间",
+  "snapshot": "快照",
+  "limits": "这是已保存快照的本地阅读副本。搜索表现、AI 提及、引用和转化需要分别衡量。",
+  "timeZone": "太平洋时间",
+  "filterQueries": "筛选搜索词…",
+  "filterPages": "筛选页面…",
+  "encryptedTitle": "加密搜索报告",
+  "encryptedHint": "输入密码，即可在当前浏览器中本地打开报告。",
+  "password": "报告密码",
+  "open": "打开报告",
+  "opening": "正在打开报告…",
+  "passwordError": "密码不正确，或文件已损坏。请使用支持 Web Crypto 的浏览器。",
+  "iterations": "310,000 次迭代",
+  "passwordMinimum": "密码至少需要 8 个字符。"
+};

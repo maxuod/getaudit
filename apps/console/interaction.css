@@ -1,0 +1,212 @@
+/* Operate-mode motion: navigation continuity, action feedback, and real work. */
+:root {
+  --motion-feedback: 150ms;
+  --motion-view: 180ms;
+  --motion-overlay: 220ms;
+  --motion-arrive: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Content stays visible when motion or script support is unavailable. */
+.page-view,
+.question-view {
+  opacity: 1;
+  transform: none;
+}
+
+:where(button, .button, summary, input, select, textarea) {
+  transition:
+    background-color var(--motion-feedback) ease-out,
+    border-color var(--motion-feedback) ease-out,
+    color var(--motion-feedback) ease-out;
+}
+
+:where(button, .button):not(:disabled):active {
+  transition-duration: 80ms;
+}
+
+/* Current position remains obvious after the transition has finished. */
+.workflow-step,
+.question-tabs button {
+  transition:
+    background-color var(--motion-feedback) ease-out,
+    border-color var(--motion-feedback) ease-out,
+    color var(--motion-feedback) ease-out,
+    box-shadow var(--motion-feedback) ease-out;
+}
+
+.workflow-step:is([aria-current="step"], .active, .is-current) {
+  color: var(--accent-hover);
+  background-color: var(--accent-soft);
+  border-color: var(--accent-line);
+  box-shadow: inset 0 -2px 0 var(--accent);
+}
+
+.question-tabs button:is([aria-selected="true"], [aria-pressed="true"], .active) {
+  color: var(--accent-hover);
+  background-color: var(--accent-soft);
+  border-color: var(--accent-line);
+  font-weight: 650;
+  box-shadow: inset 0 -2px 0 var(--accent);
+}
+
+.workflow-next button > svg:last-child {
+  transition: transform var(--motion-feedback) var(--motion-arrive);
+}
+
+.workflow-next button:not(:disabled):is(:hover, :focus-visible) > svg:last-child {
+  transform: translateX(3px);
+}
+
+/* Checkbox state is native; the row reinforces which records will be used. */
+:is(.local-question-table, .review-queue, .gsc-data-table) tbody td {
+  transition: background-color var(--motion-feedback) ease-out;
+}
+
+:is(.local-question-table, .review-queue, .gsc-data-table) tbody tr:has(input[type="checkbox"]:checked) > td,
+.review-queue tr[aria-selected="true"] > td {
+  background-color: var(--accent-soft);
+}
+
+:is(.local-question-table, .review-queue, .gsc-data-table) input[type="checkbox"] {
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+:is(.local-question-table, .review-queue, .gsc-data-table) input[type="checkbox"]:disabled {
+  cursor: not-allowed;
+}
+
+.sample-cell {
+  transition:
+    background-color var(--motion-feedback) ease-out,
+    border-color var(--motion-feedback) ease-out,
+    box-shadow var(--motion-feedback) ease-out;
+}
+
+/* A pending action keeps its label legible instead of looking unavailable. */
+:is(button, .button).is-busy,
+:is(button, .button)[aria-busy="true"] {
+  opacity: 1;
+  cursor: progress;
+}
+
+:is(button, .button).is-busy:not(.primary, .gsc-refresh),
+:is(button, .button)[aria-busy="true"]:not(.primary, .gsc-refresh) {
+  background-color: var(--accent-soft);
+  border-color: var(--accent-line);
+  color: var(--accent-hover);
+}
+
+/* Give iconless save/import actions the same feedback as refresh actions. */
+:is(button, .button):is(.is-busy, [aria-busy="true"]):not(:has(.busy-indicator, .lucide-loader, .lucide-loader-circle, .lucide-refresh-cw))::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  flex: 0 0 13px;
+  border: 1.5px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+}
+
+.advanced-section > summary {
+  transition: color var(--motion-feedback) ease-out;
+}
+
+.advanced-section[open] > summary {
+  color: var(--ink);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .page-view {
+    animation: console-view-arrive var(--motion-view) var(--motion-arrive);
+  }
+
+  .question-view {
+    animation: console-content-change var(--motion-view) ease-out;
+  }
+
+  /* Preserve the existing inspection change cue without a second entrance. */
+  .page-view .inspector {
+    animation: none;
+  }
+
+  dialog[open] {
+    animation: console-dialog-open var(--motion-overlay) var(--motion-arrive);
+  }
+
+  dialog[open]::backdrop {
+    animation: console-content-change var(--motion-view) ease-out;
+  }
+
+  :is(.alert, .gsc-alert, .gsc-notice, .gsc-message, .local-question-notice) {
+    animation: console-feedback-arrive var(--motion-view) ease-out;
+  }
+
+  :is(button, .button):is(.is-busy, [aria-busy="true"]) :is(.busy-indicator, .lucide-loader, .lucide-loader-circle, .lucide-refresh-cw),
+  :is(button, .button):is(.is-busy, [aria-busy="true"]):not(:has(.busy-indicator, .lucide-loader, .lucide-loader-circle, .lucide-refresh-cw))::before,
+  .gsc-spinning {
+    animation: console-working 800ms linear infinite;
+  }
+
+  @keyframes console-view-arrive {
+    from {
+      opacity: 0.88;
+      transform: translateY(4px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes console-content-change {
+    from { opacity: 0.78; }
+    to { opacity: 1; }
+  }
+
+  @keyframes console-dialog-open {
+    from {
+      opacity: 0.8;
+      transform: translateY(6px) scale(0.985);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes console-feedback-arrive {
+    from { opacity: 0.72; }
+    to { opacity: 1; }
+  }
+
+  @keyframes console-working {
+    to { transform: rotate(360deg); }
+  }
+}
+
+/* Reduced motion uses the same persistent state colors and busy labels. */
+@media (prefers-reduced-motion: reduce) {
+  .page-view,
+  .question-view,
+  .page-view .inspector,
+  dialog[open],
+  dialog[open]::backdrop,
+  :is(.alert, .gsc-alert, .gsc-notice, .gsc-message, .local-question-notice),
+  .gsc-spinning,
+  .is-busy .busy-indicator,
+  .is-busy :is(.lucide-loader, .lucide-loader-circle, .lucide-refresh-cw),
+  [aria-busy="true"] :is(.lucide-loader, .lucide-loader-circle, .lucide-refresh-cw),
+  :is(button, .button):is(.is-busy, [aria-busy="true"])::before {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .workflow-next button > svg:last-child {
+    transform: none !important;
+  }
+
+  dialog::backdrop {
+    backdrop-filter: none;
+  }
+}

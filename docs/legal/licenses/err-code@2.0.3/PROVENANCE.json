@@ -1,0 +1,79 @@
+{
+  "name": "err-code",
+  "version": "2.0.3",
+  "resolutionStatus": "supplemented-exact-upstream-declaration-author-attribution-and-complete-MIT-terms",
+  "upstreamLicense": "MIT",
+  "upstreamAuthor": "IndigoUnited <hello@indigounited.com> (http://indigounited.com)",
+  "authorAttributionIsCopyrightOwnerAssertion": false,
+  "copyrightNoticeSupplied": false,
+  "copyrightYear": null,
+  "standaloneUpstreamNoticeRecovered": false,
+  "sourceMetadataUrl": "https://registry.npmjs.org/err-code/2.0.3",
+  "packageTarball": "https://registry.npmjs.org/err-code/-/err-code-2.0.3.tgz",
+  "registryVersionIntegrity": "sha512-2bmlRpNKBxT/CRmPOlyISQpNj+qSeYvcym/uT0Jx2bMOlKLtSy1ZmLuVxSEKKyor/N5yhvp/ZiG1oE3DEYMSFA==",
+  "tarballIntegrityVerified": true,
+  "tarballSha256": "a5664f4a04152f1dcfa51035879284895c5e104aa13d9e0627567ead2eb248e2",
+  "licenseTermsSource": "https://opensource.org/license/mit",
+  "licenseTermsVerification": "Primary-source browser verified; whitespace wrapped. No source-page byte hash is claimed.",
+  "exactUpstreamRepository": "https://github.com/IndigoUnited/js-err-code",
+  "exactReleaseCommit": "92511d41a6a926c94c9d11493404867b1e92a77a",
+  "npmGitHead": "92511d41a6a926c94c9d11493404867b1e92a77a",
+  "releaseTag": null,
+  "releaseTreeUrl": "https://api.github.com/repos/IndigoUnited/js-err-code/git/trees/92511d41a6a926c94c9d11493404867b1e92a77a?recursive=1",
+  "publishedFiles": [
+    ".editorconfig",
+    "index.js",
+    "index.umd.js",
+    "test/test.js",
+    ".eslintrc.json",
+    "test/.eslintrc.json",
+    "bower.json",
+    "package.json",
+    "README.md",
+    ".travis.yml"
+  ],
+  "releaseTreeFiles": [
+    ".editorconfig",
+    ".eslintrc.json",
+    ".gitignore",
+    ".travis.yml",
+    "README.md",
+    "bower.json",
+    "index.js",
+    "index.umd.js",
+    "package-lock.json",
+    "package.json",
+    "test/.eslintrc.json",
+    "test/test.js"
+  ],
+  "standaloneNoticeFilesFound": [],
+  "releaseComparisons": [
+    {
+      "file": "package.json",
+      "url": "https://raw.githubusercontent.com/IndigoUnited/js-err-code/92511d41a6a926c94c9d11493404867b1e92a77a/package.json",
+      "upstreamSha256": "ff5360c17c3e197fc4a4a4fa0d07640292556d585a49c8651fd198e926d47bcc",
+      "publishedSha256": "ff5360c17c3e197fc4a4a4fa0d07640292556d585a49c8651fd198e926d47bcc",
+      "byteMatch": true,
+      "versionLicenseAuthorMatch": true
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/IndigoUnited/js-err-code/92511d41a6a926c94c9d11493404867b1e92a77a/README.md",
+      "upstreamSha256": "2d89bcf41bb06b2eddbe129a75abd418ef92a5f633accec609fd22a4843a5a93",
+      "publishedSha256": "2d89bcf41bb06b2eddbe129a75abd418ef92a5f633accec609fd22a4843a5a93",
+      "byteMatch": true
+    },
+    {
+      "file": "index.js",
+      "url": "https://raw.githubusercontent.com/IndigoUnited/js-err-code/92511d41a6a926c94c9d11493404867b1e92a77a/index.js",
+      "upstreamSha256": "d523ab544dd4e8d0b4b48e7d47c37addd2d53d28a98fe799ed63862ae1efb6db",
+      "publishedSha256": "d523ab544dd4e8d0b4b48e7d47c37addd2d53d28a98fe799ed63862ae1efb6db",
+      "byteMatch": true
+    }
+  ],
+  "limitations": [
+    "No copyright year or legal rightsholder inferred from release dates, npm publisher, or repository owner.",
+    "Supplement is not a recovered standalone upstream notice.",
+    "No unrelated later license or dependency version substituted."
+  ]
+}

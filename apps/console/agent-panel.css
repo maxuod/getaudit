@@ -1,0 +1,23 @@
+.account-control,.account-chip { position:relative;max-width:100%; }
+.account-chip { margin:0;padding:0;border:0; }
+.account-login,.account-chip>summary { display:flex;align-items:center;gap:7px;min-height:38px;padding:6px 10px;border:1px solid var(--control-border);border-radius:var(--radius-control);background:var(--paper);font-size:12px;cursor:pointer; }
+.account-chip>summary { list-style:none; }
+.account-chip>summary::-webkit-details-marker { display:none; }
+.account-chip>summary>span { max-width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; }
+.account-menu { position:absolute;right:0;top:calc(100% + 8px);z-index:15;width:min(300px,calc(100vw - 32px));padding:15px;background:var(--paper);border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 28px -18px var(--shadow);overflow-wrap:anywhere; }
+.account-menu p { margin:0 0 8px; }.account-menu small { display:block;line-height:1.5;color:var(--muted);margin-bottom:12px; }.account-menu button { width:100%; }
+.agent-desk { display:flex;flex-direction:column;gap:20px;min-width:0; }
+.agent-desk .panel { padding:24px; }.agent-desk .section-head { padding:0;margin-bottom:18px; }.agent-desk .section-head p { margin-bottom:0;max-width:72ch; }
+.agent-toolbar,.agent-key-form,.agent-actions { display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap; }.agent-toolbar .field { min-width:220px;margin:0; }.agent-key-form .field { flex:1;min-width:180px;margin:0; }.agent-endpoint { margin-top:18px; }.agent-endpoint input { font-size:12px; }
+.agent-desk h3 { font-size:16px;margin:23px 0 12px; }.agent-desk h4 { font-size:14px;margin:0 0 8px; }.agent-desk .quiet-note { max-width:78ch; }
+.agent-notice { padding:10px 12px;background:var(--success-soft);color:var(--success);border:1px solid var(--success-line);border-radius:10px; }
+.agent-key-reveal { margin-top:18px;padding:16px;background:var(--accent-soft);border-radius:12px; }.agent-key-reveal p { font-size:12px;line-height:1.6; }.agent-key-reveal input { font-family:"SFMono-Regular",Consolas,monospace; }
+.agent-write-access { display:flex;align-items:flex-start;gap:8px;font-size:12px;line-height:1.6;margin-top:14px; }.agent-write-access input { margin-top:3px; }
+.agent-analysis { padding-block:16px;border-top:1px solid var(--line);overflow-wrap:anywhere; }.agent-analysis>p { max-width:78ch;line-height:1.7; }.agent-saved-action { margin:15px 0; }.agent-saved-action dl { font-size:12px; }.agent-saved-action dd { margin:4px 0 10px;line-height:1.65; }
+.agent-key-list { margin:18px 0; }.agent-key-row { display:flex;justify-content:space-between;align-items:center;gap:15px;padding:14px 0;border-bottom:1px solid var(--line); }.agent-key-row>div { min-width:0;overflow-wrap:anywhere; }.agent-key-row small { display:block;margin-top:4px;color:var(--muted);font-size:11px; }.agent-key-row button { flex-shrink:0; }
+.agent-source-line { font-size:12px;overflow-wrap:anywhere;color:var(--muted); }.agent-findings { display:flex;gap:25px;flex-wrap:wrap;border-block:1px solid var(--line);padding:14px 0;margin:18px 0; }.agent-findings>span { display:flex;gap:10px;align-items:baseline;font-size:12px; }.agent-findings strong { font-size:19px;font-variant-numeric:tabular-nums; }
+.agent-desk table { width:100%; }.agent-desk td { overflow-wrap:anywhere; }.agent-desk td:last-child { min-width:170px; }.agent-desk td a { display:inline; }.agent-desk td svg { margin-left:5px; }
+.agent-action-list article { padding:17px 0;border-bottom:1px solid var(--line); }.agent-action-list p { max-width:78ch;overflow-wrap:anywhere; }.agent-action-list dl { display:grid;gap:10px;font-size:12px; }.agent-action-list dt { font-weight:600;margin-bottom:4px; }.agent-action-list dd { margin:0;line-height:1.65; }
+.agent-provenance,.agent-unknowns { font-size:12px;overflow-wrap:anywhere;margin-top:16px; }.agent-provenance summary,.agent-unknowns summary { cursor:pointer; }.agent-prompt { margin-top:20px;padding-top:2px;border-top:1px solid var(--line); }.agent-prompt p { max-width:75ch;line-height:1.7; }
+.agent-gsc-connect { margin-top:18px; }.agent-gsc-connect>p { font-size:12px;max-width:72ch;line-height:1.6; }
+@media(max-width:650px) { .agent-desk .panel { padding:16px; }.agent-desk .section-head { align-items:flex-start; }.agent-toolbar .field { flex:1;min-width:160px; }.agent-key-form .field { flex-basis:100%; }.account-chip>summary>span { max-width:125px; }.agent-findings { gap:12px 18px; }.agent-key-row { flex-wrap:wrap; } }

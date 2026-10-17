@@ -1,0 +1,3747 @@
+{
+  "formatVersion": 2,
+  "generatedOn": "2026-10-17",
+  "scope": "All non-root package-lock.json entries; unchanged upstream legal files plus explicitly labelled source-backed license supplements. No dependency implementation code or application binaries.",
+  "rootLicenseStatus": "MIT; public source release authorized",
+  "thirdPartyAttribution": "Exact required upstream legal notices may contain third-party copyright-holder names and contacts. These are not product-owner personal/company information.",
+  "lockfileSha256": "759eae8f4732dd543cd7eb8dc0ebedd3c2fd5e73c614be01ed4c50e111eac6b5",
+  "packageCount": 154,
+  "licenseCounts": {
+    "Apache-2.0": 6,
+    "BSD-2-Clause": 16,
+    "BSD-3-Clause": 1,
+    "BlueOak-1.0.0": 5,
+    "ISC": 11,
+    "MIT": 103,
+    "MPL-2.0": 12
+  },
+  "uniqueNoticeFileCount": 150,
+  "packages": [
+    {
+      "installPath": "node_modules/@electron-internal/extract-zip",
+      "name": "@electron-internal/extract-zip",
+      "version": "1.0.5",
+      "declaredLicense": "BSD-2-Clause",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/electron/extract-zip",
+      "packageTarball": "https://registry.npmjs.org/@electron-internal/extract-zip/-/extract-zip-1.0.5.tgz",
+      "packageIntegrity": "sha512-+bqFCP98pLI0Tt0XQo1TmlXtwjWchISndDOxCkEcIuUgXWpBnLyRI+2DU+mesvnMMX6L1XDqYNA0lXNDHd/yiA==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [],
+      "tarballSha256": "939b4462974f8fa1b339dd4f420c62787ddf06903cc9c61f1f0661f096f5370b",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "supplemented-declared-license-text-with-exact-upstream-declaration",
+      "supplementFiles": [
+        {
+          "path": "docs/legal/licenses/@electron-internal--extract-zip@1.0.5/LICENSE-BSD-2-Clause.txt",
+          "sha256": "f6036f79d054f42e11f2dd52458b4d2282e901d197955e598bf1a23600280cf0",
+          "bytes": 1236,
+          "source": "distributor-prepared-source-backed-supplement"
+        },
+        {
+          "path": "docs/legal/licenses/@electron-internal--extract-zip@1.0.5/NOTICE.md",
+          "sha256": "5d044edab620731fd8061658ce0b14c850f97aa0c3ffe99e89336bd90f3c6b50",
+          "bytes": 2128,
+          "source": "distributor-prepared-source-backed-supplement"
+        },
+        {
+          "path": "docs/legal/licenses/@electron-internal--extract-zip@1.0.5/UPSTREAM-LICENSE-DECLARATION.txt",
+          "sha256": "f64eca06693734626fe5c515ef365ef2e55aedb204c4dfd672a4832f9d8a4fc1",
+          "bytes": 25,
+          "source": "unchanged-exact-npm-release-readme-excerpt"
+        }
+      ],
+      "upstreamLicenseFileRecovered": false,
+      "supplementEvidence": {
+        "declaredLicense": "BSD-2-Clause",
+        "resolutionStatus": "supplemented-declared-license-text-with-exact-upstream-declaration",
+        "upstreamLicenseFileRecovered": false,
+        "upstreamCopyrightHolder": null,
+        "upstreamCopyrightYear": null,
+        "copyrightFinding": "No explicit holder/year notice found in inspected exact package or project-authored source; no notice invented.",
+        "gitHead": "b83e459fd04c53b0a1c8438a6792df8f64be47fc",
+        "npmIntegrityVerifiedAgainstLock": true,
+        "npmIntegrity": "sha512-+bqFCP98pLI0Tt0XQo1TmlXtwjWchISndDOxCkEcIuUgXWpBnLyRI+2DU+mesvnMMX6L1XDqYNA0lXNDHd/yiA==",
+        "npmTarballSha256": "939b4462974f8fa1b339dd4f420c62787ddf06903cc9c61f1f0661f096f5370b",
+        "npmTarballLicenseFiles": [],
+        "sourceUrls": {
+          "npmMetadata": "https://registry.npmjs.org/%40electron-internal%2Fextract-zip/1.0.5",
+          "packageSource": "https://github.com/electron/extract-zip/blob/b83e459fd04c53b0a1c8438a6792df8f64be47fc/package.json",
+          "readmeSource": "https://github.com/electron/extract-zip/blob/b83e459fd04c53b0a1c8438a6792df8f64be47fc/README.md",
+          "cargoSource": "https://github.com/electron/extract-zip/blob/b83e459fd04c53b0a1c8438a6792df8f64be47fc/Cargo.toml",
+          "sourceTree": "https://github.com/electron/extract-zip/tree/b83e459fd04c53b0a1c8438a6792df8f64be47fc",
+          "standardLicense": "https://spdx.org/licenses/BSD-2-Clause.html",
+          "standardLicenseText": "https://raw.githubusercontent.com/spdx/license-list-data/main/text/BSD-2-Clause.txt"
+        },
+        "spdxFullTemplateSha256": "f32fb3b417a194167cfad068223fc975ba96c5960513a10f66a3c28720aec1df",
+        "spdxTemplateTreatment": "Copied complete redistribution conditions/disclaimer; did not invent replacements for template copyright line.",
+        "scopeLimit": "Only missing package-license declaration/text resolved. Native-transitive dependency and binary distribution compliance not certified."
+      },
+      "noticeResolutionScope": "Source-backed declaration and standard license terms supplied as a clearly labelled supplement; no upstream copyright holder/year invented and no binary compliance certification."
+    },
+    {
+      "installPath": "node_modules/@electron/asar",
+      "name": "@electron/asar",
+      "version": "4.3.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/electron/asar.git",
+      "packageTarball": "https://registry.npmjs.org/@electron/asar/-/asar-4.3.0.tgz",
+      "packageIntegrity": "sha512-k/FFC/NQoTykGBi/Ga4L4KorsAKDdkK0LfNVG90eUG6vPVpJaL3iR9V1ZLbzBAF3QpojK5DcaGOdQOheKZv4JQ==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@electron--asar@4.3.0/LICENSE.md",
+          "originalPath": "LICENSE.md",
+          "sha256": "d5af8fc171f6f600c0ab4e7597dca398dda80dbe6821ce01cef78e859e7a00f8",
+          "bytes": 1055,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@electron/get",
+      "name": "@electron/get",
+      "version": "5.1.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/electron/get",
+      "packageTarball": "https://registry.npmjs.org/@electron/get/-/get-5.1.0.tgz",
+      "packageIntegrity": "sha512-3kSBtG8ObcTVfXanm5vVJ6UnBLEVmVsRk1M+vGqCuMBV+XLCbJYuWQful+yIy0GQDsSlK0kHEriEHn7SPk4EnA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@electron--get@5.1.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "edab8abb78d9c5b36944c3e00aebf6a90eb32378993f49ac8a3904007029c629",
+          "bytes": 1088,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@electron/notarize",
+      "name": "@electron/notarize",
+      "version": "3.1.1",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/electron/notarize.git",
+      "packageTarball": "https://registry.npmjs.org/@electron/notarize/-/notarize-3.1.1.tgz",
+      "packageIntegrity": "sha512-uQQSlOiJnqRkTL1wlEBAxe90nVN/Fc/hEmk0bqpKk8nKjV1if/tXLHKUPePtv9Xsx90PtZU8aidx5lAiOpjkQQ==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@electron--notarize@3.1.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "60e42db5f32611ac978f4be323cba0511d1375a1af10f32d2a8bba9b291d9de2",
+          "bytes": 1070,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@electron/osx-sign",
+      "name": "@electron/osx-sign",
+      "version": "2.7.0",
+      "declaredLicense": "BSD-2-Clause",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/electron/osx-sign.git",
+      "packageTarball": "https://registry.npmjs.org/@electron/osx-sign/-/osx-sign-2.7.0.tgz",
+      "packageIntegrity": "sha512-9DGhNqKMl6ibkhUoXbN7OHX2gZznfY10L3ZwG0u6r667Kfb6kec4JEfFTXftoqzmOfZ+OzwDbr4p/nKBMHnz0g==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@electron--osx-sign@2.7.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "fe6ac932d2a16058886ab32ce601b50ce2b9d65925305b72227a184185552535",
+          "bytes": 1352,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@electron/packager",
+      "name": "@electron/packager",
+      "version": "20.3.0",
+      "declaredLicense": "BSD-2-Clause",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/electron/packager.git",
+      "packageTarball": "https://registry.npmjs.org/@electron/packager/-/packager-20.3.0.tgz",
+      "packageIntegrity": "sha512-3MvgJgy6YJ5ti0oGGBKrWKdYwpTaoRrhranMDgHSQ6i5t56yZV9IRDyoXTuqBp97LiKqnZeAMe2wTcF/9+fP5g==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@electron--packager@20.3.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "d1c14be05d76cb7894e6a01815996b1ec96a196e9ea9552e1a46b215e9ca7994",
+          "bytes": 1313,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@electron/universal",
+      "name": "@electron/universal",
+      "version": "3.0.6",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/electron/universal.git",
+      "packageTarball": "https://registry.npmjs.org/@electron/universal/-/universal-3.0.6.tgz",
+      "packageIntegrity": "sha512-MonS1kfkZdSEkLZI0pdR/TCx8ecxwRSFm7sORfwIkDI9UaIbHnk4Mgeqq+Ob9qDQRV8LZ9+hHCmimpA9BRcNxw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@electron--universal@3.0.6/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "edab8abb78d9c5b36944c3e00aebf6a90eb32378993f49ac8a3904007029c629",
+          "bytes": 1088,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@electron/windows-sign",
+      "name": "@electron/windows-sign",
+      "version": "2.1.0",
+      "declaredLicense": "BSD-2-Clause",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/electron/windows-sign.git",
+      "packageTarball": "https://registry.npmjs.org/@electron/windows-sign/-/windows-sign-2.1.0.tgz",
+      "packageIntegrity": "sha512-hyRE175pWNxU3R0k7B7Zwm4KpSgK/Ql+7yqUPRfnYc9K06uVPJDLvXH6oXpl/RAKbLu0Y114xuH6BdjDhF/pKA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@electron--windows-sign@2.1.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "270871b2e9e4f2db0caa58205bac8453b469f993a4821676f712003cac63ef8b",
+          "bytes": 1315,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@jridgewell/sourcemap-codec",
+      "name": "@jridgewell/sourcemap-codec",
+      "version": "1.6.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/jridgewell/sourcemaps.git",
+      "packageTarball": "https://registry.npmjs.org/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.6.0.tgz",
+      "packageIntegrity": "sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@jridgewell--sourcemap-codec@1.6.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "769d154fbde32a915af110b1123650bc79f4cbe675acc66e005265bf069c6c6c",
+          "bytes": 1080,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@malept/cross-spawn-promise",
+      "name": "@malept/cross-spawn-promise",
+      "version": "2.0.0",
+      "declaredLicense": "Apache-2.0",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/malept/cross-spawn-promise",
+      "packageTarball": "https://registry.npmjs.org/@malept/cross-spawn-promise/-/cross-spawn-promise-2.0.0.tgz",
+      "packageIntegrity": "sha512-1DpKU0Z5ThltBwjNySMC14g0CkbyhCaz9FkhxqNsZI6uAPJXFS8cMXlBKo26FJ8ZuW6S9GCMcR9IO5k2X5/9Fg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@malept--cross-spawn-promise@2.0.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@oxc-project/types",
+      "name": "@oxc-project/types",
+      "version": "0.151.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/oxc-project/oxc.git",
+      "packageTarball": "https://registry.npmjs.org/@oxc-project/types/-/types-0.151.0.tgz",
+      "packageIntegrity": "sha512-J1yXrIlNDZVzE3ada310xeAw7nH8yCAyLPuUIsjKatFPmfn5bS1oW+cM+QsGOtVWd5nhSpbwZWx/rue+r5Z+PA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@oxc-project--types@0.151.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "95ced5ecf1133fbf41d409b5555c86c344f83f3b019926057ddbc07cfdcc27b3",
+          "bytes": 1119,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@rolldown/binding-android-arm-eabi",
+      "name": "@rolldown/binding-android-arm-eabi",
+      "version": "1.2.11",
+      "declaredLicense": "MIT",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/rolldown/rolldown.git",
+      "packageTarball": "https://registry.npmjs.org/@rolldown/binding-android-arm-eabi/-/binding-android-arm-eabi-1.2.11.tgz",
+      "packageIntegrity": "sha512-A5kXfGKvKWWZE0TtPrfsvT+q4Y5d1QG8gGUzpYjGydM+fARM9MuX90PrXYXe0XbsDVgyxxNzHo6giCj90bsFNw==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [],
+      "tarballSha256": "086259427aabacfa5a1063cfbbbb7984e1b802a566b795d30757a35ca5f775c1",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "no-matching-notice-file-in-package",
+      "relatedUpstreamLicenseFiles": [
+        {
+          "path": "docs/legal/licenses/rolldown@1.2.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "bytes": 1302,
+          "source": "installed-package"
+        }
+      ],
+      "relatedUpstreamSource": "https://github.com/rolldown/rolldown/tree/v1.2.11",
+      "relatedNoticeBasis": "Same repository and version as rolldown package; platform tarball itself has no matching legal file. This is a reference, not an assertion that all bundled native dependencies are covered."
+    },
+    {
+      "installPath": "node_modules/@rolldown/binding-android-arm64",
+      "name": "@rolldown/binding-android-arm64",
+      "version": "1.2.11",
+      "declaredLicense": "MIT",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/rolldown/rolldown.git",
+      "packageTarball": "https://registry.npmjs.org/@rolldown/binding-android-arm64/-/binding-android-arm64-1.2.11.tgz",
+      "packageIntegrity": "sha512-z6cTycz+iJ4PVkuL4HHW4DfTfoeU/2nqYYuSOrTmH7yHK5Y0LCOnA03V4ZNxavyVaU1oOqUgIg2klN/s+USGOA==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [],
+      "tarballSha256": "3c9a0aed857d639b3f3096d88521dd86e468fe29b89046dc9f15fc9b5ccc6004",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "no-matching-notice-file-in-package",
+      "relatedUpstreamLicenseFiles": [
+        {
+          "path": "docs/legal/licenses/rolldown@1.2.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "bytes": 1302,
+          "source": "installed-package"
+        }
+      ],
+      "relatedUpstreamSource": "https://github.com/rolldown/rolldown/tree/v1.2.11",
+      "relatedNoticeBasis": "Same repository and version as rolldown package; platform tarball itself has no matching legal file. This is a reference, not an assertion that all bundled native dependencies are covered."
+    },
+    {
+      "installPath": "node_modules/@rolldown/binding-darwin-arm64",
+      "name": "@rolldown/binding-darwin-arm64",
+      "version": "1.2.11",
+      "declaredLicense": "MIT",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/rolldown/rolldown.git",
+      "packageTarball": "https://registry.npmjs.org/@rolldown/binding-darwin-arm64/-/binding-darwin-arm64-1.2.11.tgz",
+      "packageIntegrity": "sha512-jShvqNtP6vDC6/A5JOAzbVV+DkgHqhl/ScVCJEbt+TUY6QYz7YnXcrg3sLtFBniro0f/Ld50ZwCWA6f7KYD1nQ==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [],
+      "tarballSha256": "a8e44a04d324ff9c8f376f89aa9bff0df72bd213e3571fa6b8b3a259830a4bae",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "no-matching-notice-file-in-package",
+      "relatedUpstreamLicenseFiles": [
+        {
+          "path": "docs/legal/licenses/rolldown@1.2.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "bytes": 1302,
+          "source": "installed-package"
+        }
+      ],
+      "relatedUpstreamSource": "https://github.com/rolldown/rolldown/tree/v1.2.11",
+      "relatedNoticeBasis": "Same repository and version as rolldown package; platform tarball itself has no matching legal file. This is a reference, not an assertion that all bundled native dependencies are covered."
+    },
+    {
+      "installPath": "node_modules/@rolldown/binding-darwin-x64",
+      "name": "@rolldown/binding-darwin-x64",
+      "version": "1.2.11",
+      "declaredLicense": "MIT",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/rolldown/rolldown.git",
+      "packageTarball": "https://registry.npmjs.org/@rolldown/binding-darwin-x64/-/binding-darwin-x64-1.2.11.tgz",
+      "packageIntegrity": "sha512-f2i2xiNWq1Z1l2++q2fuhZRdLAT3aqxD6vRNm1RAxpUoBcdqNB3C0s1Bt+K+PbEx2F5F4gQp6hqKkphCY/xF9w==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [],
+      "tarballSha256": "c1fe6a057cdfe0e065862c1931584d2d90c87275c0499bea84676a1bc01c460e",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "no-matching-notice-file-in-package",
+      "relatedUpstreamLicenseFiles": [
+        {
+          "path": "docs/legal/licenses/rolldown@1.2.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "bytes": 1302,
+          "source": "installed-package"
+        }
+      ],
+      "relatedUpstreamSource": "https://github.com/rolldown/rolldown/tree/v1.2.11",
+      "relatedNoticeBasis": "Same repository and version as rolldown package; platform tarball itself has no matching legal file. This is a reference, not an assertion that all bundled native dependencies are covered."
+    },
+    {
+      "installPath": "node_modules/@rolldown/binding-freebsd-x64",
+      "name": "@rolldown/binding-freebsd-x64",
+      "version": "1.2.11",
+      "declaredLicense": "MIT",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/rolldown/rolldown.git",
+      "packageTarball": "https://registry.npmjs.org/@rolldown/binding-freebsd-x64/-/binding-freebsd-x64-1.2.11.tgz",
+      "packageIntegrity": "sha512-4Ir5FSOKIAMr4r0kExpt1s3bMgzJU3rA45AYOHtQpls0oNeqcYBKrWMlckrYH4KCfGLfkfn1tN1dmZPMVsdXow==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [],
+      "tarballSha256": "196cf55a57ddaf397becad615ed0f6c1a83b0aed6dff8a43d14143fa0c2e8189",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "no-matching-notice-file-in-package",
+      "relatedUpstreamLicenseFiles": [
+        {
+          "path": "docs/legal/licenses/rolldown@1.2.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "bytes": 1302,
+          "source": "installed-package"
+        }
+      ],
+      "relatedUpstreamSource": "https://github.com/rolldown/rolldown/tree/v1.2.11",
+      "relatedNoticeBasis": "Same repository and version as rolldown package; platform tarball itself has no matching legal file. This is a reference, not an assertion that all bundled native dependencies are covered."
+    },
+    {
+      "installPath": "node_modules/@rolldown/binding-linux-arm-gnueabihf",
+      "name": "@rolldown/binding-linux-arm-gnueabihf",
+      "version": "1.2.11",
+      "declaredLicense": "MIT",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/rolldown/rolldown.git",
+      "packageTarball": "https://registry.npmjs.org/@rolldown/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-1.2.11.tgz",
+      "packageIntegrity": "sha512-/gnRDM+39BROzAN/k1OZjDPnDMcZxB/0EUxKjONO5yVkNEvlsoMDrxGNKgZi/ttFriS2gwlDNzB65pvNbFOXIQ==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [],
+      "tarballSha256": "359ee8a35a9d06bc4a2e34d4a3bb93a3f208039771f7f030e3415902a020a2c2",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "no-matching-notice-file-in-package",
+      "relatedUpstreamLicenseFiles": [
+        {
+          "path": "docs/legal/licenses/rolldown@1.2.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "bytes": 1302,
+          "source": "installed-package"
+        }
+      ],
+      "relatedUpstreamSource": "https://github.com/rolldown/rolldown/tree/v1.2.11",
+      "relatedNoticeBasis": "Same repository and version as rolldown package; platform tarball itself has no matching legal file. This is a reference, not an assertion that all bundled native dependencies are covered."
+    },
+    {
+      "installPath": "node_modules/@rolldown/binding-linux-arm64-gnu",
+      "name": "@rolldown/binding-linux-arm64-gnu",
+      "version": "1.2.11",
+      "declaredLicense": "MIT",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/rolldown/rolldown.git",
+      "packageTarball": "https://registry.npmjs.org/@rolldown/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-1.2.11.tgz",
+      "packageIntegrity": "sha512-PFaK8HwvAHbaKbBcDNQihjMKYvFnA5hiENx/l5tphTDz1E0WFp32l0A7aq7lyUwGsRw/xSrNIy/gIK4thrSCrw==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [],
+      "tarballSha256": "e70aaf6048d6f2e93db4726cff1816a1abce69d752359f24a417821a81959e94",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "no-matching-notice-file-in-package",
+      "relatedUpstreamLicenseFiles": [
+        {
+          "path": "docs/legal/licenses/rolldown@1.2.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "bytes": 1302,
+          "source": "installed-package"
+        }
+      ],
+      "relatedUpstreamSource": "https://github.com/rolldown/rolldown/tree/v1.2.11",
+      "relatedNoticeBasis": "Same repository and version as rolldown package; platform tarball itself has no matching legal file. This is a reference, not an assertion that all bundled native dependencies are covered."
+    },
+    {
+      "installPath": "node_modules/@rolldown/binding-linux-arm64-musl",
+      "name": "@rolldown/binding-linux-arm64-musl",
+      "version": "1.2.11",
+      "declaredLicense": "MIT",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/rolldown/rolldown.git",
+      "packageTarball": "https://registry.npmjs.org/@rolldown/binding-linux-arm64-musl/-/binding-linux-arm64-musl-1.2.11.tgz",
+      "packageIntegrity": "sha512-AskzJUIKRLPxkruR1wLKewGbOw+EYfU/9lOrBFj4AFrEA8hPpKFnODWNu2WLaNs0QNkEb9QIJufmVZZIL/bJlg==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [],
+      "tarballSha256": "6bdb665e628771d5f1db97ed36abefdd7808864adaff065d34c1e85daf2eda92",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "no-matching-notice-file-in-package",
+      "relatedUpstreamLicenseFiles": [
+        {
+          "path": "docs/legal/licenses/rolldown@1.2.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "bytes": 1302,
+          "source": "installed-package"
+        }
+      ],
+      "relatedUpstreamSource": "https://github.com/rolldown/rolldown/tree/v1.2.11",
+      "relatedNoticeBasis": "Same repository and version as rolldown package; platform tarball itself has no matching legal file. This is a reference, not an assertion that all bundled native dependencies are covered."
+    },
+    {
+      "installPath": "node_modules/@rolldown/binding-linux-ppc64-gnu",
+      "name": "@rolldown/binding-linux-ppc64-gnu",
+      "version": "1.2.11",
+      "declaredLicense": "MIT",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/rolldown/rolldown.git",
+      "packageTarball": "https://registry.npmjs.org/@rolldown/binding-linux-ppc64-gnu/-/binding-linux-ppc64-gnu-1.2.11.tgz",
+      "packageIntegrity": "sha512-qlUGAheh2yh8afH7QBgx0PrRHN85hKnNd78x8MeMhXivuevgd8vgf6/CstOzmNKY/lLTHvNTrPy98cLnAugzJw==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [],
+      "tarballSha256": "af77b3c8fbc493ada38d7dcfd2f193696b81a6fdd24d201f427f7d8913db0a1e",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "no-matching-notice-file-in-package",
+      "relatedUpstreamLicenseFiles": [
+        {
+          "path": "docs/legal/licenses/rolldown@1.2.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "bytes": 1302,
+          "source": "installed-package"
+        }
+      ],
+      "relatedUpstreamSource": "https://github.com/rolldown/rolldown/tree/v1.2.11",
+      "relatedNoticeBasis": "Same repository and version as rolldown package; platform tarball itself has no matching legal file. This is a reference, not an assertion that all bundled native dependencies are covered."
+    },
+    {
+      "installPath": "node_modules/@rolldown/binding-linux-s390x-gnu",
+      "name": "@rolldown/binding-linux-s390x-gnu",
+      "version": "1.2.11",
+      "declaredLicense": "MIT",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/rolldown/rolldown.git",
+      "packageTarball": "https://registry.npmjs.org/@rolldown/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-1.2.11.tgz",
+      "packageIntegrity": "sha512-secpEad+0vCbSfn8upFySkDskv+bGPk3THSDS9Y89yc4rb4kzqHp8Dmyd9BkQW4SnhNXBZCl/6CrO//hZahNJQ==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [],
+      "tarballSha256": "64d035edb49acb25992c941cce27d01ce674e33d5bf151963e4a29b64992548c",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "no-matching-notice-file-in-package",
+      "relatedUpstreamLicenseFiles": [
+        {
+          "path": "docs/legal/licenses/rolldown@1.2.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "bytes": 1302,
+          "source": "installed-package"
+        }
+      ],
+      "relatedUpstreamSource": "https://github.com/rolldown/rolldown/tree/v1.2.11",
+      "relatedNoticeBasis": "Same repository and version as rolldown package; platform tarball itself has no matching legal file. This is a reference, not an assertion that all bundled native dependencies are covered."
+    },
+    {
+      "installPath": "node_modules/@rolldown/binding-linux-x64-gnu",
+      "name": "@rolldown/binding-linux-x64-gnu",
+      "version": "1.2.11",
+      "declaredLicense": "MIT",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/rolldown/rolldown.git",
+      "packageTarball": "https://registry.npmjs.org/@rolldown/binding-linux-x64-gnu/-/binding-linux-x64-gnu-1.2.11.tgz",
+      "packageIntegrity": "sha512-mOVBT3dPpkWm8XBWPmU4bf+U6dYDLeMo/9ojUmis4N0L5uu10qra5vOyngZ7/PSdoE4G9KvRt4bloRxNjLas7A==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [],
+      "tarballSha256": "49f6e843133f72f3c286741fce027d36e0caac6f9f17512634318c93e3adba7a",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "no-matching-notice-file-in-package",
+      "relatedUpstreamLicenseFiles": [
+        {
+          "path": "docs/legal/licenses/rolldown@1.2.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "bytes": 1302,
+          "source": "installed-package"
+        }
+      ],
+      "relatedUpstreamSource": "https://github.com/rolldown/rolldown/tree/v1.2.11",
+      "relatedNoticeBasis": "Same repository and version as rolldown package; platform tarball itself has no matching legal file. This is a reference, not an assertion that all bundled native dependencies are covered."
+    },
+    {
+      "installPath": "node_modules/@rolldown/binding-linux-x64-musl",
+      "name": "@rolldown/binding-linux-x64-musl",
+      "version": "1.2.11",
+      "declaredLicense": "MIT",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/rolldown/rolldown.git",
+      "packageTarball": "https://registry.npmjs.org/@rolldown/binding-linux-x64-musl/-/binding-linux-x64-musl-1.2.11.tgz",
+      "packageIntegrity": "sha512-Is78i9A8Ui4SqcxUwFJ9uMmjDn58IbVTjFWYdQestFEgeuEmHMLGNriXnVJKkwG2YiZjw8cP0zCTyDMdDGtOOg==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [],
+      "tarballSha256": "560b2880c7deb22b60b78cff10565c33066a7b3046160ed538f76cdf05e9d656",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "no-matching-notice-file-in-package",
+      "relatedUpstreamLicenseFiles": [
+        {
+          "path": "docs/legal/licenses/rolldown@1.2.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "bytes": 1302,
+          "source": "installed-package"
+        }
+      ],
+      "relatedUpstreamSource": "https://github.com/rolldown/rolldown/tree/v1.2.11",
+      "relatedNoticeBasis": "Same repository and version as rolldown package; platform tarball itself has no matching legal file. This is a reference, not an assertion that all bundled native dependencies are covered."
+    },
+    {
+      "installPath": "node_modules/@rolldown/binding-openharmony-arm64",
+      "name": "@rolldown/binding-openharmony-arm64",
+      "version": "1.2.11",
+      "declaredLicense": "MIT",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/rolldown/rolldown.git",
+      "packageTarball": "https://registry.npmjs.org/@rolldown/binding-openharmony-arm64/-/binding-openharmony-arm64-1.2.11.tgz",
+      "packageIntegrity": "sha512-dUCXneZ87INUMyQ0D+C0HrEBNUPNXHaPmU5GTjyKTJEiussw9Kaj5Ln8UztPe4epV/ffvgNBEadksdYhmW6xJA==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [],
+      "tarballSha256": "dd50806eb691d10b1e3f826c9d901e9a6280aa63ea4f56cd715e21bb24c28508",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "no-matching-notice-file-in-package",
+      "relatedUpstreamLicenseFiles": [
+        {
+          "path": "docs/legal/licenses/rolldown@1.2.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "bytes": 1302,
+          "source": "installed-package"
+        }
+      ],
+      "relatedUpstreamSource": "https://github.com/rolldown/rolldown/tree/v1.2.11",
+      "relatedNoticeBasis": "Same repository and version as rolldown package; platform tarball itself has no matching legal file. This is a reference, not an assertion that all bundled native dependencies are covered."
+    },
+    {
+      "installPath": "node_modules/@rolldown/binding-win32-arm64-msvc",
+      "name": "@rolldown/binding-win32-arm64-msvc",
+      "version": "1.2.11",
+      "declaredLicense": "MIT",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/rolldown/rolldown.git",
+      "packageTarball": "https://registry.npmjs.org/@rolldown/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-1.2.11.tgz",
+      "packageIntegrity": "sha512-jByxb6qfd+bH1xUd0qnfFnb17i9sWBPY2tOavJ0l3tdr3OTu+Kvtm8cd/JV5nFt657b1VqGltxg9olOEfofXWw==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [],
+      "tarballSha256": "9e5308858cd743b11f6c84f6f5088a40538826781b6a5f2f6976f7f2699b79db",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "no-matching-notice-file-in-package",
+      "relatedUpstreamLicenseFiles": [
+        {
+          "path": "docs/legal/licenses/rolldown@1.2.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "bytes": 1302,
+          "source": "installed-package"
+        }
+      ],
+      "relatedUpstreamSource": "https://github.com/rolldown/rolldown/tree/v1.2.11",
+      "relatedNoticeBasis": "Same repository and version as rolldown package; platform tarball itself has no matching legal file. This is a reference, not an assertion that all bundled native dependencies are covered."
+    },
+    {
+      "installPath": "node_modules/@rolldown/binding-win32-x64-msvc",
+      "name": "@rolldown/binding-win32-x64-msvc",
+      "version": "1.2.11",
+      "declaredLicense": "MIT",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/rolldown/rolldown.git",
+      "packageTarball": "https://registry.npmjs.org/@rolldown/binding-win32-x64-msvc/-/binding-win32-x64-msvc-1.2.11.tgz",
+      "packageIntegrity": "sha512-/PzKqzAJ03i19oy2ItPvyvaVjOjBCNnfaJs8yvUdGBKmiESgnrJSQ2awd81QzFbbnAmu7YO9ZnJrDCb9VSJPRA==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [],
+      "tarballSha256": "b1c2305986ec4a7dd6e03f883d118dac96cd5c3d02970634a28041c31d8a6596",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "no-matching-notice-file-in-package",
+      "relatedUpstreamLicenseFiles": [
+        {
+          "path": "docs/legal/licenses/rolldown@1.2.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "bytes": 1302,
+          "source": "installed-package"
+        }
+      ],
+      "relatedUpstreamSource": "https://github.com/rolldown/rolldown/tree/v1.2.11",
+      "relatedNoticeBasis": "Same repository and version as rolldown package; platform tarball itself has no matching legal file. This is a reference, not an assertion that all bundled native dependencies are covered."
+    },
+    {
+      "installPath": "node_modules/@rolldown/pluginutils",
+      "name": "@rolldown/pluginutils",
+      "version": "1.0.1",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/rolldown/plugins.git",
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@rolldown--pluginutils@1.0.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "e1919b3b98b8bf6c1b99fcc60a0ed46027c97ac947432e1278446c9606f50161",
+          "bytes": 1106,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@standard-schema/spec",
+      "name": "@standard-schema/spec",
+      "version": "1.1.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/standard-schema/standard-schema",
+      "packageTarball": "https://registry.npmjs.org/@standard-schema/spec/-/spec-1.1.0.tgz",
+      "packageIntegrity": "sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@standard-schema--spec@1.1.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "653b779005a3a4d64a7288c940f7b9a0e8f0b1e0375f6aa6af9473caf131e564",
+          "bytes": 1071,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@types/chai",
+      "name": "@types/chai",
+      "version": "5.2.3",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "packageTarball": "https://registry.npmjs.org/@types/chai/-/chai-5.2.3.tgz",
+      "packageIntegrity": "sha512-Mw558oeA9fFbv65/y4mHtXDs9bPnFMZAL/jxdPFUpOHHIXX91mcgEHbS5Lahr+pwZFR8A7GQleRWeI6cGFC2UA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@types--chai@5.2.3/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@types/deep-eql",
+      "name": "@types/deep-eql",
+      "version": "4.0.2",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "packageTarball": "https://registry.npmjs.org/@types/deep-eql/-/deep-eql-4.0.2.tgz",
+      "packageIntegrity": "sha512-c9h9dVVMigMPc4bwTvC5dxqtqJZwQPePsWjPlpSOnojbor6pGqdk541lfA7AqFQr5pB1BRdq0juY9db81BwyFw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@types--deep-eql@4.0.2/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@types/estree",
+      "name": "@types/estree",
+      "version": "1.0.9",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "packageTarball": "https://registry.npmjs.org/@types/estree/-/estree-1.0.9.tgz",
+      "packageIntegrity": "sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@types--estree@1.0.9/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@types/node",
+      "name": "@types/node",
+      "version": "22.20.1",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@types--node@22.20.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@types/react",
+      "name": "@types/react",
+      "version": "19.3.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "packageTarball": "https://registry.npmjs.org/@types/react/-/react-19.3.0.tgz",
+      "packageIntegrity": "sha512-N0rFCuH9YoxG9/m61l9MfpJKfmLOVU0em7ipIz6TRgSSkvReLB9vL85GB+yr8Bs5leqpvg96JSwF4ZS1s4viQg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@types--react@19.3.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@types/react-dom",
+      "name": "@types/react-dom",
+      "version": "19.3.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "packageTarball": "https://registry.npmjs.org/@types/react-dom/-/react-dom-19.3.0.tgz",
+      "packageIntegrity": "sha512-ZI7bU42mZXXKHn/qNLEw2IrbiINU7X5+vfgdixBHkCNpYWXjKgfQ/P+uyGb5CjOLB9UcnTeg3rylQtV2hym44Q==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@types--react-dom@19.3.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@vitejs/plugin-react",
+      "name": "@vitejs/plugin-react",
+      "version": "6.1.1",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/vitejs/vite-plugin-react.git",
+      "packageTarball": "https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-6.1.1.tgz",
+      "packageIntegrity": "sha512-yxLaQV9gkhS8ezJqCM6+ndU7mDY6gqAg75NQ+0IjwEI8IYOmQCgkRwHKVSfWXW076DsqMo0Dk+0FK1U+M5RgFw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@vitejs--plugin-react@6.1.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "29b68325fe026047d13e187b44c33b2acacf7dc647dec4583702e59f235e13b5",
+          "bytes": 1103,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@vitest/expect",
+      "name": "@vitest/expect",
+      "version": "4.1.11",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/vitest-dev/vitest.git",
+      "packageTarball": "https://registry.npmjs.org/@vitest/expect/-/expect-4.1.11.tgz",
+      "packageIntegrity": "sha512-VX2x5vNJXET47KAFzwERI+KRMtTTCSWTfSMKsW7JsUsXV4psq++e3DvZpuTDOpHcxytiDs6p2nhVb2tVDiiUYw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@vitest--expect@4.1.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "04575fc5bfae19a9b63100f8691f901a2e15a399011ac02db435a9ef27295551",
+          "bytes": 1102,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@vitest/mocker",
+      "name": "@vitest/mocker",
+      "version": "4.1.11",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/vitest-dev/vitest.git",
+      "packageTarball": "https://registry.npmjs.org/@vitest/mocker/-/mocker-4.1.11.tgz",
+      "packageIntegrity": "sha512-2XJVD55d1o5AZous5CCGKS74g/riOj9odEt2bQpCVZeblHyHdnMeFl4jl0XjU21stf4mbjUkew2eXQZt65g5CQ==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@vitest--mocker@4.1.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "04575fc5bfae19a9b63100f8691f901a2e15a399011ac02db435a9ef27295551",
+          "bytes": 1102,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@vitest/pretty-format",
+      "name": "@vitest/pretty-format",
+      "version": "4.1.11",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/vitest-dev/vitest.git",
+      "packageTarball": "https://registry.npmjs.org/@vitest/pretty-format/-/pretty-format-4.1.11.tgz",
+      "packageIntegrity": "sha512-yiZzPbGTS9Sr/JpFl8zHrcIkAofNbFV6k21vIgQN/cY/oxZeXhJv5sc/MBJ5jFKWmWs+oJHw0UXLZjmf931+Vw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@vitest--pretty-format@4.1.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "04575fc5bfae19a9b63100f8691f901a2e15a399011ac02db435a9ef27295551",
+          "bytes": 1102,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@vitest/runner",
+      "name": "@vitest/runner",
+      "version": "4.1.11",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/vitest-dev/vitest.git",
+      "packageTarball": "https://registry.npmjs.org/@vitest/runner/-/runner-4.1.11.tgz",
+      "packageIntegrity": "sha512-LztvUgdwMNJMIkj3hQnnxiC2Xy1zNxq928W/xhjCLaNCzqTZOudjwbQf6v9IntZGPw132i2Lq2rgTRZHD3JHNw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@vitest--runner@4.1.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "04575fc5bfae19a9b63100f8691f901a2e15a399011ac02db435a9ef27295551",
+          "bytes": 1102,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@vitest/snapshot",
+      "name": "@vitest/snapshot",
+      "version": "4.1.11",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/vitest-dev/vitest.git",
+      "packageTarball": "https://registry.npmjs.org/@vitest/snapshot/-/snapshot-4.1.11.tgz",
+      "packageIntegrity": "sha512-pN7ikn1ON7h8ee4gIAp4AzyK+zBtJPzVbqOgu5LCEh4VaJVbPQcgYQYJIMGQPXVeJJq1fnfazis7a5pFNPahog==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@vitest--snapshot@4.1.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "04575fc5bfae19a9b63100f8691f901a2e15a399011ac02db435a9ef27295551",
+          "bytes": 1102,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@vitest/spy",
+      "name": "@vitest/spy",
+      "version": "4.1.11",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/vitest-dev/vitest.git",
+      "packageTarball": "https://registry.npmjs.org/@vitest/spy/-/spy-4.1.11.tgz",
+      "packageIntegrity": "sha512-apNa/prQy2qCeywhnixOHPRCgGNhvg7T4Dapfl1GahLp/R+uhBm5cPyFoNVyqsNd2h1nJxL6BqqdIjiABL60YA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@vitest--spy@4.1.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "04575fc5bfae19a9b63100f8691f901a2e15a399011ac02db435a9ef27295551",
+          "bytes": 1102,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@vitest/utils",
+      "name": "@vitest/utils",
+      "version": "4.1.11",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/vitest-dev/vitest.git",
+      "packageTarball": "https://registry.npmjs.org/@vitest/utils/-/utils-4.1.11.tgz",
+      "packageIntegrity": "sha512-zTCVGpyFsGWBhllOyKlTw/vnr6D9qxsfSDyfbyZmTyjHw5N/VuvzHpHoQjm2ZJzn4RJgx5w4r7V0er69CmLgPQ==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@vitest--utils@4.1.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "04575fc5bfae19a9b63100f8691f901a2e15a399011ac02db435a9ef27295551",
+          "bytes": 1102,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/@xmldom/xmldom",
+      "name": "@xmldom/xmldom",
+      "version": "0.9.12",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/xmldom/xmldom.git",
+      "packageTarball": "https://registry.npmjs.org/@xmldom/xmldom/-/xmldom-0.9.12.tgz",
+      "packageIntegrity": "sha512-5AXjrcMClTryPe9LgZrygpB1lj7s0S9E0+W+AHaVKAVyHanafK86iPSvG5xHVSp/jC+VH1UXu0TAEmY279xH7A==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@xmldom--xmldom@0.9.12/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "4da724fc305d81606b245b324d4d2586916b9d248b23d82183df753ace0fdf71",
+          "bytes": 1298,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/assertion-error",
+      "name": "assertion-error",
+      "version": "2.0.1",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/assertion-error/-/assertion-error-2.0.1.tgz",
+      "packageIntegrity": "sha512-Izi8RQcffqCeNVgFigKli1ssklIbpHnCYc6AknXGYoB6grJqyeby7jv12JUQgmTAnIDnbck1uxksT4dzN3PWBA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/assertion-error@2.0.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "2130216d5ab4c02134f8247f32999feda0abe1eaf028218baeac445c19ce4cea",
+          "bytes": 1108,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/balanced-match",
+      "name": "balanced-match",
+      "version": "4.0.4",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/juliangruber/balanced-match.git",
+      "packageTarball": "https://registry.npmjs.org/balanced-match/-/balanced-match-4.0.4.tgz",
+      "packageIntegrity": "sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/balanced-match@4.0.4/LICENSE.md",
+          "originalPath": "LICENSE.md",
+          "sha256": "d408f38ffa3355c5faec517153295338892eb0f1ea43f57874bb23c6075979b5",
+          "bytes": 1155,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/base64-js",
+      "name": "base64-js",
+      "version": "1.5.1",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/beatgammit/base64-js.git",
+      "packageTarball": "https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz",
+      "packageIntegrity": "sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/base64-js@1.5.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "5b37224c080cdcc97c871ada971c224e9926370fe74f11b539aa1cf9f3b1aca1",
+          "bytes": 1081,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/boolbase",
+      "name": "boolbase",
+      "version": "2.0.0",
+      "declaredLicense": "ISC",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/fb55/boolbase",
+      "packageTarball": "https://registry.npmjs.org/boolbase/-/boolbase-2.0.0.tgz",
+      "packageIntegrity": "sha512-DkVaaQHymRhpYEYo9x1oo7Q7B0Y6KJUsjm3c9eTyFDby4MHLBTwZ6ZDWBel5zrYxj1WsZgC5oLpiz+93MluXeA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/boolbase@2.0.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "cdf4d87ae0a6c160227263bf4e39a0a10e30e89ae7256e0f7ac7bde0836552c6",
+          "bytes": 751,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/brace-expansion",
+      "name": "brace-expansion",
+      "version": "5.0.12",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/juliangruber/brace-expansion.git",
+      "packageTarball": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-5.0.12.tgz",
+      "packageIntegrity": "sha512-YovQ3rzhaLMIrDjNDMkNS01tea93qhEhG5xy8f6+R0l+dw3Ki+5sCoIoI942iuLZTHWogWktgwVDhU09iNEimQ==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/brace-expansion@5.0.12/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "9c63a23124d68cd30cd316a94a1a0bca34f032786df6df69fc4b5f136bac8d2e",
+          "bytes": 1144,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/chai",
+      "name": "chai",
+      "version": "6.2.2",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/chaijs/chai",
+      "packageTarball": "https://registry.npmjs.org/chai/-/chai-6.2.2.tgz",
+      "packageIntegrity": "sha512-NUPRluOfOiTKBKvWPtSD4PhFvWCqOi0BGStNWs57X9js7XGTprSmFoz5F0tWhR4WPjNeR9jXqdC7/UpSJTnlRg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/chai@6.2.2/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "b181da80336ff9dd1043fc8be1a764d7382363433319aa872e4d2cb5ce2a3066",
+          "bytes": 1082,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/commander",
+      "name": "commander",
+      "version": "9.5.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/tj/commander.js.git",
+      "packageTarball": "https://registry.npmjs.org/commander/-/commander-9.5.0.tgz",
+      "packageIntegrity": "sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/commander@9.5.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "04512a63dce4d2d506ad612dc0bd7681ccf6e3655f7b6eaef7dfac8323d1ec0b",
+          "bytes": 1098,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/convert-source-map",
+      "name": "convert-source-map",
+      "version": "2.0.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/thlorenz/convert-source-map.git",
+      "packageTarball": "https://registry.npmjs.org/convert-source-map/-/convert-source-map-2.0.0.tgz",
+      "packageIntegrity": "sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/convert-source-map@2.0.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "1fa6ee8bb95a81ae3d73a5bd074a3ac380ffec13697051063ca1a601921b91db",
+          "bytes": 1078,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/cross-spawn",
+      "name": "cross-spawn",
+      "version": "7.0.6",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.6.tgz",
+      "packageIntegrity": "sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/cross-spawn@7.0.6/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "aaa78451b6fecd1b9c4594c796c133c0e90cad100372ff8bc6de615e9ef9adf1",
+          "bytes": 1105,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/css-select",
+      "name": "css-select",
+      "version": "7.0.0",
+      "declaredLicense": "BSD-2-Clause",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/fb55/css-select.git",
+      "packageTarball": "https://registry.npmjs.org/css-select/-/css-select-7.0.0.tgz",
+      "packageIntegrity": "sha512-snmjEVXy+1LnwXdxhYvTMj1d9tOh4HxkA1YmoayVBeeyR2C14Pum7fcxJIm4SswYspVy866eYNwlH6xC3/VH5g==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/css-select@7.0.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164",
+          "bytes": 1260,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/css-what",
+      "name": "css-what",
+      "version": "8.0.0",
+      "declaredLicense": "BSD-2-Clause",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/fb55/css-what",
+      "packageTarball": "https://registry.npmjs.org/css-what/-/css-what-8.0.0.tgz",
+      "packageIntegrity": "sha512-DH0Bqq3DNp5tdOReuNyAA+Ev4Y2GS5FMbZpeTLP6C4CDi0h5nL0BmUPChXw3o/qbHLDWHl49sbNqQVY7bMSDdw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/css-what@8.0.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164",
+          "bytes": 1260,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/cssom",
+      "name": "cssom",
+      "version": "0.5.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/cssom/-/cssom-0.5.0.tgz",
+      "packageIntegrity": "sha512-iKuQcq+NdHqlAcwUY0o/HL69XQrUaQdMjmStJ8JFmUaiiQErlhrmuigkg/CU4E2J0IyUKUrMAgl36TvN67MqTw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/cssom@0.5.0/LICENSE.txt",
+          "originalPath": "LICENSE.txt",
+          "sha256": "e539937c489c4928ad7461669ec017f4d916fb3565fc26f5b8a0ce816d2ed23c",
+          "bytes": 1054,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/csstype",
+      "name": "csstype",
+      "version": "3.2.3",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/frenic/csstype",
+      "packageTarball": "https://registry.npmjs.org/csstype/-/csstype-3.2.3.tgz",
+      "packageIntegrity": "sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/csstype@3.2.3/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "11d55bd4541c75ee7879547ac49089c489163dae49551389713c3d026cab383e",
+          "bytes": 1062,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/debug",
+      "name": "debug",
+      "version": "4.4.3",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/debug-js/debug.git",
+      "packageTarball": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+      "packageIntegrity": "sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/debug@4.4.3/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "3a61c6c96caf5c1d9b623fb9b04c822b783dfcb78aa7e49c76a3f643e6ed7f95",
+          "bytes": 1139,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/detect-libc",
+      "name": "detect-libc",
+      "version": "2.1.2",
+      "declaredLicense": "Apache-2.0",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/lovell/detect-libc.git",
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/detect-libc@2.1.2/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+          "bytes": 11357,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/dom-serializer",
+      "name": "dom-serializer",
+      "version": "3.1.1",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/cheeriojs/dom-serializer.git",
+      "packageTarball": "https://registry.npmjs.org/dom-serializer/-/dom-serializer-3.1.1.tgz",
+      "packageIntegrity": "sha512-4MEa38/QexBob6gFNwu+EGdWvhJ1OKuNwdYY3Y3NyeWDQfnGeDYQUDfIRzWu5B5gsv03so2Uxd28YC6zrsx3Lw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/dom-serializer@3.1.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "fd495b1bdd024995c6b3bd612584a4e37513250317bb5a6586f62c7756f9aff1",
+          "bytes": 1075,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/domelementtype",
+      "name": "domelementtype",
+      "version": "3.0.0",
+      "declaredLicense": "BSD-2-Clause",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/fb55/domelementtype.git",
+      "packageTarball": "https://registry.npmjs.org/domelementtype/-/domelementtype-3.0.0.tgz",
+      "packageIntegrity": "sha512-umCQid3jKbDmVjx8jGaW7uUykm4DEUeyV21hPxNMo2nV955DhUThwqyOIDtreepP31hl84X7G5U9ZfsWvIB3Pg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/domelementtype@3.0.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164",
+          "bytes": 1260,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/domhandler",
+      "name": "domhandler",
+      "version": "6.0.1",
+      "declaredLicense": "BSD-2-Clause",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/fb55/domhandler.git",
+      "packageTarball": "https://registry.npmjs.org/domhandler/-/domhandler-6.0.1.tgz",
+      "packageIntegrity": "sha512-gYzvtM72ZtxQO0T048kd6HWSbbGCNOUwcnfQ01cqIJ4X2IYKFFHZ5mKvrQETcFXxsRObZulDaKmy//R7TPtsBg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/domhandler@6.0.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164",
+          "bytes": 1260,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/domutils",
+      "name": "domutils",
+      "version": "4.0.2",
+      "declaredLicense": "BSD-2-Clause",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/fb55/domutils.git",
+      "packageTarball": "https://registry.npmjs.org/domutils/-/domutils-4.0.2.tgz",
+      "packageIntegrity": "sha512-qI4JLRKnSzqFqr7hAlS5xQDusBCjKSEG4t4+7aNrIQMHBcsC2TGEhuyABJdYkgSewL57PNLYEiibY2iPKhKpaA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/domutils@4.0.2/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164",
+          "bytes": 1260,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/electron",
+      "name": "electron",
+      "version": "44.4.5",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/electron/electron",
+      "packageTarball": "https://registry.npmjs.org/electron/-/electron-44.4.5.tgz",
+      "packageIntegrity": "sha512-SjgoaeYsSWZfJzubgQU7juvuXMTvn6/e1gAHdGFA/yuMbpF+I+skYqIJ6DdXBXHeWbkbpNpmwZCTpiivtlWZSw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/electron@44.4.5/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "5154e165bd6c2cc0cfbcd8916498c7abab0497923bafcd5cb07673fe8480087d",
+          "bytes": 1096,
+          "source": "installed-package"
+        },
+        {
+          "path": "docs/legal/licenses/electron@44.4.5/dist/LICENSE",
+          "originalPath": "dist/LICENSE",
+          "sha256": "5154e165bd6c2cc0cfbcd8916498c7abab0497923bafcd5cb07673fe8480087d",
+          "bytes": 1096,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/electron/node_modules/@types/node",
+      "name": "@types/node",
+      "version": "24.19.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+      "packageTarball": "https://registry.npmjs.org/@types/node/-/node-24.19.0.tgz",
+      "packageIntegrity": "sha512-zY+5tKxXdhGh1PYI0ac+7juvEu4OI6vWtVVoj5i2m42jxAY1U+zHGt6QCyOFwykdP62sM3MJ9stoYYUw5aCWew==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/@types--node@24.19.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "bytes": 1141,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/electron/node_modules/undici-types",
+      "name": "undici-types",
+      "version": "7.24.6",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/nodejs/undici.git",
+      "packageTarball": "https://registry.npmjs.org/undici-types/-/undici-types-7.24.6.tgz",
+      "packageIntegrity": "sha512-WRNW+sJgj5OBN4/0JpHFqtqzhpbnV0GuB+OozA9gCL7a993SmU+1JBZCzLNxYsbMfIeDL+lTsphD5jN5N+n0zg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/undici-types@7.24.6/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "a6db8096b2707bc0102d256917d4d33f298ba36d8c3f25de067a2b5bb379db27",
+          "bytes": 1090,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/entities",
+      "name": "entities",
+      "version": "8.1.0",
+      "declaredLicense": "BSD-2-Clause",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/fb55/entities.git",
+      "packageTarball": "https://registry.npmjs.org/entities/-/entities-8.1.0.tgz",
+      "packageIntegrity": "sha512-kxL7msIffSuh9aaFAMD7rxAIuTRMAHMeBtgHW2yUdWw732ZNh4MehkF2gdjvtdmikkaIP9bFDDJOPlsvm7avrA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/entities@8.1.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164",
+          "bytes": 1260,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/env-paths",
+      "name": "env-paths",
+      "version": "3.0.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/env-paths/-/env-paths-3.0.0.tgz",
+      "packageIntegrity": "sha512-dtJUTepzMW3Lm/NPxRf3wP4642UWhjL2sQxc+ym2YMj1m/H2zDNQOlezafzkHwn6sMstjHTwG6iQQsctDW/b1A==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/env-paths@3.0.0/license",
+          "originalPath": "license",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3",
+          "bytes": 1117,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/err-code",
+      "name": "err-code",
+      "version": "2.0.3",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/IndigoUnited/js-err-code.git",
+      "packageTarball": "https://registry.npmjs.org/err-code/-/err-code-2.0.3.tgz",
+      "packageIntegrity": "sha512-2bmlRpNKBxT/CRmPOlyISQpNj+qSeYvcym/uT0Jx2bMOlKLtSy1ZmLuVxSEKKyor/N5yhvp/ZiG1oE3DEYMSFA==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [],
+      "tarballSha256": "a5664f4a04152f1dcfa51035879284895c5e104aa13d9e0627567ead2eb248e2",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "supplemented-exact-upstream-declaration-author-attribution-and-complete-MIT-terms",
+      "supplementFiles": [
+        {
+          "path": "docs/legal/licenses/err-code@2.0.3/LICENSE-DECLARATION.txt",
+          "sha256": "fc77a9e08f94cc48c43073eabb111ab5739dd77c19dc93d969b428829da2f8c4",
+          "bytes": 2281,
+          "source": "exact-upstream-license-and-author-declaration-plus-complete-standard-MIT-terms"
+        },
+        {
+          "path": "docs/legal/licenses/err-code@2.0.3/PROVENANCE.json",
+          "sha256": "4c956935cad409daab1a124183e61f55546824d7cc3e9655f4bd189788811109",
+          "bytes": 3384,
+          "source": "explicit-provenance-for-assembled-supplement"
+        },
+        {
+          "path": "docs/legal/licenses/err-code@2.0.3/UPSTREAM-README-LICENSE.txt",
+          "sha256": "5fb141b3454c428633675f8522e86fd53a6119b94df824fb7c0f613e590caa8e",
+          "bytes": 98,
+          "source": "exact-published-README-license-excerpt"
+        },
+        {
+          "path": "docs/legal/licenses/err-code@2.0.3/UPSTREAM-package.json",
+          "sha256": "ff5360c17c3e197fc4a4a4fa0d07640292556d585a49c8651fd198e926d47bcc",
+          "bytes": 844,
+          "source": "exact-published-package-metadata"
+        }
+      ],
+      "upstreamLicenseFileRecovered": false,
+      "supplementEvidence": {
+        "resolutionStatus": "supplemented-exact-upstream-declaration-author-attribution-and-complete-MIT-terms",
+        "upstreamAuthor": "IndigoUnited <hello@indigounited.com> (http://indigounited.com)",
+        "authorAttributionIsCopyrightOwnerAssertion": false,
+        "copyrightNoticeSupplied": false,
+        "copyrightYear": null,
+        "standaloneUpstreamNoticeRecovered": false,
+        "sourceMetadataUrl": "https://registry.npmjs.org/err-code/2.0.3",
+        "packageTarball": "https://registry.npmjs.org/err-code/-/err-code-2.0.3.tgz",
+        "registryVersionIntegrity": "sha512-2bmlRpNKBxT/CRmPOlyISQpNj+qSeYvcym/uT0Jx2bMOlKLtSy1ZmLuVxSEKKyor/N5yhvp/ZiG1oE3DEYMSFA==",
+        "tarballIntegrityVerified": true,
+        "tarballSha256": "a5664f4a04152f1dcfa51035879284895c5e104aa13d9e0627567ead2eb248e2",
+        "licenseTermsSource": "https://opensource.org/license/mit",
+        "exactUpstreamRepository": "https://github.com/IndigoUnited/js-err-code",
+        "exactReleaseCommit": "92511d41a6a926c94c9d11493404867b1e92a77a",
+        "npmGitHead": "92511d41a6a926c94c9d11493404867b1e92a77a",
+        "releaseTag": null,
+        "noticeFile": {
+          "path": "docs/legal/licenses/err-code@2.0.3/LICENSE-DECLARATION.txt",
+          "sha256": "fc77a9e08f94cc48c43073eabb111ab5739dd77c19dc93d969b428829da2f8c4",
+          "bytes": 2281,
+          "source": "exact-upstream-license-and-author-declaration-plus-complete-standard-MIT-terms"
+        },
+        "limits": [
+          "No copyright year or legal rightsholder inferred from release dates, npm publisher, or repository owner.",
+          "Supplement is not a recovered standalone upstream notice.",
+          "No unrelated later license or dependency version substituted."
+        ]
+      },
+      "noticeResolutionScope": "Source-backed declaration and standard license terms supplied as a clearly labelled supplement; no upstream copyright holder/year invented and no binary compliance certification."
+    },
+    {
+      "installPath": "node_modules/es-module-lexer",
+      "name": "es-module-lexer",
+      "version": "2.3.1",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/guybedford/es-module-lexer.git",
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/es-module-lexer@2.3.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "8a4b6c44eebfb026d23719a348145a661a555568dbfdc11618ff2d0dd9306b00",
+          "bytes": 1085,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/estree-walker",
+      "name": "estree-walker",
+      "version": "3.0.3",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/Rich-Harris/estree-walker",
+      "packageTarball": "https://registry.npmjs.org/estree-walker/-/estree-walker-3.0.3.tgz",
+      "packageIntegrity": "sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/estree-walker@3.0.3/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "8a6dcbabe7179f9c8489c08a7d874d0f1e093ae7449e03756ccf87cb9d0e296e",
+          "bytes": 1126,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/expect-type",
+      "name": "expect-type",
+      "version": "1.4.0",
+      "declaredLicense": "Apache-2.0",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/mmkal/expect-type.git",
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/expect-type@1.4.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "7c6cc83c84eaa249a85bf12fe3eedd831bb50c696e8890b5248223ae68c7b408",
+          "bytes": 10760,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/fdir",
+      "name": "fdir",
+      "version": "6.5.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/thecodrr/fdir.git",
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/fdir@6.5.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "9a39f2aadab11a3697edd668ff2d8ad885b649737b7ab4d3bf12b34e5ada0c86",
+          "bytes": 1053,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/filename-reserved-regex",
+      "name": "filename-reserved-regex",
+      "version": "3.0.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/filename-reserved-regex/-/filename-reserved-regex-3.0.0.tgz",
+      "packageIntegrity": "sha512-hn4cQfU6GOT/7cFHXBqeBg2TbrMBgdD0kcjLhvSQYYwm3s4B6cjvBfb7nBALJLAXqmU5xajSa7X2NnUud/VCdw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/filename-reserved-regex@3.0.0/license",
+          "originalPath": "license",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3",
+          "bytes": 1117,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/filenamify",
+      "name": "filenamify",
+      "version": "6.0.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/filenamify/-/filenamify-6.0.0.tgz",
+      "packageIntegrity": "sha512-vqIlNogKeyD3yzrm0yhRMQg8hOVwYcYRfjEoODd49iCprMn4HL85gK3HcykQE53EPIpX3HcAbGA5ELQv216dAQ==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/filenamify@6.0.0/license",
+          "originalPath": "license",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3",
+          "bytes": 1117,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/flora-colossus",
+      "name": "flora-colossus",
+      "version": "3.0.2",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/MarshallOfSound/flora-colossus",
+      "packageTarball": "https://registry.npmjs.org/flora-colossus/-/flora-colossus-3.0.2.tgz",
+      "packageIntegrity": "sha512-Jk78K/Tzt6saxQPGChlJw69xuFGpWyTSAS8EdU0h/FyXwD2K46yNOXmo6nRHcZ9ooekyBAzMkwmiGNt7wOC5zg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/flora-colossus@3.0.2/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "4fc9f82d6b7f17c1ebe80270e09ee5a21e4c3c17f7020481df897e927348845f",
+          "bytes": 1079,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/galactus",
+      "name": "galactus",
+      "version": "2.0.2",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/MarshallOfSound/galactus.git",
+      "packageTarball": "https://registry.npmjs.org/galactus/-/galactus-2.0.2.tgz",
+      "packageIntegrity": "sha512-HmKyTFGomdAchz4umx8MwBnrnfFmdpwiTyGA4ZOF7rya2Lmgbc9qate4yweInL+0gUBVImhaz12SBGpW3SY4Yg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/galactus@2.0.2/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "7de64735d720d26ad552f65730c288c8710ebf7321a0befe99ca109eb69eb57a",
+          "bytes": 1079,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/glob",
+      "name": "glob",
+      "version": "13.0.6",
+      "declaredLicense": "BlueOak-1.0.0",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/glob/-/glob-13.0.6.tgz",
+      "packageIntegrity": "sha512-Wjlyrolmm8uDpm/ogGyXZXb1Z+Ca2B8NbJwqBVg0axK9GbBeoS7yGV6vjXnYdGm6X53iehEuxxbyiKp8QmN4Vw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/glob@13.0.6/LICENSE.md",
+          "originalPath": "LICENSE.md",
+          "sha256": "a49c9ba464796f65b59fca3f1e6ca40912df1e859f575383223f7ec6c5baae09",
+          "bytes": 1764,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/graceful-fs",
+      "name": "graceful-fs",
+      "version": "4.2.11",
+      "declaredLicense": "ISC",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/isaacs/node-graceful-fs",
+      "packageTarball": "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz",
+      "packageIntegrity": "sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/graceful-fs@4.2.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "f65c5d9f22a317b2a10803bd1868461ce6499c2ed7217bc80c0cc772a748789c",
+          "bytes": 791,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/html-escaper",
+      "name": "html-escaper",
+      "version": "3.0.3",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/WebReflection/html-escaper.git",
+      "packageTarball": "https://registry.npmjs.org/html-escaper/-/html-escaper-3.0.3.tgz",
+      "packageIntegrity": "sha512-RuMffC89BOWQoY0WKGpIhn5gX3iI54O6nRA0yC124NYVtzjmFWBIiFd8M0x+ZdX0P9R4lADg1mgP8C7PxGOWuQ==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/html-escaper@3.0.3/LICENSE.txt",
+          "originalPath": "LICENSE.txt",
+          "sha256": "27d06bbb2eb031be8aa376868a2e1f11b6acba938d4cc8e1234b66b9739c54a3",
+          "bytes": 1089,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/htmlparser2",
+      "name": "htmlparser2",
+      "version": "10.1.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/fb55/htmlparser2.git",
+      "packageTarball": "https://registry.npmjs.org/htmlparser2/-/htmlparser2-10.1.0.tgz",
+      "packageIntegrity": "sha512-VTZkM9GWRAtEpveh7MSF6SjjrpNVNNVJfFup7xTY3UpFtm67foy9HDVXneLtFVt4pMz5kZtgNcvCniNFb1hlEQ==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/htmlparser2@10.1.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "204cfa747341660e4da64cd23e8c876c6b20279d247f48564993d3fc4a2eab47",
+          "bytes": 1104,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/htmlparser2/node_modules/dom-serializer",
+      "name": "dom-serializer",
+      "version": "2.0.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/cheeriojs/dom-serializer.git",
+      "packageTarball": "https://registry.npmjs.org/dom-serializer/-/dom-serializer-2.0.0.tgz",
+      "packageIntegrity": "sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/dom-serializer@2.0.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "94cfe87de9b178e8fee313a19178e625129e2ce559db32e772e7bd95114ee6ff",
+          "bytes": 1098,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/htmlparser2/node_modules/dom-serializer/node_modules/entities",
+      "name": "entities",
+      "version": "4.5.0",
+      "declaredLicense": "BSD-2-Clause",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/fb55/entities.git",
+      "packageTarball": "https://registry.npmjs.org/entities/-/entities-4.5.0.tgz",
+      "packageIntegrity": "sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/entities@4.5.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164",
+          "bytes": 1260,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/htmlparser2/node_modules/domelementtype",
+      "name": "domelementtype",
+      "version": "2.3.0",
+      "declaredLicense": "BSD-2-Clause",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/fb55/domelementtype.git",
+      "packageTarball": "https://registry.npmjs.org/domelementtype/-/domelementtype-2.3.0.tgz",
+      "packageIntegrity": "sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/domelementtype@2.3.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164",
+          "bytes": 1260,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/htmlparser2/node_modules/domhandler",
+      "name": "domhandler",
+      "version": "5.0.3",
+      "declaredLicense": "BSD-2-Clause",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/fb55/domhandler.git",
+      "packageTarball": "https://registry.npmjs.org/domhandler/-/domhandler-5.0.3.tgz",
+      "packageIntegrity": "sha512-cgwlv/1iFQiFnU96XXgROh8xTeetsnJiDsTc7TYCLFd9+/WNkIqPTxiM/8pSd8VIrhXGTf1Ny1q1hquVqDJB5w==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/domhandler@5.0.3/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164",
+          "bytes": 1260,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/htmlparser2/node_modules/domutils",
+      "name": "domutils",
+      "version": "3.2.2",
+      "declaredLicense": "BSD-2-Clause",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/fb55/domutils.git",
+      "packageTarball": "https://registry.npmjs.org/domutils/-/domutils-3.2.2.tgz",
+      "packageIntegrity": "sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/domutils@3.2.2/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164",
+          "bytes": 1260,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/htmlparser2/node_modules/entities",
+      "name": "entities",
+      "version": "7.0.1",
+      "declaredLicense": "BSD-2-Clause",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/fb55/entities.git",
+      "packageTarball": "https://registry.npmjs.org/entities/-/entities-7.0.1.tgz",
+      "packageIntegrity": "sha512-TWrgLOFUQTH994YUyl1yT4uyavY5nNB5muff+RtWaqNVCAK408b5ZnnbNAUEWLTCpum9w6arT70i1XdQ4UeOPA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/entities@7.0.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164",
+          "bytes": 1260,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/isbinaryfile",
+      "name": "isbinaryfile",
+      "version": "4.0.10",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/gjtorikian/isBinaryFile",
+      "packageTarball": "https://registry.npmjs.org/isbinaryfile/-/isbinaryfile-4.0.10.tgz",
+      "packageIntegrity": "sha512-iHrqe5shvBUcFbmZq9zOQHBoeOhZJu6RQGrDpBgenUm/Am+F3JM2MgQj+rK3Z601fzrL5gLZWtAPH2OBaSVcyw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/isbinaryfile@4.0.10/LICENSE.txt",
+          "originalPath": "LICENSE.txt",
+          "sha256": "2eedc70f2242aaf269e86e2c85eabeb875dc524d187d5953016b24091d26a843",
+          "bytes": 1074,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/isexe",
+      "name": "isexe",
+      "version": "2.0.0",
+      "declaredLicense": "ISC",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/isaacs/isexe.git",
+      "packageTarball": "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz",
+      "packageIntegrity": "sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/isexe@2.0.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b",
+          "bytes": 765,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/junk",
+      "name": "junk",
+      "version": "4.0.1",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/junk/-/junk-4.0.1.tgz",
+      "packageIntegrity": "sha512-Qush0uP+G8ZScpGMZvHUiRfI0YBWuB3gVBYlI0v0vvOJt5FLicco+IkP0a50LqTTQhmts/m6tP5SWE+USyIvcQ==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/junk@4.0.1/license",
+          "originalPath": "license",
+          "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3",
+          "bytes": 1117,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/lightningcss",
+      "name": "lightningcss",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/parcel-bundler/lightningcss.git",
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/lightningcss@1.33.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+          "bytes": 15648,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved",
+      "upstreamSourceRelease": "https://github.com/parcel-bundler/lightningcss/releases/tag/v1.33.0",
+      "upstreamSourceTree": "https://github.com/parcel-bundler/lightningcss/tree/v1.33.0"
+    },
+    {
+      "installPath": "node_modules/lightningcss-linux-arm64-gnu",
+      "name": "lightningcss-linux-arm64-gnu",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "optional": true,
+      "dev": true,
+      "repository": null,
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "lockfile",
+      "noticeFiles": [],
+      "noticeRecoveryError": "Lock entry has no resolved package URL; no package tarball recovery claimed.",
+      "noticeStatus": "no-matching-notice-file-in-package",
+      "upstreamSourceRelease": "https://github.com/parcel-bundler/lightningcss/releases/tag/v1.33.0",
+      "upstreamSourceTree": "https://github.com/parcel-bundler/lightningcss/tree/v1.33.0",
+      "relatedUpstreamLicenseFiles": [
+        {
+          "path": "docs/legal/licenses/lightningcss@1.33.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+          "bytes": 15648,
+          "source": "installed-package"
+        }
+      ],
+      "relatedNoticeBasis": "Inferred same-version platform variant from package name/version; lock entry has no resolved URL/integrity. Verify exact distributed artifact before a binary release."
+    },
+    {
+      "installPath": "node_modules/lightningcss/node_modules/lightningcss-android-arm64",
+      "name": "lightningcss-android-arm64",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/parcel-bundler/lightningcss.git",
+      "packageTarball": "https://registry.npmjs.org/lightningcss-android-arm64/-/lightningcss-android-arm64-1.33.0.tgz",
+      "packageIntegrity": "sha512-gEpRTalKdosp4Bb8qWtc2iOgE5SeIHlpS1up9bFq2wAyYhl1UdTObYiHe98zEM9SQvSoqQZ1IQD0JNpg3Ml5pg==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/lightningcss-android-arm64@1.33.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+          "bytes": 15648,
+          "source": "npm-tarball-lock-integrity-verified"
+        }
+      ],
+      "tarballSha256": "e6fd2befa439a4934dd50a9283820a7b95725246a3251c60588f074aff20509a",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "preserved",
+      "upstreamSourceRelease": "https://github.com/parcel-bundler/lightningcss/releases/tag/v1.33.0",
+      "upstreamSourceTree": "https://github.com/parcel-bundler/lightningcss/tree/v1.33.0"
+    },
+    {
+      "installPath": "node_modules/lightningcss/node_modules/lightningcss-darwin-arm64",
+      "name": "lightningcss-darwin-arm64",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/parcel-bundler/lightningcss.git",
+      "packageTarball": "https://registry.npmjs.org/lightningcss-darwin-arm64/-/lightningcss-darwin-arm64-1.33.0.tgz",
+      "packageIntegrity": "sha512-Sciaz8eenNTKn9b3t7+xr0ipTp9YxKQY4npwQ3mrRuL0BAVHBLyZxofhaKBAVtzmtRZ/zTyo0/to4B1uWG/Djg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/lightningcss-darwin-arm64@1.33.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+          "bytes": 15648,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved",
+      "upstreamSourceRelease": "https://github.com/parcel-bundler/lightningcss/releases/tag/v1.33.0",
+      "upstreamSourceTree": "https://github.com/parcel-bundler/lightningcss/tree/v1.33.0"
+    },
+    {
+      "installPath": "node_modules/lightningcss/node_modules/lightningcss-darwin-x64",
+      "name": "lightningcss-darwin-x64",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/parcel-bundler/lightningcss.git",
+      "packageTarball": "https://registry.npmjs.org/lightningcss-darwin-x64/-/lightningcss-darwin-x64-1.33.0.tgz",
+      "packageIntegrity": "sha512-Z5UPAxzrjlWNNyGy6i65cJzzvgJ5D3T6wMvs+gWpY9d7qRhANrxqAp6LhxIgZhWEw18RfJTGcRxjuLIBr+m8XQ==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/lightningcss-darwin-x64@1.33.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+          "bytes": 15648,
+          "source": "npm-tarball-lock-integrity-verified"
+        }
+      ],
+      "tarballSha256": "c0b555fe6ec4c5c660503b1e87aad7ac90ba5af1e2cb1742155d485a39d5b973",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "preserved",
+      "upstreamSourceRelease": "https://github.com/parcel-bundler/lightningcss/releases/tag/v1.33.0",
+      "upstreamSourceTree": "https://github.com/parcel-bundler/lightningcss/tree/v1.33.0"
+    },
+    {
+      "installPath": "node_modules/lightningcss/node_modules/lightningcss-freebsd-x64",
+      "name": "lightningcss-freebsd-x64",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/parcel-bundler/lightningcss.git",
+      "packageTarball": "https://registry.npmjs.org/lightningcss-freebsd-x64/-/lightningcss-freebsd-x64-1.33.0.tgz",
+      "packageIntegrity": "sha512-QQM/Ti/hQajJwCY+RiWuCZ9sdtI/XQk7nDK5vC8kkdwixezOlDgvDx7+RT+QjK6FcFT4MpsuoBnHIo/O3StRRg==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/lightningcss-freebsd-x64@1.33.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+          "bytes": 15648,
+          "source": "npm-tarball-lock-integrity-verified"
+        }
+      ],
+      "tarballSha256": "828e9a915d504a2796bdbe56643397d3ac639bf9abc629ba11163e7b7ef150a6",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "preserved",
+      "upstreamSourceRelease": "https://github.com/parcel-bundler/lightningcss/releases/tag/v1.33.0",
+      "upstreamSourceTree": "https://github.com/parcel-bundler/lightningcss/tree/v1.33.0"
+    },
+    {
+      "installPath": "node_modules/lightningcss/node_modules/lightningcss-linux-arm-gnueabihf",
+      "name": "lightningcss-linux-arm-gnueabihf",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/parcel-bundler/lightningcss.git",
+      "packageTarball": "https://registry.npmjs.org/lightningcss-linux-arm-gnueabihf/-/lightningcss-linux-arm-gnueabihf-1.33.0.tgz",
+      "packageIntegrity": "sha512-N7FVBe6iS24MlM6R/4RBTxGhQheZGs7tiQ9U32UtF75NzP5Q7xWPRqLBCKxlRQRk3rY1jCIPLzx7WzOhuUIRLQ==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/lightningcss-linux-arm-gnueabihf@1.33.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+          "bytes": 15648,
+          "source": "npm-tarball-lock-integrity-verified"
+        }
+      ],
+      "tarballSha256": "b2a0af78c27da36a2449c2fe71eb3730e6c40d7aaab20bdc3689282432bb3117",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "preserved",
+      "upstreamSourceRelease": "https://github.com/parcel-bundler/lightningcss/releases/tag/v1.33.0",
+      "upstreamSourceTree": "https://github.com/parcel-bundler/lightningcss/tree/v1.33.0"
+    },
+    {
+      "installPath": "node_modules/lightningcss/node_modules/lightningcss-linux-arm64-musl",
+      "name": "lightningcss-linux-arm64-musl",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/parcel-bundler/lightningcss.git",
+      "packageTarball": "https://registry.npmjs.org/lightningcss-linux-arm64-musl/-/lightningcss-linux-arm64-musl-1.33.0.tgz",
+      "packageIntegrity": "sha512-yiO5ROMuYQgXbC60yjZU5CYSFZGKXL0HFATXt9mHJn1+zW55oCtMI9NfcVhYLMFDL7gV7oBPon/EmMMGg2OvtQ==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/lightningcss-linux-arm64-musl@1.33.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+          "bytes": 15648,
+          "source": "npm-tarball-lock-integrity-verified"
+        }
+      ],
+      "tarballSha256": "048a00d8ef519a413e01907a5a50e01d7c4e86ddcde49a5020eed7747196b9f6",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "preserved",
+      "upstreamSourceRelease": "https://github.com/parcel-bundler/lightningcss/releases/tag/v1.33.0",
+      "upstreamSourceTree": "https://github.com/parcel-bundler/lightningcss/tree/v1.33.0"
+    },
+    {
+      "installPath": "node_modules/lightningcss/node_modules/lightningcss-linux-x64-gnu",
+      "name": "lightningcss-linux-x64-gnu",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/parcel-bundler/lightningcss.git",
+      "packageTarball": "https://registry.npmjs.org/lightningcss-linux-x64-gnu/-/lightningcss-linux-x64-gnu-1.33.0.tgz",
+      "packageIntegrity": "sha512-ar+Ju7LmcN0Jo4FpL4hpFybwNG9/3A/Br5KW2n2jyODg3MEZXaDYADdemoNS+BDNfMgKvylJLj4S5tyRActuAg==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/lightningcss-linux-x64-gnu@1.33.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+          "bytes": 15648,
+          "source": "npm-tarball-lock-integrity-verified"
+        }
+      ],
+      "tarballSha256": "fd485dfd57082c4ef864dd867fa87fd8e1a9b5d58ee85c2b76e28e42c8f3e1d3",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "preserved",
+      "upstreamSourceRelease": "https://github.com/parcel-bundler/lightningcss/releases/tag/v1.33.0",
+      "upstreamSourceTree": "https://github.com/parcel-bundler/lightningcss/tree/v1.33.0"
+    },
+    {
+      "installPath": "node_modules/lightningcss/node_modules/lightningcss-linux-x64-musl",
+      "name": "lightningcss-linux-x64-musl",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/parcel-bundler/lightningcss.git",
+      "packageTarball": "https://registry.npmjs.org/lightningcss-linux-x64-musl/-/lightningcss-linux-x64-musl-1.33.0.tgz",
+      "packageIntegrity": "sha512-RYiYbkokw0trfKqqzfF55lginwEPrD3OJDfTuJzFs1MK6iFnDenaz1fqLLtX4ITG3OktJQXOeTaw1awrBAlZPw==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/lightningcss-linux-x64-musl@1.33.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+          "bytes": 15648,
+          "source": "npm-tarball-lock-integrity-verified"
+        }
+      ],
+      "tarballSha256": "f3a1a10f3c393db5ce03438035b94fcd48bc7b7b52bb97f76a3ed52784624441",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "preserved",
+      "upstreamSourceRelease": "https://github.com/parcel-bundler/lightningcss/releases/tag/v1.33.0",
+      "upstreamSourceTree": "https://github.com/parcel-bundler/lightningcss/tree/v1.33.0"
+    },
+    {
+      "installPath": "node_modules/lightningcss/node_modules/lightningcss-win32-arm64-msvc",
+      "name": "lightningcss-win32-arm64-msvc",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/parcel-bundler/lightningcss.git",
+      "packageTarball": "https://registry.npmjs.org/lightningcss-win32-arm64-msvc/-/lightningcss-win32-arm64-msvc-1.33.0.tgz",
+      "packageIntegrity": "sha512-1K+MPfLSFVpphzpdbfkhlWk6wBrTObBzS2T6db10PNOZgR9GoVsAWzwNyuhUYYbTp23j+4RrncfujZ4uAzXvwA==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/lightningcss-win32-arm64-msvc@1.33.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+          "bytes": 15648,
+          "source": "npm-tarball-lock-integrity-verified"
+        }
+      ],
+      "tarballSha256": "9c211ef0a63a92626091f7c0a97b0ddb39b4278da5b11d13512b7eed9680bd7d",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "preserved",
+      "upstreamSourceRelease": "https://github.com/parcel-bundler/lightningcss/releases/tag/v1.33.0",
+      "upstreamSourceTree": "https://github.com/parcel-bundler/lightningcss/tree/v1.33.0"
+    },
+    {
+      "installPath": "node_modules/lightningcss/node_modules/lightningcss-win32-x64-msvc",
+      "name": "lightningcss-win32-x64-msvc",
+      "version": "1.33.0",
+      "declaredLicense": "MPL-2.0",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/parcel-bundler/lightningcss.git",
+      "packageTarball": "https://registry.npmjs.org/lightningcss-win32-x64-msvc/-/lightningcss-win32-x64-msvc-1.33.0.tgz",
+      "packageIntegrity": "sha512-OlEICDx/Xl0FqSp4bry8zFnCvGpig3Gl4gCquvYwHuqJKEC1+n9NgDniFvqHGmMv1ZkqDJrDqKKSykTDX+ehuA==",
+      "metadataSource": "npm-tarball-lock-integrity-verified",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/lightningcss-win32-x64-msvc@1.33.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "5eba353fe5076ac3432177f8ab1cf75e3afcd0584251e37c3bfead5f447d040e",
+          "bytes": 15648,
+          "source": "npm-tarball-lock-integrity-verified"
+        }
+      ],
+      "tarballSha256": "feb506faf3bdf4139826f521777c71b53c355f8eb6bcdd3220e16c5e131f1197",
+      "tarballIntegrityVerified": true,
+      "noticeStatus": "preserved",
+      "upstreamSourceRelease": "https://github.com/parcel-bundler/lightningcss/releases/tag/v1.33.0",
+      "upstreamSourceTree": "https://github.com/parcel-bundler/lightningcss/tree/v1.33.0"
+    },
+    {
+      "installPath": "node_modules/linkedom",
+      "name": "linkedom",
+      "version": "0.18.13",
+      "declaredLicense": "ISC",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/WebReflection/linkedom.git",
+      "packageTarball": "https://registry.npmjs.org/linkedom/-/linkedom-0.18.13.tgz",
+      "packageIntegrity": "sha512-ES/o9qotMpzpN2MHs+Iq/JcVoOj8Fa5wiQYrTdFpvAnwXL0g66XHHUc9WUMk6nAlBtGsFQ24ne+SYnvnaQ2FSw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/linkedom@0.18.13/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "dc6d4961d8b6ee747231582ae9c53ce1d66bf76bc9f5a28f554c0e97210953bf",
+          "bytes": 765,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/lru-cache",
+      "name": "lru-cache",
+      "version": "11.5.3",
+      "declaredLicense": "BlueOak-1.0.0",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/lru-cache/-/lru-cache-11.5.3.tgz",
+      "packageIntegrity": "sha512-U4N8FgzmWxc8k1VH8Kr6lQg18U7Fjvby6wXHVRX/ZZ7IwWbRMgrRbP0Wrb5q5NVinryp4SQampHKdvtecItxUg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/lru-cache@11.5.3/LICENSE.md",
+          "originalPath": "LICENSE.md",
+          "sha256": "8a1af140fdfbf5afd3df27f7e662f989c5b963a300020dfafce42033cae9e004",
+          "bytes": 1552,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/lucide-react",
+      "name": "lucide-react",
+      "version": "1.48.0",
+      "declaredLicense": "ISC",
+      "optional": false,
+      "dev": false,
+      "repository": "https://github.com/lucide-icons/lucide.git",
+      "packageTarball": "https://registry.npmjs.org/lucide-react/-/lucide-react-1.48.0.tgz",
+      "packageIntegrity": "sha512-R0CIKY/fXiC6y9xRBADgsK+VW2p/pcTJOMhLZf1T+uG+vJUvyUR02nGOgmIIC7MPkiNK4Ox8QDnbqF8rJYWPZQ==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/lucide-react@1.48.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+          "bytes": 3208,
+          "source": "installed-package"
+        },
+        {
+          "path": "docs/legal/licenses/lucide-react@1.48.0/dist/esm/icons/copyright.mjs.map",
+          "originalPath": "dist/esm/icons/copyright.mjs.map",
+          "sha256": "e76a3007f3232ceab27c936e80a40031141d8969b53e3db1da647f8fb2ecd436",
+          "bytes": 2664,
+          "source": "installed-package"
+        },
+        {
+          "path": "docs/legal/licenses/lucide-react@1.48.0/dist/esm/icons/copyright.mjs",
+          "originalPath": "dist/esm/icons/copyright.mjs",
+          "sha256": "7b931e2c0349d0cebc2e1b6371218e3d7cd1f1b1a3b0fcdb683a0c3a4e23f0d7",
+          "bytes": 583,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/magic-string",
+      "name": "magic-string",
+      "version": "0.30.21",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/Rich-Harris/magic-string.git",
+      "packageTarball": "https://registry.npmjs.org/magic-string/-/magic-string-0.30.21.tgz",
+      "packageIntegrity": "sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/magic-string@0.30.21/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "1cbe51b907662f6cb1492b16c359384a595180bf0e4d101603ed525e75c4e484",
+          "bytes": 1051,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/minimatch",
+      "name": "minimatch",
+      "version": "10.2.6",
+      "declaredLicense": "BlueOak-1.0.0",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/minimatch/-/minimatch-10.2.6.tgz",
+      "packageIntegrity": "sha512-vpLQEs+VLCr1nU0BXS07maYoFwlDAH0gngQuuttxIwutDFEMHq2blX+8vpgxDdK3J1PwjCJiep77OitTZ4Ll1A==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/minimatch@10.2.6/LICENSE.md",
+          "originalPath": "LICENSE.md",
+          "sha256": "2c7c5d22ed5a8ee968c64757710979afcd77438c48b4a265b94e615babd8a901",
+          "bytes": 1550,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/minipass",
+      "name": "minipass",
+      "version": "7.1.3",
+      "declaredLicense": "BlueOak-1.0.0",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/isaacs/minipass",
+      "packageTarball": "https://registry.npmjs.org/minipass/-/minipass-7.1.3.tgz",
+      "packageIntegrity": "sha512-tEBHqDnIoM/1rXME1zgka9g6Q2lcoCkxHLuc7ODJ5BxbP5d4c2Z5cGgtXAku59200Cx7diuHTOYfSBD8n6mm8A==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/minipass@7.1.3/LICENSE.md",
+          "originalPath": "LICENSE.md",
+          "sha256": "8a1af140fdfbf5afd3df27f7e662f989c5b963a300020dfafce42033cae9e004",
+          "bytes": 1552,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/ms",
+      "name": "ms",
+      "version": "2.1.3",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz",
+      "packageIntegrity": "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/ms@2.1.3/license.md",
+          "originalPath": "license.md",
+          "sha256": "1662fae9b5314d11cf51284e2dcd1f006a354f7343f08712a730fcff9a359801",
+          "bytes": 1079,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/nanoid",
+      "name": "nanoid",
+      "version": "3.3.19",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.19.tgz",
+      "packageIntegrity": "sha512-Y2tUNy4ouw6tq5oDSKeQYGOyhkUBhNOcGV/02KC+6kd9eDGqdZd++mjMiIDilrBYvjEnCYvVtsuHCuP+okSfug==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/nanoid@3.3.19/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "da4db1480d9beea3483a2eda5c53b22238d0827d57da162b48f122e04d2d9987",
+          "bytes": 1095,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/nth-check",
+      "name": "nth-check",
+      "version": "3.0.1",
+      "declaredLicense": "BSD-2-Clause",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/fb55/nth-check",
+      "packageTarball": "https://registry.npmjs.org/nth-check/-/nth-check-3.0.1.tgz",
+      "packageIntegrity": "sha512-GX0gsdbGVCgnRgbeGaubfjpBXyYRWOOCVeYh08bSQvDZqxz5ndXs1OTfAt/h36G1xvI94YIspsI0sVFqAV9+RQ==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/nth-check@3.0.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "cb992345949ccd6e8394b2cd6c465f7b897c864f845937dbf64e8997f389e164",
+          "bytes": 1260,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/obug",
+      "name": "obug",
+      "version": "2.1.4",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/sxzz/obug.git",
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/obug@2.1.4/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "ee48679d379ca6b4493d5e231094d85f818dd9be40b1a4f234fb7ff657ee35d9",
+          "bytes": 1205,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/path-key",
+      "name": "path-key",
+      "version": "3.1.1",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/path-key/-/path-key-3.1.1.tgz",
+      "packageIntegrity": "sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/path-key@3.1.1/license",
+          "originalPath": "license",
+          "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0",
+          "bytes": 1109,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/path-scurry",
+      "name": "path-scurry",
+      "version": "2.0.2",
+      "declaredLicense": "BlueOak-1.0.0",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/isaacs/path-scurry",
+      "packageTarball": "https://registry.npmjs.org/path-scurry/-/path-scurry-2.0.2.tgz",
+      "packageIntegrity": "sha512-3O/iVVsJAPsOnpwWIeD+d6z/7PmqApyQePUtCndjatj/9I5LylHvt5qluFaBT3I5h3r1ejfR056c+FCv+NnNXg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/path-scurry@2.0.2/LICENSE.md",
+          "originalPath": "LICENSE.md",
+          "sha256": "8a1af140fdfbf5afd3df27f7e662f989c5b963a300020dfafce42033cae9e004",
+          "bytes": 1552,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/pathe",
+      "name": "pathe",
+      "version": "2.0.3",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/pathe/-/pathe-2.0.3.tgz",
+      "packageIntegrity": "sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/pathe@2.0.3/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "52e92576851154bad7737e90cc72818936f43665cb0e3f7428ed8edc8cc5709b",
+          "bytes": 3355,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/pe-library",
+      "name": "pe-library",
+      "version": "1.0.1",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/jet2jet/pe-library-js.git",
+      "packageTarball": "https://registry.npmjs.org/pe-library/-/pe-library-1.0.1.tgz",
+      "packageIntegrity": "sha512-nh39Mo1eGWmZS7y+mK/dQIqg7S1lp38DpRxkyoHf0ZcUs/HDc+yyTjuOtTvSMZHmfSLuSQaX945u05Y2Q6UWZg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/pe-library@1.0.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "ad05317184b8cd78a770c1f55e386f600fd23feb88596c797ceb3ccd49f7d6bc",
+          "bytes": 1060,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/picocolors",
+      "name": "picocolors",
+      "version": "1.1.1",
+      "declaredLicense": "ISC",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz",
+      "packageIntegrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/picocolors@1.1.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "6582629e2979466878f6014313dcc2f3756c9616148682227ce3063dde310750",
+          "bytes": 787,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/picomatch",
+      "name": "picomatch",
+      "version": "4.0.7",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.7.tgz",
+      "packageIntegrity": "sha512-qcJu88Q2IWqJsDD529JKMdwGm/dvInW4HvQnRwiH9JtihJvzGOscDtHE3x1pBKeUOTysQ8kVmLnJ2kJu7yhcGA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/picomatch@4.0.7/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "d0cd141b0c322fded5dfad1d4645bb2fedfc05b7321fe1009469638190d59ef9",
+          "bytes": 1091,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/playwright-core",
+      "name": "playwright-core",
+      "version": "1.63.0",
+      "declaredLicense": "Apache-2.0",
+      "optional": false,
+      "dev": false,
+      "repository": "https://github.com/microsoft/playwright.git",
+      "packageTarball": "https://registry.npmjs.org/playwright-core/-/playwright-core-1.63.0.tgz",
+      "packageIntegrity": "sha512-rYCsBF/M5HjUch52bbtVONEFjv6Xu8sm8h72dNlR5bzIE1fvC/bxgspzkjSfU+MweEMmPM8KJebG6nnyxo5mCg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/playwright-core@1.63.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb",
+          "bytes": 11601,
+          "source": "installed-package"
+        },
+        {
+          "path": "docs/legal/licenses/playwright-core@1.63.0/NOTICE",
+          "originalPath": "NOTICE",
+          "sha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d",
+          "bytes": 254,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/plist",
+      "name": "plist",
+      "version": "3.1.1",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/TooTallNate/node-plist.git",
+      "packageTarball": "https://registry.npmjs.org/plist/-/plist-3.1.1.tgz",
+      "packageIntegrity": "sha512-ZIfcLJC+7E7FBFnDxm9MPmt7D+DidyQ26lewieO75AdhA2ayMtsJSES0iWzqJQbcVRSrTufQoy0DR94xHue0oA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/plist@3.1.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "3677dc86e6e5f119b500c308cc24cf533e2eb44c41050ea64584e049e5b70161",
+          "bytes": 1107,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/postcss",
+      "name": "postcss",
+      "version": "8.5.28",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/postcss/-/postcss-8.5.28.tgz",
+      "packageIntegrity": "sha512-RRuzqDtt5Y9h3quz5hWhK+TPnsmVs6WwSU6LkJMeY4HstUEDuYTG8UJSdawMRzmzAtV+KEoG8N3Qg2qLy5vM/A==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/postcss@8.5.28/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "5be1f3465bba68a626777f984878814aaf35e7ef8e9fd314d469bcf887050fb8",
+          "bytes": 1095,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/postject",
+      "name": "postject",
+      "version": "1.0.0-alpha.6",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/postject/-/postject-1.0.0-alpha.6.tgz",
+      "packageIntegrity": "sha512-b9Eb8h2eVqNE8edvKdwqkrY6O7kAwmI8kcnBv1NScolYJbo59XUF0noFq+lxbC1yN20bmC0WBEbDC5H/7ASb0A==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/postject@1.0.0-alpha.6/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "6546657539feb5b454f400db317e71fa39ff5cd048fa5d78ae0ada2df72f1ea7",
+          "bytes": 13409,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/progress",
+      "name": "progress",
+      "version": "2.0.3",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/visionmedia/node-progress",
+      "packageTarball": "https://registry.npmjs.org/progress/-/progress-2.0.3.tgz",
+      "packageIntegrity": "sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/progress@2.0.3/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "d7d2a7786de7c7cfd96f920c6f12927d74e1d2a861ca4498bf465c3bc3f4c21c",
+          "bytes": 1098,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/promise-retry",
+      "name": "promise-retry",
+      "version": "2.0.1",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/IndigoUnited/node-promise-retry.git",
+      "packageTarball": "https://registry.npmjs.org/promise-retry/-/promise-retry-2.0.1.tgz",
+      "packageIntegrity": "sha512-y+WKFlBR8BGXnsNlIHFGPZmyDf3DFMoLhaflAnyZgV6rG6xu+JwesTo2Q9R6XwYmtmwAFCkAk3e35jEdoeh/3g==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/promise-retry@2.0.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "b1344bd78ebcbf8a359225ec444d038a653c6a5f9ecf405a50d4a5c11fbf27d1",
+          "bytes": 1056,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/re2js",
+      "name": "re2js",
+      "version": "2.8.6",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": false,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/re2js/-/re2js-2.8.6.tgz",
+      "packageIntegrity": "sha512-xLgQil4kIUCrAzVk9fRSkxkFNwmygLFjVxXrLc65aE1F0+Zsb8rxumFBy4XKyvgMCTL6kilDq3EZ0piE2dP/Dg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/re2js@2.8.6/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "b80a94f2c3c0b8bd6af849511cef624ad9feecbc0151d08bacad86ebab4cb46e",
+          "bytes": 1073,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/react",
+      "name": "react",
+      "version": "19.3.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": false,
+      "repository": "https://github.com/react/react.git",
+      "packageTarball": "https://registry.npmjs.org/react/-/react-19.3.0.tgz",
+      "packageIntegrity": "sha512-E8LUcbtBWt20bbl2YoHfx4ZDBdxVTfOKtCZn9cDSJ4l6/nuoApcpIBcj47t2wZoVX8g2ZHuMHbiShgCR1T5Sog==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/react@19.3.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+          "bytes": 1088,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/react-dom",
+      "name": "react-dom",
+      "version": "19.3.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": false,
+      "repository": "https://github.com/react/react.git",
+      "packageTarball": "https://registry.npmjs.org/react-dom/-/react-dom-19.3.0.tgz",
+      "packageIntegrity": "sha512-JDk8dgif51OjFoDE70+OT9ICyYr+69HlmihNwp1+Nsfbna3t5sIiCa9ZJktDmQ4/1b/rn26hIAR2uYXDMr5r0Q==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/react-dom@19.3.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+          "bytes": 1088,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/resedit",
+      "name": "resedit",
+      "version": "2.0.3",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/jet2jet/resedit-js.git",
+      "packageTarball": "https://registry.npmjs.org/resedit/-/resedit-2.0.3.tgz",
+      "packageIntegrity": "sha512-oTeemxwoMuxxTYxXUwjkrOPfngTQehlv0/HoYFNkB4uzsP1Un1A9nI8JQKGOFkxpqkC7qkMs0lUsGrvUlbLNUA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/resedit@2.0.3/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "ad05317184b8cd78a770c1f55e386f600fd23feb88596c797ceb3ccd49f7d6bc",
+          "bytes": 1060,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/retry",
+      "name": "retry",
+      "version": "0.12.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/tim-kos/node-retry.git",
+      "packageTarball": "https://registry.npmjs.org/retry/-/retry-0.12.0.tgz",
+      "packageIntegrity": "sha512-9LkiTwjUh6rT555DtE9rTX+BKByPfrMzEAtnlEtdEwr3Nkffwiihqe2bWADg+OQRjt9gl6ICdmB/ZFDCGAtSow==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/retry@0.12.0/License",
+          "originalPath": "License",
+          "sha256": "01ad164273e8e095abc9dbd1c21e194594a671af7d528cb43ee7b4c903ba7da3",
+          "bytes": 1139,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/rolldown",
+      "name": "rolldown",
+      "version": "1.2.11",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/rolldown/rolldown.git",
+      "packageTarball": "https://registry.npmjs.org/rolldown/-/rolldown-1.2.11.tgz",
+      "packageIntegrity": "sha512-qpSwIyz0jHQq5qXBTNxFmE6664rJ7O+4TvPFOiOaBSrz8IOHc1koKKSqTM2H6u1UG1+TveuC6vaDHKXFOvb1Kw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/rolldown@1.2.11/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "23ecfff35a5a2e80d92142f75228912c3b1abc4b5a8337a821ff4397e2f9f734",
+          "bytes": 1302,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/scheduler",
+      "name": "scheduler",
+      "version": "0.28.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": false,
+      "repository": "https://github.com/react/react.git",
+      "packageTarball": "https://registry.npmjs.org/scheduler/-/scheduler-0.28.0.tgz",
+      "packageIntegrity": "sha512-juorfCmIkIw8tT+p5BXSm6PJjQF/ycEYmKyzURCIt/RaZIhL+PulbQ9Yu2z1HdOJDdqDTlxA1+xKBmHXJsczAw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/scheduler@0.28.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "da6d3703ed11cbe42bd212c725957c98da23cbff1998c05fa4b3d976d1a58e93",
+          "bytes": 1088,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/semver",
+      "name": "semver",
+      "version": "7.8.5",
+      "declaredLicense": "ISC",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/npm/node-semver.git",
+      "packageTarball": "https://registry.npmjs.org/semver/-/semver-7.8.5.tgz",
+      "packageIntegrity": "sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/semver@7.8.5/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b",
+          "bytes": 765,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/shebang-command",
+      "name": "shebang-command",
+      "version": "2.0.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/shebang-command/-/shebang-command-2.0.0.tgz",
+      "packageIntegrity": "sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/shebang-command@2.0.0/license",
+          "originalPath": "license",
+          "sha256": "69dee148a2cc470554dfa7142e830662062394d0fe67cddd379aba90dc60d6b3",
+          "bytes": 1116,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/shebang-regex",
+      "name": "shebang-regex",
+      "version": "3.0.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/shebang-regex/-/shebang-regex-3.0.0.tgz",
+      "packageIntegrity": "sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/shebang-regex@3.0.0/license",
+          "originalPath": "license",
+          "sha256": "48da2f39e100d4085767e94966b43f4fa95ff6a0698fba57ed460914e35f94a0",
+          "bytes": 1109,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/siginfo",
+      "name": "siginfo",
+      "version": "2.0.0",
+      "declaredLicense": "ISC",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/emilbayes/siginfo.git",
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/siginfo@2.0.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "3bdddf0b9b08aaa2fe4365b803fc958ed32c0597ca0bd727be8d9fcb8b248d18",
+          "bytes": 744,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/source-map-js",
+      "name": "source-map-js",
+      "version": "1.2.1",
+      "declaredLicense": "BSD-3-Clause",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz",
+      "packageIntegrity": "sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/source-map-js@1.2.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "6cb0631f71c7749763fd3dd1d5bee52dd1070ec17f2edc1710079ad070bd2fbd",
+          "bytes": 1526,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/stackback",
+      "name": "stackback",
+      "version": "0.0.2",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/shtylman/node-stackback.git",
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [],
+      "noticeRecoveryError": "Lock entry has no resolved package URL; no package tarball recovery claimed.",
+      "noticeStatus": "supplemented-exact-upstream-declaration-author-attribution-and-complete-MIT-terms",
+      "supplementFiles": [
+        {
+          "path": "docs/legal/licenses/stackback@0.0.2/LICENSE-DECLARATION.txt",
+          "sha256": "53c06ffd1039196e1dc156683f87f8a3ca90a9bc608c84801658800a3fefbbcd",
+          "bytes": 2118,
+          "source": "exact-upstream-license-and-author-declaration-plus-complete-standard-MIT-terms"
+        },
+        {
+          "path": "docs/legal/licenses/stackback@0.0.2/PROVENANCE.json",
+          "sha256": "f70fc78430cb7979b52ed79a870963c117100732b51d0505df19a7d9f49ec814",
+          "bytes": 4893,
+          "source": "explicit-provenance-for-assembled-supplement"
+        },
+        {
+          "path": "docs/legal/licenses/stackback@0.0.2/UPSTREAM-package.json",
+          "sha256": "4d984909b27d37d2f1a379b9cda7292a6e3a133c076df166d740a17514ac6e60",
+          "bytes": 485,
+          "source": "exact-published-package-metadata"
+        }
+      ],
+      "upstreamLicenseFileRecovered": false,
+      "supplementEvidence": {
+        "resolutionStatus": "supplemented-exact-upstream-declaration-author-attribution-and-complete-MIT-terms",
+        "upstreamAuthor": "Roman Shtylman <shtylman@gmail.com>",
+        "authorAttributionIsCopyrightOwnerAssertion": false,
+        "copyrightNoticeSupplied": false,
+        "copyrightYear": null,
+        "standaloneUpstreamNoticeRecovered": false,
+        "sourceMetadataUrl": "https://registry.npmjs.org/stackback/0.0.2",
+        "packageTarball": "https://registry.npmjs.org/stackback/-/stackback-0.0.2.tgz",
+        "registryVersionIntegrity": "sha512-1XMJE5fQo1jGH6Y/7ebnwPOBEkIEnT4QF32d5R1+VXdXveM0IBMJt8zfaxX1P3QhVwrYe+576+jkANtSS2mBbw==",
+        "tarballIntegrityVerified": true,
+        "tarballSha256": "3e663c82d1ccf9748ed446b648ec21a7dd6c5895ecf4a95310a60a320ca55858",
+        "licenseTermsSource": "https://opensource.org/license/mit",
+        "exactUpstreamRepository": "https://github.com/defunctzombie/node-stackback",
+        "exactReleaseCommit": "2963095372abf7b75ba55f01cef08ab1e62c2ff4",
+        "npmGitHead": null,
+        "releaseTag": "v0.0.2",
+        "noticeFile": {
+          "path": "docs/legal/licenses/stackback@0.0.2/LICENSE-DECLARATION.txt",
+          "sha256": "53c06ffd1039196e1dc156683f87f8a3ca90a9bc608c84801658800a3fefbbcd",
+          "bytes": 2118,
+          "source": "exact-upstream-license-and-author-declaration-plus-complete-standard-MIT-terms"
+        },
+        "limits": [
+          "No copyright year or legal rightsholder inferred from release dates, npm publisher, or repository owner.",
+          "Supplement is not a recovered standalone upstream notice.",
+          "No unrelated later license or dependency version substituted."
+        ]
+      },
+      "noticeResolutionScope": "Source-backed declaration and standard license terms supplied as a clearly labelled supplement; no upstream copyright holder/year invented and no binary compliance certification."
+    },
+    {
+      "installPath": "node_modules/std-env",
+      "name": "std-env",
+      "version": "4.2.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/std-env@4.2.0/LICENCE",
+          "originalPath": "LICENCE",
+          "sha256": "a6f36438e46fb911859f3b9c4cad045ba64e1af3d8f4512c60258fa2d7552d28",
+          "bytes": 1079,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/sumchecker",
+      "name": "sumchecker",
+      "version": "3.0.1",
+      "declaredLicense": "Apache-2.0",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/malept/sumchecker.git",
+      "packageTarball": "https://registry.npmjs.org/sumchecker/-/sumchecker-3.0.1.tgz",
+      "packageIntegrity": "sha512-MvjXzkz/BOfyVDkG0oFOtBxHX2u3gKbMHIF/dXblZsgD3BWOFLmHovIpZY7BykJdAjcqRCBi1WYBNdEC9yI7vg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/sumchecker@3.0.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "bytes": 11358,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/tinybench",
+      "name": "tinybench",
+      "version": "2.9.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": null,
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/tinybench@2.9.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "cebc084d54e6dd99e53292ddb4bc1cdb63d9bfcd9ce438fe3aa6eb106d79e2ea",
+          "bytes": 1065,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/tinyexec",
+      "name": "tinyexec",
+      "version": "1.2.4",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/tinylibs/tinyexec.git",
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/tinyexec@1.2.4/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "f95f668fe64081ddb4153b322e34fdd719b991285ed08177d5ad7133b7988d92",
+          "bytes": 1065,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/tinyglobby",
+      "name": "tinyglobby",
+      "version": "0.2.17",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/SuperchupuDev/tinyglobby.git",
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/tinyglobby@0.2.17/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "22c68811e174cbbfb3813d4135918df4f540959c14d872e601d9abe83d3cde8f",
+          "bytes": 1076,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/tinyrainbow",
+      "name": "tinyrainbow",
+      "version": "3.1.1",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/tinylibs/tinyrainbow.git",
+      "packageTarball": "https://registry.npmjs.org/tinyrainbow/-/tinyrainbow-3.1.1.tgz",
+      "packageIntegrity": "sha512-yau8yJdTt989Mm0Bd/236QnzEiPf2xLLTqUZRUJOo/3CB078LSwzei343DgtJVmfJKJE3TMINY1u42SQsP6mXw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/tinyrainbow@3.1.1/LICENCE",
+          "originalPath": "LICENCE",
+          "sha256": "cebc084d54e6dd99e53292ddb4bc1cdb63d9bfcd9ce438fe3aa6eb106d79e2ea",
+          "bytes": 1065,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/typescript",
+      "name": "typescript",
+      "version": "5.9.3",
+      "declaredLicense": "Apache-2.0",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/microsoft/TypeScript.git",
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/typescript@5.9.3/LICENSE.txt",
+          "originalPath": "LICENSE.txt",
+          "sha256": "a7d00bfd54525bc694b6e32f64c7ebcf5e6b7ae3657be5cc12767bce74654a47",
+          "bytes": 9197,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/uhyphen",
+      "name": "uhyphen",
+      "version": "0.2.0",
+      "declaredLicense": "ISC",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/WebReflection/uhyphen.git",
+      "packageTarball": "https://registry.npmjs.org/uhyphen/-/uhyphen-0.2.0.tgz",
+      "packageIntegrity": "sha512-qz3o9CHXmJJPGBdqzab7qAYuW8kQGKNEuoHFYrBwV6hWIMcpAmxDLXojcHfFr9US1Pe6zUswEIJIbLI610fuqA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/uhyphen@0.2.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "2b0748436e16684ec912b82f153343c6063ae7a7f24fac680058ca06bf02f2a7",
+          "bytes": 765,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/undici",
+      "name": "undici",
+      "version": "7.30.0",
+      "declaredLicense": "MIT",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/nodejs/undici.git",
+      "packageTarball": "https://registry.npmjs.org/undici/-/undici-7.30.0.tgz",
+      "packageIntegrity": "sha512-dkrQXeHSaoamnItlYbmzG0wFYrM0ZwDxCIg0A7aKjTyyhh9svRzCNFEzV+Vm05/yehjCzjDZ31KXfGEjYSztDQ==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/undici@7.30.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "a6db8096b2707bc0102d256917d4d33f298ba36d8c3f25de067a2b5bb379db27",
+          "bytes": 1090,
+          "source": "installed-package"
+        },
+        {
+          "path": "docs/legal/licenses/undici@7.30.0/lib/web/fetch/LICENSE",
+          "originalPath": "lib/web/fetch/LICENSE",
+          "sha256": "a21d6c8d3fc631198b97e57584697f7f9c37805c71c6cf9a12e4442b40394b88",
+          "bytes": 1071,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/undici-types",
+      "name": "undici-types",
+      "version": "6.21.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/nodejs/undici.git",
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/undici-types@6.21.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "a6db8096b2707bc0102d256917d4d33f298ba36d8c3f25de067a2b5bb379db27",
+          "bytes": 1090,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/vite",
+      "name": "vite",
+      "version": "8.3.1",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/vitejs/vite.git",
+      "packageTarball": "https://registry.npmjs.org/vite/-/vite-8.3.1.tgz",
+      "packageIntegrity": "sha512-/bvH9E9tmCXRGp2uXY3WbOldqpTwFkbha/8ANaEQ6VkxhH60KyqLwgZq6lG2y+4uT55x9+9eUHMpQ7uGnOCKjA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/vite@8.3.1/LICENSE.md",
+          "originalPath": "LICENSE.md",
+          "sha256": "387dd7baa307083401a27c58c362c30832f5ba1dba84f10cc22c33401523f45c",
+          "bytes": 112425,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/vite/node_modules/fsevents",
+      "name": "fsevents",
+      "version": "2.3.3",
+      "declaredLicense": "MIT",
+      "optional": true,
+      "dev": true,
+      "repository": "https://github.com/fsevents/fsevents.git",
+      "packageTarball": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz",
+      "packageIntegrity": "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/fsevents@2.3.3/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "2a8a5d6197bb97a018b8a190dd3ed853d750ca87c8e80c17aad41d6c6ff448e1",
+          "bytes": 1133,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/vitest",
+      "name": "vitest",
+      "version": "4.1.11",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/vitest-dev/vitest.git",
+      "packageTarball": "https://registry.npmjs.org/vitest/-/vitest-4.1.11.tgz",
+      "packageIntegrity": "sha512-fhACrNXUidIbGSBr5FlbuBkO7VWC1ZyLl0DO4CU2DrQoAPxX84Ysxs+HeGQpii5lZWV1Q4gBZTTu49mF+A6Edw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/vitest@4.1.11/LICENSE.md",
+          "originalPath": "LICENSE.md",
+          "sha256": "881d660c26831481b697e39724d4a35c9f86e07b67156d4aeb693a0b39910435",
+          "bytes": 37726,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/which",
+      "name": "which",
+      "version": "2.0.2",
+      "declaredLicense": "ISC",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/isaacs/node-which.git",
+      "packageTarball": "https://registry.npmjs.org/which/-/which-2.0.2.tgz",
+      "packageIntegrity": "sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/which@2.0.2/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b",
+          "bytes": 765,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/why-is-node-running",
+      "name": "why-is-node-running",
+      "version": "2.3.0",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/mafintosh/why-is-node-running.git",
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/why-is-node-running@2.3.0/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "6a134e51aa31496c15a741592fc5d782b2dbf8d8b6b8524e15c8520ae0cd6374",
+          "bytes": 1079,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/xmlbuilder",
+      "name": "xmlbuilder",
+      "version": "15.1.1",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/oozcitak/xmlbuilder-js.git",
+      "packageTarball": "https://registry.npmjs.org/xmlbuilder/-/xmlbuilder-15.1.1.tgz",
+      "packageIntegrity": "sha512-yMqGBqtXyeN1e3TGYvgNgDVZ3j84W4cwkOXQswghol6APgZWaff9lnbvN7MHYJOiXsvGPXtjTYJEiC9J2wv9Eg==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/xmlbuilder@15.1.1/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "e368bc4263b466cf98c225af15e300549e00da8859416a4536109e9654d434a8",
+          "bytes": 1101,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/yargs-parser",
+      "name": "yargs-parser",
+      "version": "22.0.0",
+      "declaredLicense": "ISC",
+      "optional": false,
+      "dev": true,
+      "repository": "https://github.com/yargs/yargs-parser.git",
+      "packageTarball": "https://registry.npmjs.org/yargs-parser/-/yargs-parser-22.0.0.tgz",
+      "packageIntegrity": "sha512-rwu/ClNdSMpkSrUb+d6BRsSkLUq1fmfsY6TOpYzTwvwkg1/NRG85KBy3kq++A8LKQwX6lsu+aWad+2khvuXrqw==",
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/yargs-parser@22.0.0/LICENSE.txt",
+          "originalPath": "LICENSE.txt",
+          "sha256": "365496ca1f56da40b23c9815fc40fa9005847b2f8f8fd1c1a4929ef25ec8cd1d",
+          "bytes": 731,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    },
+    {
+      "installPath": "node_modules/zod",
+      "name": "zod",
+      "version": "4.4.3",
+      "declaredLicense": "MIT",
+      "optional": false,
+      "dev": false,
+      "repository": "https://github.com/colinhacks/zod.git",
+      "packageTarball": null,
+      "packageIntegrity": null,
+      "metadataSource": "installed-package",
+      "noticeFiles": [
+        {
+          "path": "docs/legal/licenses/zod@4.4.3/LICENSE",
+          "originalPath": "LICENSE",
+          "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8",
+          "bytes": 1072,
+          "source": "installed-package"
+        }
+      ],
+      "noticeStatus": "preserved"
+    }
+  ],
+  "upstreamNoticeGaps": [],
+  "readiness": "Final source review; MIT selected and three declaration/text supplements completed. Exact upstream standalone license files remain absent where documented. No publication or binary-distribution compliance certification.",
+  "rootLicenseFile": "LICENSE",
+  "rootLicenseSource": "https://opensource.org/license/mit",
+  "preservedUpstreamNoticeFileCount": 140,
+  "resolvedDeclarationGaps": [
+    {
+      "name": "@electron-internal/extract-zip",
+      "version": "1.0.5",
+      "status": "supplemented-declared-license-text-with-exact-upstream-declaration",
+      "upstreamLicenseFileRecovered": false,
+      "files": [
+        "docs/legal/licenses/@electron-internal--extract-zip@1.0.5/LICENSE-BSD-2-Clause.txt",
+        "docs/legal/licenses/@electron-internal--extract-zip@1.0.5/NOTICE.md",
+        "docs/legal/licenses/@electron-internal--extract-zip@1.0.5/UPSTREAM-LICENSE-DECLARATION.txt"
+      ]
+    },
+    {
+      "name": "err-code",
+      "version": "2.0.3",
+      "status": "supplemented-exact-upstream-declaration-author-attribution-and-complete-MIT-terms",
+      "upstreamLicenseFileRecovered": false,
+      "files": [
+        "docs/legal/licenses/err-code@2.0.3/LICENSE-DECLARATION.txt",
+        "docs/legal/licenses/err-code@2.0.3/PROVENANCE.json",
+        "docs/legal/licenses/err-code@2.0.3/UPSTREAM-README-LICENSE.txt",
+        "docs/legal/licenses/err-code@2.0.3/UPSTREAM-package.json"
+      ]
+    },
+    {
+      "name": "stackback",
+      "version": "0.0.2",
+      "status": "supplemented-exact-upstream-declaration-author-attribution-and-complete-MIT-terms",
+      "upstreamLicenseFileRecovered": false,
+      "files": [
+        "docs/legal/licenses/stackback@0.0.2/LICENSE-DECLARATION.txt",
+        "docs/legal/licenses/stackback@0.0.2/PROVENANCE.json",
+        "docs/legal/licenses/stackback@0.0.2/UPSTREAM-package.json"
+      ]
+    }
+  ],
+  "supplementFileCount": 10,
+  "noticeCoverage": {
+    "supplemented": 3,
+    "preserved": 135,
+    "related-upstream-reference": 16
+  }
+}

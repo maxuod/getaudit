@@ -1,0 +1,28 @@
+/** Canonical English copy for saved search reports and their encrypted envelope. */
+export const searchReportEn = {
+  "title": "Search performance report",
+  "heading": "Search performance",
+  "clicks": "Clicks",
+  "impressions": "Impressions",
+  "ctr": "CTR",
+  "position": "Average position",
+  "queries": "Queries",
+  "pages": "Pages",
+  "trend": "Daily impressions",
+  "noTrend": "This historical snapshot does not include daily trends.",
+  "scope": "Source & scope",
+  "capturedAt": "Captured at",
+  "snapshot": "Snapshot",
+  "limits": "This is a local reading copy of a saved snapshot. Search performance, AI mentions, citations and conversions are separate measures.",
+  "timeZone": "Pacific time",
+  "filterQueries": "Filter queries…",
+  "filterPages": "Filter pages…",
+  "encryptedTitle": "Encrypted search report",
+  "encryptedHint": "Enter your password to open this report locally in your browser.",
+  "password": "Report password",
+  "open": "Open report",
+  "opening": "Opening report…",
+  "passwordError": "The password is incorrect or the file is damaged. Use a browser that supports Web Crypto.",
+  "iterations": "310,000 iterations",
+  "passwordMinimum": "Use a password with at least 8 characters."
+};

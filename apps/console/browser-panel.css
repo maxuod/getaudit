@@ -1,0 +1,13 @@
+/* One current task, with setup and the full ledger one disclosure away. */
+.audit-app .browser-batch.sampling-desk{border-top:1px solid var(--line)}
+.sampling-desk .sampling-current{display:flex;align-items:center;gap:9px 18px;flex-wrap:wrap;margin:18px 0 10px;font-size:13px}
+.sampling-current>strong{font-size:15px}.sampling-current>span{color:var(--muted)}
+.sampling-current>progress{flex-basis:100%;width:100%;height:6px;margin-top:4px;accent-color:var(--accent)}
+.sampling-current-stage{font-size:12px;color:var(--muted);margin:9px 0}
+.sampling-options,.sampling-history,.sampling-run-options{margin-top:20px;border-top:1px solid var(--line);padding-top:13px;min-width:0}
+:is(.sampling-options,.sampling-history,.sampling-run-options)>summary{cursor:pointer;font-size:12px;font-weight:500;color:var(--muted);width:fit-content;max-width:100%}
+.sampling-options>div,.sampling-run-options>div{padding-top:14px;min-width:0}
+.sampling-options p{font-size:12px;line-height:1.7;max-width:74ch;margin:0 0 8px}
+.sampling-desk .sampling-history .batch-run{border-top:1px solid var(--line);border-bottom:0;margin:15px 0 0;padding-top:16px}
+.sampling-desk>.button-row{margin-top:18px}.sampling-run-options{margin-bottom:18px}
+@media(max-width:700px){.sampling-desk .section-head>.button-row{width:100%}.sampling-desk .section-head>.button-row>.primary{width:100%}.sampling-current>span{font-size:12px}}

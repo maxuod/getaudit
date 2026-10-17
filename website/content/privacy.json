@@ -1,0 +1,327 @@
+{
+  "version": 1,
+  "effectiveDate": "2026-10-16",
+  "primaryLocale": "en",
+  "locales": {
+    "en": {
+      "title": "Privacy policy template",
+      "description": "How getaudit.si and the getaudit desktop app handle your information.",
+      "dateLabel": "Last updated",
+      "intro": [
+        "Open-source deployment template: this page is an example for contributors, not an operational privacy notice. The operator must review and replace it before public deployment.",
+        "The desktop app keeps its research workspace on your computer. Connecting a service, running a search or analysis, or giving an agent access can send information to the service you choose. The details below explain those boundaries."
+      ],
+      "sections": [
+        {
+          "id": "website",
+          "title": "A small website footprint",
+          "paragraphs": [
+            "The website code does not add advertising trackers, analytics scripts, email collection forms, or marketing cookies. It stores your language choice in your browser's local storage so the next visit can use the same language. You can remove that preference through your browser settings.",
+            "Website hosting providers include Vercel and, for the earlier product preview, OpenAI Sites on Cloudflare infrastructure. Hosting providers may process technical request information, such as your IP address, requested page, time of access, and browser information, and use necessary access or security cookies to deliver and protect the website. Their services have their own privacy practices. Following an external link takes you to a separate service. Contact links open your own email app."
+          ]
+        },
+        {
+          "id": "workspace",
+          "title": "What stays in your workspace",
+          "paragraphs": [
+            "The app stores the projects, websites, questions, settings, and notes you add, along with collected answers, citations, page excerpts, optional screenshots, search and analytics snapshots, reports, and task history. Records can include source URLs, dates, request and response details, and integrity hashes used to explain where a finding came from.",
+            "This workspace is stored locally. The desktop app does not automatically upload the workspace to a getaudit cloud account. Background tasks run on your computer; they still contact the external services needed for the work you start."
+          ]
+        },
+        {
+          "id": "google-access",
+          "title": "When you connect Google",
+          "paragraphs": [
+            "Google sign-in opens in your browser. With your permission, getaudit receives your Google account identifier, name, and email to show the connected account and keep connections associated with the correct account. getaudit does not receive your Google password. The combined Google connection, including GA4 traffic analysis, is currently in testing.",
+            "The connection requests read-only access to Google Search Console and Google Analytics. Search Console data can include accessible properties and permission levels, queries and page URLs, clicks, impressions, click-through rates, average positions, dates, countries, devices, sitemaps, and URL inspection results. Analytics data can include accessible GA4 account and property details and aggregate reports such as active users, sessions, page views, key events, dates, and traffic sources.",
+            "You choose the properties to use in a project. Available features depend on the permissions you grant and the properties your Google account can access. These permissions do not let getaudit change your Search Console or Analytics configuration, and the connection does not request access to Gmail, Drive, or Contacts."
+          ]
+        },
+        {
+          "id": "google-use",
+          "title": "What we use Google data for",
+          "paragraphs": [
+            "getaudit uses the Google data you authorize to show your search and analytics results, save dated evidence, help you identify research opportunities, and prepare the comparisons, analyses, and reports you request. Authorizing Google access alone does not start an AI analysis or publish your data.",
+            "Our handling of Google API data, including derived information, is subject to the Google API Services User Data Policy and its Limited Use requirements. We do not sell Google user data, use it for advertising or credit decisions, or use it to train or fine-tune general-purpose AI models. We do not give people access to read it except with your agreement to specific support access, when necessary for security, or when required by law. Optional transfers for the features below occur at your direction."
+          ]
+        },
+        {
+          "id": "research-services",
+          "title": "Searches and research services you choose",
+          "paragraphs": [
+            "When you run collection, the selected service receives the questions or search terms and the request settings needed to answer them. Optional API connections include OpenAI, Google Gemini, Anthropic, Perplexity, and DataForSEO. Public page research also sends requests to the websites being inspected. Those services receive normal connection information, such as your IP address, and process requests under their own terms and privacy policies.",
+            "Browser collection uses separate temporary browser sessions rather than your personal browser profile. Strict guest collection does not reuse a prepared signed-in session. If you choose a supported signed-in mode, you sign in within its separate session. The visited platforms can use cookies and session storage there. Their account, request retention, and training settings are separate from the getaudit website's cookie practices.",
+            "For applicable scans that verify egress country, the desktop app contacts Cloudflare’s /cdn-cgi/trace service. Cloudflare receives ordinary connection data, including the network IP address. The app uses the returned IP to derive a plan-specific fingerprint; the saved egress proof contains country, check time and fingerprint, rather than a raw IP field."
+          ]
+        },
+        {
+          "id": "ai-analysis",
+          "title": "Optional AI analysis",
+          "paragraphs": [
+            "When you request an AI interpretation of collected answers, getaudit sends the selected questions, answer excerpts, and research context to the configured OpenAI API. Keyword audits send the selected search terms to DataForSEO and send the selected keywords, their Search Console average positions, relevant URLs, and page excerpts to your selected OpenAI or Anthropic model. Model inputs and outputs can also be saved in your local research history.",
+            "These requests provide the analysis you choose. getaudit does not operate a model-training service. A provider's processing, retention, location, and account settings can differ, and requests may be processed outside your country. Review them before sending confidential material. Use Google-derived data only with services and settings that keep its use within the disclosed analysis and Google's Limited Use requirements. A request setting that disables response storage does not establish that every provider log or retention period is disabled."
+          ]
+        },
+        {
+          "id": "agents",
+          "title": "Agents get the access you grant",
+          "paragraphs": [
+            "You can explicitly authorize a compatible third-party agent or MCP client with a project-scoped access key. Its default permission is read-only and covers selected supported GSC/GEO findings and context, including saved Search Console performance, citation and coverage information. Current Agent tools do not expose GA4 data, full original captures, screenshots, artifacts or browser sessions. You can separately allow appending an analysis; through this connection, that permission does not allow changing source evidence, starting collection or paid work, editing your website, or publishing.",
+            "An Agent or MCP client may run locally. If it uses an external AI service, the selected findings it is authorized to read may be sent to that service under its data policies. Choose the client and its permissions carefully. You can revoke the key to stop further access; revocation does not remove information the client has already received."
+          ]
+        },
+        {
+          "id": "exports-sharing",
+          "title": "Exports, sharing, and copies",
+          "paragraphs": [
+            "Reports, backups, exports, and sharing features can contain the evidence and website or analytics data you include. You decide whether to create or distribute them. Anyone you give a usable report file, share link, key, or passphrase may be able to read the corresponding content. Revoking a share stops later access through that share; it cannot recall copies already downloaded or sent elsewhere."
+          ]
+        },
+        {
+          "id": "security",
+          "title": "How local storage is protected",
+          "paragraphs": [
+            "The packaged desktop app uses operating-system-backed encryption for saved connection credentials and Google session tokens. Short-lived Google access tokens are used in memory for API requests. Google authorization uses a browser return to the local app, PKCE, state and nonce checks, and signed identity-token verification. External API requests use HTTPS.",
+            "The local evidence database, reports, screenshots, and database backups are not all encrypted by getaudit. Their protection also depends on your computer, user account, disk encryption, backup settings, and any location where you copy them. Do not share connection files, agent keys, passwords, or access tokens with a report or support request."
+          ]
+        },
+        {
+          "id": "controls",
+          "title": "Disconnecting and deleting are different",
+          "paragraphs": [
+            "Signing out of Google in getaudit removes the current Google session from the app's saved connection storage and stops that connection from making new reads. It does not erase saved research, exports, or backups, sign you out of Google in your browser, or revoke the grant held by Google. You can remove getaudit's access separately through your Google Account connections settings.",
+            "Deleting a project in the app is a restorable action that hides it from active work. It does not permanently erase its evidence history. Uninstalling the app may also leave local application data behind.",
+            "To erase a local workspace completely, its stored application data and any copies, exports, backups, or separately retained files need to be removed. Contact us if you need help locating those records. Removing local data does not delete the original data held by Google or another provider."
+          ]
+        },
+        {
+          "id": "retention-support",
+          "title": "Retention and support",
+          "paragraphs": [
+            "Saved research is retained locally as an evidence history; the app does not apply an automatic expiry period to those records. Your own backups and copies have their own lifecycle. External providers and the website host apply their own retention practices.",
+            "If you email us, we receive the contact details and content you choose to send. We use them to respond and handle the request. Privacy questions and requests to access, correct, or delete information we hold can be sent to {{contactEmail}}. We may need enough information to verify and locate your request. We cannot remotely erase a workspace that exists only on your computer."
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "When this policy changes",
+          "paragraphs": [
+            "We will update the date on this page when the policy changes. If we introduce a new use of Google user data, we will explain it and obtain any required consent before using the data that way."
+          ]
+        }
+      ],
+      "links": [
+        {
+          "id": "google-user-data",
+          "label": "Google API Services User Data Policy",
+          "href": "https://developers.google.com/terms/api-services-user-data-policy"
+        },
+        {
+          "id": "google-connections",
+          "label": "Manage your Google Account connections",
+          "href": "https://myaccount.google.com/connections"
+        },
+        {
+          "id": "google-privacy",
+          "label": "Google Privacy Policy",
+          "href": "https://policies.google.com/privacy"
+        },
+        {
+          "id": "openai-privacy",
+          "label": "OpenAI business and API privacy",
+          "href": "https://openai.com/enterprise-privacy/"
+        },
+        {
+          "id": "anthropic-privacy",
+          "label": "Anthropic Privacy Policy",
+          "href": "https://www.anthropic.com/legal/privacy"
+        },
+        {
+          "id": "perplexity-privacy",
+          "label": "Perplexity Privacy Notice",
+          "href": "https://www.perplexity.ai/en-GB/hub/legal/privacy-notice"
+        },
+        {
+          "id": "dataforseo-privacy",
+          "label": "DataForSEO Privacy Policy",
+          "href": "https://dataforseo.com/privacy-policy"
+        },
+        {
+          "id": "vercel-privacy",
+          "label": "Vercel Privacy Notice",
+          "href": "https://vercel.com/legal/privacy-notice"
+        },
+        {
+          "id": "cloudflare-privacy",
+          "label": "Cloudflare Privacy Policy",
+          "href": "https://www.cloudflare.com/privacypolicy/"
+        },
+        {
+          "id": "contact",
+          "label": "Email {{contributorLabel}} about privacy",
+          "href": "mailto:{{contactEmail}}"
+        }
+      ]
+    },
+    "zh-CN": {
+      "title": "隐私政策模板",
+      "description": "了解 getaudit.si 网站和 getaudit 桌面应用如何处理你的信息。",
+      "dateLabel": "最后更新",
+      "intro": [
+        "开源部署模板：本页供贡献者参考，并非已生效的运营方隐私声明。正式部署前，运营方必须核对并完善实际情况。",
+        "桌面应用把研究工作区保存在你的电脑上。连接第三方服务、发起搜索或分析、向智能体开放访问时，相关信息可能会发送给你选择的服务。下面逐项说明这些信息会去哪里。"
+      ],
+      "sections": [
+        {
+          "id": "website",
+          "title": "网站只留一点必要的信息",
+          "paragraphs": [
+            "网站代码没有添加广告追踪、访问统计脚本、邮件收集表单或营销 Cookie。网站只在浏览器本地保存语言选择，以便下次访问时使用同一语言。你可以通过浏览器设置清除这项偏好。",
+            "网站托管服务商包括 Vercel；早期产品预览由 OpenAI Sites 托管，使用 Cloudflare 基础设施。托管服务商可能处理 IP 地址、访问页面、访问时间和浏览器信息等技术请求数据，并使用交付、访问控制或安全所需的 Cookie，以提供和保护网站；这些服务也有各自的隐私规则。打开外部链接会前往其他服务。联系链接会打开你自己的邮件应用。"
+          ]
+        },
+        {
+          "id": "workspace",
+          "title": "工作区里保存了什么",
+          "paragraphs": [
+            "应用会保存你添加的项目、网站、问题、设置和笔记，以及收集的回答、引用、网页摘录、可选截图、搜索与分析数据快照、报告和任务记录。记录还可能包含来源网址、日期、请求与响应详情、用于核对证据完整性的哈希值，让每个发现都有据可查。",
+            "这些工作区数据保存在本机，桌面应用不会自动把整个工作区上传到 getaudit 云端账户。后台任务也在你的电脑上运行；你启动的任务需要使用外部服务时，仍会向相应服务发出请求。"
+          ]
+        },
+        {
+          "id": "google-access",
+          "title": "连接 Google 时会读取什么",
+          "paragraphs": [
+            "Google 登录在浏览器中完成。经你授权，getaudit 会收到 Google 账户标识、姓名和邮箱，用来显示当前账户，并让连接与正确的账户对应。getaudit 不会收到你的 Google 密码。 包括 GA4 流量分析在内的统一 Google 连接目前仍在测试。",
+            "连接会请求 Google Search Console 和 Google Analytics 的只读权限。Search Console 数据可能包括你可访问的资源及其权限级别、查询词和页面网址、点击量、展示量、点击率、平均排名、日期、国家或地区、设备、站点地图及网址检查结果。Analytics 数据可能包括你可访问的 GA4 账户和资源信息，以及活跃用户数、会话数、浏览量、关键事件、日期、流量来源等汇总报告。",
+            "你可以为项目选择要使用的资源。能用哪些功能，取决于你实际授予的权限和 Google 账户本身可访问的资源。这些权限不允许 getaudit 修改 Search Console 或 Analytics 配置，也不请求 Gmail、云端硬盘或通讯录权限。"
+          ]
+        },
+        {
+          "id": "google-use",
+          "title": "Google 数据用在哪里",
+          "paragraphs": [
+            "getaudit 使用你授权的 Google 数据来展示搜索与分析结果、保存带日期的证据、帮助寻找值得研究的机会，并生成你请求的对比、分析和报告。仅仅授权 Google 连接，不会自动启动 AI 分析或公开你的数据。",
+            "我们对 Google API 数据及其衍生信息的处理遵循《Google API 服务用户数据政策》及其中的“有限使用”要求。我们不出售 Google 用户数据，不将其用于广告或信用决策，也不用它训练或微调通用 AI 模型。除非你同意针对具体数据提供支持访问、确有安全需要，或法律要求，否则我们不会让人员读取这些数据。下文所述可选功能涉及的数据传输，由你选择发起。"
+          ]
+        },
+        {
+          "id": "research-services",
+          "title": "你选择的搜索与研究服务",
+          "paragraphs": [
+            "你启动采集后，所选服务会收到相关问题或搜索词，以及完成请求所需的设置。可选 API 服务包括 OpenAI、Google Gemini、Anthropic、Perplexity 和 DataForSEO。读取公开网页时，也会向被研究的网站发出请求。这些服务会收到 IP 地址等正常连接信息，并按各自的条款和隐私政策处理请求。",
+            "浏览器采集使用独立的临时会话，不读取你的个人浏览器资料。严格免登录采集不会复用准备好的登录会话。如果你选择受支持的登录模式，需要在其独立会话中登录。访问的平台可能在该会话里使用 Cookie 和会话存储；其账户、请求保留和模型训练设置，与 getaudit 产品网站的 Cookie 做法是两回事。",
+            "需要核验网络出口国家的扫描，会由桌面程序请求 Cloudflare 的 /cdn-cgi/trace 服务。Cloudflare 会收到包括网络 IP 地址在内的常规连接信息。程序根据返回的 IP 计算该采集计划专属的指纹；保存的出口核验记录包含国家、核验时间和指纹，不含原始 IP 字段。"
+          ]
+        },
+        {
+          "id": "ai-analysis",
+          "title": "按需使用 AI 分析",
+          "paragraphs": [
+            "你请求 AI 解读已采集的回答时，getaudit 会将所选问题、回答摘录和研究上下文发送到已配置的 OpenAI API。关键词审计会将所选搜索词发送给 DataForSEO，并将所选关键词、对应的 Search Console 平均排名、相关网址和网页摘录发送给你选择的 OpenAI 或 Anthropic 模型。模型输入和输出也可能保存在本机研究记录中。",
+            "这些请求只为完成你选择的分析；getaudit 不提供模型训练服务。不同服务商的数据处理、保留期限、处理地点和账户设置可能不同，请求也可能在你所在国家或地区以外处理。发送机密内容前，请先了解相应规则。涉及 Google 衍生数据时，应选择将数据用途限定在已披露分析范围内、符合 Google“有限使用”要求的服务和设置。即使请求关闭了响应存储，也不代表服务商的所有日志或数据保留机制都已关闭。"
+          ]
+        },
+        {
+          "id": "agents",
+          "title": "智能体按你授予的权限访问",
+          "paragraphs": [
+            "你可以创建限定项目范围的访问密钥，明确授权兼容的第三方 Agent 或 MCP 客户端。默认权限为只读，范围限于选定且受支持的 GSC/GEO 研究结果和相关上下文，包括已保存的 Search Console 效果、引用及覆盖信息。当前 Agent 工具不提供 GA4 数据、完整原始采集内容、截图、采集附件或浏览器会话。你可以另外允许追加分析；通过这项连接，这项权限不允许修改原始证据、启动采集或付费任务、修改网站或发布内容。",
+            "Agent 或 MCP 客户端可以在本机运行。使用外部 AI 服务时，获准读取的内容可能按该服务的数据政策发送过去。请自行选择客户端并控制权限。撤销密钥可以阻止后续访问，但不会删除客户端已经收到的信息。"
+          ]
+        },
+        {
+          "id": "exports-sharing",
+          "title": "导出、分享与副本",
+          "paragraphs": [
+            "报告、备份、导出文件和分享内容，可能包含你选入的证据、网站或分析数据。是否创建和发送，由你决定。获得可用报告文件、分享链接、密钥或口令的人，可能可以查看相应内容。撤销分享可以阻止通过该分享继续访问，但无法收回已经下载或转发到其他地方的副本。"
+          ]
+        },
+        {
+          "id": "security",
+          "title": "本机数据如何受到保护",
+          "paragraphs": [
+            "打包的桌面应用通过操作系统提供的加密能力保存连接凭据和 Google 会话令牌。短期 Google 访问令牌在内存中用于 API 请求。Google 授权通过浏览器回到本机应用，并使用 PKCE、state 和 nonce 检查及身份令牌签名验证。外部 API 请求使用 HTTPS。",
+            "本机证据数据库、报告、截图和数据库备份，并非都由 getaudit 加密。它们的安全还取决于你的电脑、用户账户、磁盘加密、备份设置，以及你复制文件到的其他位置。分享报告或提交支持请求时，请勿附带连接文件、智能体密钥、密码或访问令牌。"
+          ]
+        },
+        {
+          "id": "controls",
+          "title": "断开连接，不等于删除历史",
+          "paragraphs": [
+            "在 getaudit 中退出 Google，会从应用保存的连接信息中移除当前 Google 会话，并停止使用该连接读取新数据。它不会清除已保存的研究、导出文件或备份，也不会让浏览器退出 Google，或撤销 Google 端保留的授权。你可以另外前往 Google 账户的连接设置，移除 getaudit 的访问权限。",
+            "在应用中删除项目，是可以恢复的操作：项目会从当前工作中隐藏，证据历史不会被永久擦除。卸载应用后，本机应用数据也可能仍然存在。",
+            "如需完整清除本机工作区，需要删除应用存储的数据，以及另行保留的副本、导出文件、备份等。找不到这些记录时，可以联系我们获取帮助。删除本机数据，不会删除 Google 或其他服务商持有的原始数据。"
+          ]
+        },
+        {
+          "id": "retention-support",
+          "title": "数据保留与联系我们",
+          "paragraphs": [
+            "已保存的研究会作为证据历史保留在本机，应用不会自动在固定期限后将其清除。你另行保存的备份和副本由你管理。外部服务商和网站托管方则采用各自的数据保留规则。",
+            "如果你发送邮件给我们，我们会收到你主动提供的联系方式和邮件内容，并用它们回复、处理相关请求。隐私问题，以及针对我们所持信息的访问、更正或删除请求，请发送至 {{contactEmail}}。为核实和定位请求，我们可能需要你提供必要的信息。仅保存在你电脑上的工作区，我们无法远程替你删除。"
+          ]
+        },
+        {
+          "id": "changes",
+          "title": "政策更新",
+          "paragraphs": [
+            "政策变更时，我们会更新本页日期。如果未来增加 Google 用户数据的新用途，我们会先作说明，并在取得所需同意后再按新用途使用数据。"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "id": "google-user-data",
+          "label": "Google API 服务用户数据政策",
+          "href": "https://developers.google.com/terms/api-services-user-data-policy"
+        },
+        {
+          "id": "google-connections",
+          "label": "管理 Google 账户连接",
+          "href": "https://myaccount.google.com/connections"
+        },
+        {
+          "id": "google-privacy",
+          "label": "Google 隐私政策",
+          "href": "https://policies.google.com/privacy"
+        },
+        {
+          "id": "openai-privacy",
+          "label": "OpenAI 企业与 API 隐私说明",
+          "href": "https://openai.com/enterprise-privacy/"
+        },
+        {
+          "id": "anthropic-privacy",
+          "label": "Anthropic 隐私政策",
+          "href": "https://www.anthropic.com/legal/privacy"
+        },
+        {
+          "id": "perplexity-privacy",
+          "label": "Perplexity 隐私声明",
+          "href": "https://www.perplexity.ai/en-GB/hub/legal/privacy-notice"
+        },
+        {
+          "id": "dataforseo-privacy",
+          "label": "DataForSEO 隐私政策",
+          "href": "https://dataforseo.com/privacy-policy"
+        },
+        {
+          "id": "vercel-privacy",
+          "label": "Vercel 隐私声明",
+          "href": "https://vercel.com/legal/privacy-notice"
+        },
+        {
+          "id": "cloudflare-privacy",
+          "label": "Cloudflare 隐私政策",
+          "href": "https://www.cloudflare.com/privacypolicy/"
+        },
+        {
+          "id": "contact",
+          "label": "通过邮件联系 {{contributorLabel}} 处理隐私问题",
+          "href": "mailto:{{contactEmail}}"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "getaudit",
+  "version": "0.4.22",
+  "private": true,
+  "type": "module",
+  "description": "An integrated SEO and GEO workspace for search data, local AI-platform scans, and authorized Agent analysis.",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lab": "node --experimental-strip-types --no-warnings src/cli/main.ts",
+    "showcase": "node --experimental-strip-types --no-warnings src/cli/main.ts report:default",
+    "report:client-previews": "node --experimental-strip-types --no-warnings src/cli/client-previews.ts",
+    "report:client-check": "node --experimental-strip-types --no-warnings src/cli/client-report-check.ts",
+    "console:build": "vite build --config apps/console/vite.config.ts",
+    "console": "node scripts/build-console.mjs && node dist-node/console/start.js",
+    "console:demo": "node scripts/build-console.mjs && node dist-node/console/start.js --demo",
+    "console:typecheck": "tsc -p apps/console/tsconfig.json",
+    "desktop:build": "npm run console:build && node scripts/build-console.mjs && node scripts/package-console.mjs",
+    "console:verify": "node --experimental-strip-types --no-warnings src/console/verify-export.ts",
+    "check:locales": "node scripts/check-console-locales.mjs",
+    "desktop:dev": "npm run console:build && node scripts/build-console.mjs && electron desktop/main.cjs",
+    "review:scan": "node scripts/review-public-tree.mjs",
+    "website:build": "npm --prefix website run build && npm --prefix website run check"
+  },
+  "dependencies": {
+    "lucide-react": "^1.48.0",
+    "playwright-core": "1.63.0",
+    "re2js": "2.8.6",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "electron": "^44.4.5",
+    "linkedom": "0.18.13",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.1",
+    "vitest": "^4.1.11"
+  },
+  "license": "MIT"
+}

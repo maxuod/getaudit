@@ -1,0 +1,283 @@
+{
+  "productName": "getgeo",
+  "date": "2026-10-12",
+  "primaryLocale": "en",
+  "fallbackLocale": "en",
+  "supportedLocales": [
+    "en",
+    "zh-CN"
+  ],
+  "voice": {
+    "tone": "Warm, lightly playful, concrete, and unhurried. An office helper with a notebook, reading glasses, sticky notes, and a small detective streak.",
+    "authorship": "Write the English original first, then make a natural Simplified Chinese adaptation with the same meaning and state constraints.",
+    "statusRule": "Companion copy sits beside the actual phase and state. It never replaces the status, reason, or next action.",
+    "layoutPolicy": "English is the primary language for future UI writing, labels, and layout review. Simplified Chinese remains fully supported.",
+    "rotationPolicy": "Rotate messages only within the current active phase. Repeating or rotating a message must not imply that a new finding, successful match, verification, or completion occurred.",
+    "excludedClaims": [
+      "invented progress",
+      "percentages",
+      "estimated completion times",
+      "almost done",
+      "verified findings",
+      "rank gains",
+      "citation gains",
+      "accuracy guarantees"
+    ],
+    "statePolicy": "Waiting and blocked messages belong only to their real states, with the actual reason and action shown separately. Completion messages appear only after true completion. Never mix these state messages into the running rotation.",
+    "evidencePolicy": "UI language does not change original evidence, URLs, identifiers, hashes, or the market and language used for actual collection.",
+    "scope": "Reusable English-first bilingual companion copy, integrated into the getgeo Console. Original evidence and collection conditions remain independent of UI language."
+  },
+  "phases": [
+    {
+      "id": "phase-0",
+      "role": "Inspecting entry points",
+      "messages": [
+        {
+          "id": "entry-01",
+          "en": "Our little helper is clearing the desk for fresh clues.",
+          "zh-CN": "小助手正在整理桌面，给新线索腾个位置。"
+        },
+        {
+          "id": "entry-02",
+          "en": "The notebook is open, and the pencil is ready for clues.",
+          "zh-CN": "笔记本摊开了，铅笔也准备记下线索。"
+        },
+        {
+          "id": "entry-03",
+          "en": "We're laying out the map before following the footprints.",
+          "zh-CN": "先把地图铺开，再沿着脚印看看。"
+        },
+        {
+          "id": "entry-04",
+          "en": "A fresh page, a clear desk, and a little room for curiosity.",
+          "zh-CN": "翻开新的一页，腾出干净的桌面，也给好奇心留点位置。"
+        },
+        {
+          "id": "entry-05",
+          "en": "Our helper is making space for the links on the desk.",
+          "zh-CN": "小助手正在给这些链接腾出桌面上的位置。"
+        },
+        {
+          "id": "entry-06",
+          "en": "The magnifying glass is getting a front-row seat.",
+          "zh-CN": "放大镜已经坐到了前排，准备仔细看看。"
+        },
+        {
+          "id": "entry-07",
+          "en": "We're giving the starting points their own sticky notes.",
+          "zh-CN": "给每个起点贴张便签，方便顺着线索往下看。"
+        },
+        {
+          "id": "entry-08",
+          "en": "The desk lamp is on, and the trail starts here.",
+          "zh-CN": "台灯亮着，就从这里沿着线索看起。"
+        },
+        {
+          "id": "entry-09",
+          "en": "Our helper is keeping the notebook open for the next clue.",
+          "zh-CN": "小助手把笔记本摊着，给接下来的线索留着位置。"
+        },
+        {
+          "id": "entry-10",
+          "en": "The trail map is spread out, with plenty of room in the margins.",
+          "zh-CN": "线索地图已经铺开，页边还留着不少记笔记的地方。"
+        },
+        {
+          "id": "entry-11",
+          "en": "Our helper is sharpening the pencil for a closer look.",
+          "zh-CN": "小助手正在削好铅笔，准备边看边记。"
+        },
+        {
+          "id": "entry-12",
+          "en": "We're taking the links out of the drawer and onto the desk.",
+          "zh-CN": "把链接从抽屉里拿出来，放到桌上慢慢看。"
+        }
+      ]
+    },
+    {
+      "id": "phase-1",
+      "role": "Matching citations to sources",
+      "messages": [
+        {
+          "id": "citation-01",
+          "en": "Our helper is putting on the tiny reading glasses.",
+          "zh-CN": "小助手正在戴上那副小小的阅读眼镜。"
+        },
+        {
+          "id": "citation-02",
+          "en": "We're keeping the answer and its source on the same desk.",
+          "zh-CN": "把回答和它的来源放在同一张桌上，一起看看。"
+        },
+        {
+          "id": "citation-03",
+          "en": "The sticky notes are keeping the quotes company.",
+          "zh-CN": "便签正陪着引用内容，方便随手做标记。"
+        },
+        {
+          "id": "citation-04",
+          "en": "Our helper is holding the place with a very small bookmark.",
+          "zh-CN": "小助手用一枚小书签夹住了正在看的位置。"
+        },
+        {
+          "id": "citation-05",
+          "en": "The magnifying glass is spending some time with the footnotes.",
+          "zh-CN": "放大镜正在脚注那里多待一会儿。"
+        },
+        {
+          "id": "citation-06",
+          "en": "We're lining up the paper trail beside the words.",
+          "zh-CN": "把来源线索摆在文字旁边，方便对着看。"
+        },
+        {
+          "id": "citation-07",
+          "en": "The reading lamp is on duty for the fine print.",
+          "zh-CN": "阅读灯正在值班，照着那些小字。"
+        },
+        {
+          "id": "citation-08",
+          "en": "Our helper is keeping a finger on the source page.",
+          "zh-CN": "小助手把手指停在来源页面上，留着正在看的位置。"
+        },
+        {
+          "id": "citation-09",
+          "en": "The quotes have a seat. The sources have the neighboring one.",
+          "zh-CN": "引用内容坐在这边，来源坐在旁边。"
+        },
+        {
+          "id": "citation-10",
+          "en": "We're making room in the margins for the source links.",
+          "zh-CN": "在页边留点空白，放上来源链接。"
+        },
+        {
+          "id": "citation-11",
+          "en": "A bookmark here, a sticky note there, and a closer look in between.",
+          "zh-CN": "这边夹个书签，那边贴张便签，中间再仔细看看。"
+        },
+        {
+          "id": "citation-12",
+          "en": "Our helper is laying out the references for a closer look.",
+          "zh-CN": "小助手正在把参考来源摊开，方便仔细查看。"
+        }
+      ]
+    },
+    {
+      "id": "phase-2",
+      "role": "Organizing records",
+      "messages": [
+        {
+          "id": "records-01",
+          "en": "Our helper is giving the paperwork a little elbow room.",
+          "zh-CN": "小助手正在给这些记录腾出一点宽敞的地方。"
+        },
+        {
+          "id": "records-02",
+          "en": "We're keeping the paper trail beside the notes as we sort.",
+          "zh-CN": "整理笔记时，也把来源线索放在旁边。"
+        },
+        {
+          "id": "records-03",
+          "en": "The filing tray is open for business.",
+          "zh-CN": "文件托盘开工了，准备接住这些记录。"
+        },
+        {
+          "id": "records-04",
+          "en": "Our helper is lining up the folders on the desk.",
+          "zh-CN": "小助手正在把桌上的文件夹排整齐。"
+        },
+        {
+          "id": "records-05",
+          "en": "We're giving each note a spot in the notebook.",
+          "zh-CN": "给每条笔记在本子里留个位置。"
+        },
+        {
+          "id": "records-06",
+          "en": "The sticky notes are reporting for filing duty.",
+          "zh-CN": "便签来报到了，准备帮忙整理归档。"
+        },
+        {
+          "id": "records-07",
+          "en": "Our helper is straightening the stack, one page at a time.",
+          "zh-CN": "小助手正在一页一页地理齐这叠记录。"
+        },
+        {
+          "id": "records-08",
+          "en": "We're keeping the links beside the notes they came with.",
+          "zh-CN": "把链接和它们对应的笔记放在一起。"
+        },
+        {
+          "id": "records-09",
+          "en": "A place for the pages, a little space for the margins.",
+          "zh-CN": "给每页记录留个位置，也给页边留点空白。"
+        },
+        {
+          "id": "records-10",
+          "en": "The paper clips are taking their desk job seriously.",
+          "zh-CN": "回形针正在认真履行它的桌面职责。"
+        },
+        {
+          "id": "records-11",
+          "en": "Our helper is sorting the desk, with the source labels in view.",
+          "zh-CN": "小助手正在整理桌面，来源标签也摆在看得见的地方。"
+        },
+        {
+          "id": "records-12",
+          "en": "The folders are open, and the notes are settling into place.",
+          "zh-CN": "文件夹摊开着，笔记正慢慢放到各自的位置。"
+        }
+      ]
+    }
+  ],
+  "stateMessages": {
+    "waiting": [
+      {
+        "id": "waiting-01",
+        "en": "Our helper has set the pencil down for a moment.",
+        "zh-CN": "小助手暂时放下了铅笔。"
+      },
+      {
+        "id": "waiting-02",
+        "en": "The desk is on pause. The notebook is staying open.",
+        "zh-CN": "桌面工作暂停一下，笔记本先保持摊开。"
+      },
+      {
+        "id": "waiting-03",
+        "en": "The reading glasses are resting beside the notes.",
+        "zh-CN": "阅读眼镜正在笔记旁边歇一会儿。"
+      }
+    ],
+    "blocked": [
+      {
+        "id": "blocked-01",
+        "en": "There's a closed door on this paper trail.",
+        "zh-CN": "这条线索前面有扇暂时打不开的门。"
+      },
+      {
+        "id": "blocked-02",
+        "en": "Our helper has put a sticky note on the snag.",
+        "zh-CN": "小助手在卡住的地方贴了张便签。"
+      },
+      {
+        "id": "blocked-03",
+        "en": "The pencil is parked until this knot is untangled.",
+        "zh-CN": "先把铅笔搁下，等这个结解开再继续。"
+      }
+    ],
+    "complete": [
+      {
+        "id": "complete-01",
+        "en": "The desk is tidy, and this round of paperwork can rest.",
+        "zh-CN": "桌面整理好了，这一轮记录工作可以歇一歇。"
+      },
+      {
+        "id": "complete-02",
+        "en": "Our helper is putting the pencil back in its cup.",
+        "zh-CN": "小助手正在把铅笔放回笔筒。"
+      },
+      {
+        "id": "complete-03",
+        "en": "The notebook can take a breather. This task is complete.",
+        "zh-CN": "笔记本可以歇口气了，这次任务已完成。"
+      }
+    ]
+  }
+}

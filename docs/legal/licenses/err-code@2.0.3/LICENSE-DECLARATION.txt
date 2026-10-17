@@ -1,0 +1,44 @@
+err-code 2.0.3 — upstream MIT declaration and author attribution
+
+Published upstream author field (verbatim):
+IndigoUnited <hello@indigounited.com> (http://indigounited.com)
+
+Published upstream license field (verbatim):
+MIT
+
+The exact release README also states (verbatim):
+Released under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
+
+Attribution and provenance scope:
+This is an accompanying supplement assembled for redistribution, not a claim
+that upstream shipped a standalone LICENSE file. The exact published package
+and release tree provide no separate LICENSE/COPYING/COPYRIGHT/NOTICE file.
+No upstream dated copyright notice was supplied. The published author field
+is retained as author attribution, not asserted as a verified copyright owner.
+No year, additional rights holder, or new grant by the downstream project is
+invented here. The generic <YEAR>/<COPYRIGHT HOLDER> template header is not
+populated. Complete MIT permission, notice condition and disclaimer terms
+referred to by the upstream declaration follow.
+
+Standard terms source: https://opensource.org/license/mit
+Exact version/source fingerprints: PROVENANCE.json in this directory.
+
+MIT License — complete permission, condition and disclaimer
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

@@ -1,0 +1,56 @@
+/* One home, three daily destinations, and setup kept in one place. */
+.audit-app .sidebar nav.daily-navigation { margin-top:19px; }
+.audit-app .sidebar .sidebar-settings { display:flex;align-items:center;gap:10px;width:100%;padding:10px 11px;margin:24px 0 0;background:transparent;border:1px solid transparent;border-radius:10px;text-align:left;color:var(--muted); }
+.audit-app .sidebar .sidebar-settings.active { background:white;border-color:var(--line);color:var(--accent-hover); }
+.audit-app .sidebar .sidebar-settings:hover { background:var(--paper); }
+.audit-app .sidebar-bottom { padding-top:17px; }
+.audit-app .sidebar-signoff { margin-bottom:12px; }
+.audit-app .page-head .page-location { display:none; }
+.audit-app .page-head .page-heading-copy>p { max-width:65ch; }
+.audit-app .page-head.home-heading { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap; }
+.audit-app .context-navigation { display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin:0 0 23px;border-bottom:1px solid var(--line);padding-bottom:9px; }
+.audit-app .context-navigation button { background:transparent;border:0;padding:8px 12px;color:var(--muted);border-radius:8px; }
+.audit-app .context-navigation button[aria-current="page"] { color:var(--accent-hover);background:var(--accent-soft);font-weight:600; }
+.audit-app .context-navigation .context-back { margin-right:auto; }
+.audit-app .workspace-settings { max-width:840px; }
+.audit-app .settings-list { border-top:1px solid var(--line); }
+.audit-app .settings-list>button { display:flex;align-items:center;gap:16px;width:100%;padding:19px 2px;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;text-align:left; }
+.audit-app .settings-list>button:hover { background:var(--surface); }
+.audit-app .settings-list>button>svg:first-child { color:var(--accent);flex:0 0 auto; }
+.audit-app .settings-list>button>svg:last-child { margin-left:auto;flex:0 0 auto;color:var(--muted); }
+.audit-app .settings-list>button>span { min-width:0;display:grid;gap:5px; }
+.audit-app .settings-list strong { font-size:14px;font-weight:600; }
+.audit-app .settings-list small { color:var(--muted);line-height:1.55;font-size:12px; }
+.audit-app .simple-advanced { margin-top:22px; }
+.audit-app .simple-advanced>summary { color:var(--muted);font-size:12px;padding:10px 0;cursor:pointer; }
+.audit-app .settings-local-note { max-width:65ch;font-size:12px;line-height:1.65;color:var(--muted);margin-top:32px; }
+.audit-app .connection-group { margin:16px 0;border-bottom:1px solid var(--line);padding:0 0 15px; }
+.audit-app .connection-group>summary { cursor:pointer;font-weight:600;padding:10px 0; }
+.audit-app .connection-group>div { padding-top:9px; }
+.audit-app .connection-group small.connection-group-status { color:var(--muted);font-size:11px;font-weight:400;margin-left:auto; }
+.audit-app .connection-form-note { font-size:12px;line-height:1.6;color:var(--muted); }
+.audit-app .connection-group .field small { display:none; }
+.audit-app .new-project-options { margin:9px 0 19px; }
+.audit-app .new-project-options>summary { color:var(--muted);font-size:12px;cursor:pointer;padding:8px 0; }
+@media(max-width:700px) {
+  .audit-app .sidebar { display:flex;flex-direction:row;flex-wrap:wrap;gap:13px;align-items:center; }
+  .audit-app .sidebar .wordmark { margin-right:auto; }
+  .audit-app .sidebar .sidebar-settings { margin:0;width:auto;font-size:12px;padding:8px; }
+  .audit-app .sidebar .project-switch { display:flex;order:1;flex:1 0 100%;margin:0;padding:9px 0 0;border-bottom:0;border-top:1px solid var(--line); }
+  .audit-app .sidebar .project-switch .project-avatar { display:none; }
+  .audit-app .sidebar .project-switch select { max-width:100%;width:100%;font-size:12px; }
+  .audit-app .sidebar nav.daily-navigation { margin:0;order:2;flex:1 0 100%;gap:6px; }
+  .audit-app .sidebar nav.daily-navigation button { flex:1;justify-content:center; }
+  .audit-app .sidebar-bottom { display:none; }
+  .audit-app .topbar { height:auto;min-height:49px;padding:10px 17px; }
+  .audit-app .topbar .breadcrumb { display:none; }
+  .audit-app .topbar .private { display:none; }
+  .audit-app .topbar-right { width:100%;gap:7px;justify-content:flex-end;flex-wrap:wrap; }
+  .audit-app .topbar-right>.icon { display:none; }
+  .audit-app .settings-list>button { gap:12px;padding-block:17px; }
+}
+
+.audit-app .home-data-switch { display:flex;gap:5px;margin:0 0 21px;padding-bottom:12px;border-bottom:1px solid var(--line); }
+.audit-app .home-data-switch button { border:0;background:transparent;color:var(--muted);padding:8px 13px;font-size:12px; }
+.audit-app .home-data-switch button[aria-pressed="true"] { background:var(--accent-soft);color:var(--accent-hover);font-weight:600; }
+.audit-app .page-google .google-connection { max-width:900px; }
