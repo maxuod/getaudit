@@ -35,8 +35,20 @@ rmSync(stage, { recursive: true, force: true });
 mkdirSync(stage, { recursive: true });
 const allowedDesktop = new Set(['main.cjs', 'sampling.cjs', 'chrome-collector.cjs', 'browser-extract.cjs',
   'browser-platforms.cjs', 'capture-artifact.cjs', 'connection-vault.cjs', 'egress-check.cjs', 'locales', 'assets']);
+const legalInventory = JSON.parse(readFileSync(join(root, 'docs/legal/dependency-licenses.json'), 'utf8'));
+const noticeFiles = new Map();
+for (const dependency of legalInventory.packages) {
+  for (const file of [...(dependency.noticeFiles || []), ...(dependency.supplementFiles || [])]) {
+    if (!file.path.startsWith('docs/legal/licenses/') || file.path.split('/').includes('..') || !/^[a-f0-9]{64}$/.test(file.sha256))
+      throw new Error('Invalid preserved legal inventory entry.');
+    noticeFiles.set(file.path, file);
+  }
+}
+// This exact inventory exception preserves upstream attribution collateral.
+// Owned runtime maps and every map outside the reviewed legal tree stay excluded.
+const legalSourceMaps = new Set([...noticeFiles.keys()].filter(path => path.endsWith('.map')).map(path => join(root, path)));
 function copy(source, target) {
-  cpSync(source, target, { recursive: true, filter: p => !/\.(?:map|log|db|sqlite|enc|pem|key|p12|pfx)$|(?:^|\/)\.DS_Store$/.test(p) });
+  cpSync(source, target, { recursive: true, filter: p => (!p.endsWith('.map') || legalSourceMaps.has(p)) && !/\.(?:log|db|sqlite|enc|pem|key|p12|pfx)$|(?:^|\/)\.DS_Store$/.test(p) });
 }
 for (const directory of ['dist-node', 'dist/console']) copy(join(root, directory), join(stage, directory));
 mkdirSync(join(stage, 'desktop'));
@@ -62,6 +74,14 @@ mkdirSync(legal);
 copy(join(root, 'LICENSE'), join(legal, 'LICENSE'));
 copy(join(root, 'THIRD_PARTY_NOTICES.md'), join(legal, 'SOURCE-THIRD-PARTY-NOTICES.md'));
 copy(join(root, 'docs/legal'), join(legal, 'source-dependency-notices'));
+const preservedLegalMaps = new Set();
+for (const file of noticeFiles.values()) {
+  const target = join(legal, 'source-dependency-notices', file.path.slice('docs/legal/'.length));
+  if (!existsSync(target) || createHash('sha256').update(readFileSync(target)).digest('hex') !== file.sha256 || lstatSync(target).size !== file.bytes)
+    throw new Error('Preserved legal inventory mismatch: ' + file.path);
+  if (target.endsWith('.map')) preservedLegalMaps.add(target);
+}
+releaseInfo.preservedSourceNoticeFiles = noticeFiles.size;
 for (const name of ['LICENSE', 'LICENSES.chromium.html']) {
   const source = join(root, 'node_modules/electron/dist', name);
   if (!existsSync(source)) throw new Error('Exact Electron runtime legal notices are required. Run the locked Electron install first.');
@@ -87,8 +107,8 @@ function inspect(directory) {
     const path = join(directory, entry.name), stat = lstatSync(path);
     if (stat.isSymbolicLink()) { disallowed.push(path); continue; }
     if (stat.isDirectory()) inspect(path);
-    else if (/^\.env|google-oauth-client\.json$|\.(?:db|sqlite|enc|log|map|pem|key|p12|pfx)$|\.db-/.test(entry.name)) disallowed.push(path);
-    else if (stat.size < 25_000_000 && /\.(?:js|cjs|mjs|json|html|css|md|txt)$/.test(entry.name)) {
+    else if (/^\.env|google-oauth-client\.json$|\.(?:db|sqlite|enc|log|pem|key|p12|pfx)$|\.db-/.test(entry.name) || (entry.name.endsWith('.map') && !preservedLegalMaps.has(path))) disallowed.push(path);
+    else if (stat.size < 25_000_000 && /\.(?:js|cjs|mjs|json|html|css|md|txt|map)$/.test(entry.name)) {
       const contents = readFileSync(path, 'utf8');
       if (/(?:\/Users\/[^/\s"'<>]+\/|\/Volumes\/[^/\n]+\/Developer\/|AIza[\w-]{30,}|GOCSPX-[\w-]{10,}|-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----)/.test(contents)) disallowed.push(path);
     }
