@@ -43,6 +43,14 @@ getaudit 是一个在本地运行的集成式 SEO 与 GEO 系统。连接 Google
 
 界面支持一键切换英文与简体中文。支持的任务可在程序运行时后台执行，退出、休眠或关机可能中断任务。报告与证据导出保留来源和采集条件，便于日后复查判断的依据。
 
+## 下载 Mac 版
+
+[下载 getaudit](https://getaudit.si/#download) · [版本说明与文件校验值](https://github.com/maxuod/getaudit/releases/tag/v0.4.22-community.1)
+
+抢先体验版支持 **macOS 13 或更新系统的 Apple 芯片 Mac**。安装包采用临时签名，**尚未经过 Apple 公证**；首次打开时可能被 macOS 阻止。打开方式与当前限制见版本说明。
+
+浏览器 GEO 扫描需另行安装 Google Chrome，并配置数据来源。**本预览版暂不提供 Google 登录与 GA4 连接**，可选第三方服务费用另计。暂不提供 Intel Mac、Windows 或 Linux 安装包。
+
 ## 先试试本地演示
 
 需要 **Node.js 22.19 或更新版本**和 npm。当前桌面目标平台是 macOS；其他原生平台尚未验证。
@@ -69,7 +77,7 @@ npm run console
 npm run desktop:dev
 ```
 
-社区构建使用独立的应用身份与数据目录，不读取另一安装版本的连接保险库。仓库提供源码，不是已签名或公证的公开安装包。
+社区构建使用独立的应用身份与数据目录，不读取另一安装版本的连接保险库。仓库提供源码；上方另行发布的社区预览安装包采用临时签名，尚未经过 Apple 公证。打包与兼容性说明见[社区构建指南](docs/community-build.md)。
 
 ## 连接与当前限制
 

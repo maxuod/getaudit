@@ -48,6 +48,14 @@ Your work is saved locally. Google reads, AI-platform scans, and optional provid
 
 The interface supports English and 简体中文 in one click. Supported jobs can continue in the background while the app is running; quitting, sleep, or shutdown can interrupt them. Reports and evidence exports keep sources and collection conditions attached, so you can return to the basis of a finding.
 
+## Download for Mac
+
+[Download getaudit](https://getaudit.si/#download) · [Release notes and checksums](https://github.com/maxuod/getaudit/releases/tag/v0.4.22-community.1)
+
+The early-access desktop package supports **Apple Silicon Macs running macOS 13 or newer**. It uses an ad-hoc signature and has **not been notarized by Apple**; macOS may block it at first launch. Follow the release notes for opening instructions and current limitations.
+
+Install Google Chrome separately for browser-based GEO scans and configure your sources. **Google sign-in and GA4 connections are not available in this preview.** Optional third-party service costs are separate. Intel Mac, Windows, and Linux installers are not currently provided.
+
 ## Try the local demo
 
 Use **Node.js 22.19 or newer** and npm. macOS is the current desktop target; other native platforms have not been validated.
@@ -74,7 +82,7 @@ For the development desktop window on macOS:
 npm run desktop:dev
 ```
 
-The community desktop build uses its own application identity and data directory. It does not open another installed edition's connection vault. This repository contains source, not a signed or notarized public installer.
+The community desktop build uses its own application identity and data directory. It does not open another installed edition's connection vault. Source is available here; the separate community prerelease above is ad-hoc signed and is not Apple-notarized. See the [community build guide](docs/community-build.md) for packaging and compatibility details.
 
 ## Connections and current limits
 

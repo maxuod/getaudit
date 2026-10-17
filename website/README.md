@@ -45,6 +45,13 @@ These descriptions identify the current product and its availability boundaries.
 - **Agent access:** selected supported GSC/GEO findings and context, including citations and coverage. Current tools omit GA4 data, full original captures, screenshots, artifacts and browser sessions. Through this connection, project-scoped read access and optional append-analysis permission do not permit starting scans, spending money, editing websites or publishing.
 - **Local records and external services:** work records are stored locally. Google and AI platforms receive requests selected by the user. An Agent may run locally. If it uses an external AI service, selected findings it is authorized to read may be sent to that service under its data policies.
 
-The homepage and FAQ describe these boundaries alongside the customer benefits. The shared schema builder derives its feature descriptions from visible copy in each language. The showcase itself has no account signup, hosted Google login, payment, analytics collector or data-collection API.
+The homepage and FAQ describe these boundaries alongside the customer benefits. The shared schema builder derives its feature descriptions from visible copy in each language. The showcase itself has no account signup, hosted Google login, payment, analytics collector or private-data collection API. The optional `/api/github` endpoint reads only the fixed public repository counts, caches successful results for five minutes, and uses no account tokens.
 
 The project source code is licensed under [MIT](../LICENSE). The bundled Bricolage font retains its complete SIL Open Font License and required third-party notices in `public/assets/FONT-LICENSE.txt`. Do not remove those notices.
+
+
+## GitHub and Mac downloads
+
+The homepage links to the public `maxuod/getaudit` repository and fetches its star/fork counts through a same-origin endpoint. Missing or rate-limited counts remain dashes with a working GitHub link; zero is a real value. The local preview serves the same endpoint. No browser GitHub credentials, tracking or star action is added.
+
+`src/release.mjs` holds verified immutable GitHub release metadata. A valid release enables the direct Mac ZIP link, version, architecture, size and SHA-256. Without metadata the page links to Releases and advertises no fake download. English and Chinese distinguish ad-hoc signing, Developer ID signing and notarization. Current Apple Silicon early-access builds require macOS 13+ and Google Chrome for GEO scans; the Google/GA4 connection remains in testing. A fork must use its own verified repository/release configuration before publication.

@@ -1,10 +1,12 @@
+import {downloadMarkup} from './download.js';
+import {project} from './project.js';
 import {siteConfig} from './config.mjs';
 import {copy,tours} from './content.js';
 import {buildStructuredData,serializeStructuredData} from './schema.js';
 
 const allowed=['en','zh-CN'];
 const pref='getaudit.website.language';
-let locale='en',selectedTour=0,policyData;
+let locale='en',selectedTour=0,policyData,githubState={loading:true};
 try{const saved=localStorage.getItem(pref);if(allowed.includes(saved))locale=saved;}catch{/* The site remains usable with browser storage disabled. */}
 const escape=value=>String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 const page=document.body.dataset.page;
@@ -32,6 +34,24 @@ function renderPolicy(){
   block.innerHTML=`<div class="policy-title"><nav class="back-link" aria-label="${escape(c().breadcrumbs)}"><a href="/">${escape(c().home)}</a><span aria-hidden="true"> / </span><span aria-current="page">${escape(p.title)}</span></nav><h1>${escape(p.title)}</h1><p class="policy-date">${escape(c().policyDate)}: <time datetime="${policyData.effectiveDate}">${policyData.effectiveDate}</time></p>${p.intro.map(x=>`<p>${escape(x)}</p>`).join('')}</div><div class="policy-layout"><aside class="policy-contents"><span>${escape(c().policyContents)}</span><nav aria-label="${escape(c().policyContents)}">${p.sections.map(s=>`<a href="#${escape(s.id)}">${escape(s.title)}</a>`).join('')}</nav></aside><article class="policy-article"><div class="policy-summary"><h2>${escape(c().policySummary)}</h2><p>${escape(c().policyQuick)}</p></div>${p.sections.map(s=>`<section id="${escape(s.id)}"><h2>${escape(s.title)}</h2>${s.paragraphs.map(x=>`<p>${escape(x)}</p>`).join('')}</section>`).join('')}<section class="policy-links"><h2>${locale==='en'?'Related resources':'相关链接'}</h2><ul>${p.links.map(l=>`<li><a href="${escape(l.href)}" rel="noopener noreferrer" target="_blank">${escape(l.label)}</a></li>`).join('')}</ul></section><section class="policy-contact"><h2>${escape(c().policyContact)}</h2><p>${escape(c().policyContactBody)}</p><a href="mailto:${escape(siteConfig.contactEmail)}">${escape(siteConfig.contactEmail)}</a></section></article></div>`;
 }
 
+function renderGithubStats(){
+  document.querySelector('[data-github-stats]')?.setAttribute('aria-label',c().githubStatsLabel);
+  document.querySelectorAll('[data-github-count]').forEach(element=>{
+    const value=githubState[element.dataset.githubCount];element.textContent=Number.isSafeInteger(value)?new Intl.NumberFormat(locale).format(value):'—';
+  });
+  const status=document.querySelector('[data-github-status]');if(status)status.textContent=githubState.loading?c().githubLoading:githubState.available?c().githubUpdated:c().githubUnavailable;
+}
+
+function renderProject(){
+  const download=document.querySelector('[data-download]');
+  if(download){
+    const detailsOpen=download.querySelector('details')?.open;
+    download.innerHTML=downloadMarkup(c(),locale);
+    if(detailsOpen&&download.querySelector('details'))download.querySelector('details').open=true;
+  }
+  renderGithubStats();
+}
+
 function render(){
   const text=c();document.documentElement.lang=locale;
   document.querySelectorAll('[data-t]').forEach(element=>{const value=text[element.dataset.t];if(typeof value==='string')element.textContent=value;});
@@ -56,7 +76,7 @@ function render(){
   document.querySelector('meta[name="description"]')?.setAttribute('content',description);
   document.querySelector('meta[property="og:title"]')?.setAttribute('content',document.title);
   document.querySelector('meta[property="og:description"]')?.setAttribute('content',description);
-  renderTour();renderPolicy();
+  renderTour();renderPolicy();renderProject();
   const schemaElement=document.querySelector('[data-structured-data]');
   if(schemaElement&&(page!=='privacy'||policyData)){
     schemaElement.textContent=serializeStructuredData(buildStructuredData({page,locale,origin:schemaElement.dataset.siteOrigin,copy,tours,policy:policyData}));
@@ -97,3 +117,14 @@ if(page==='privacy'){
   try{policyData=(await import('./privacy-content.js')).policy;}catch{/* The complete English policy is already rendered in HTML. */}
 }
 render();
+
+if(document.querySelector('[data-github-stats]')){
+  try{
+    const response=await fetch('/api/github',{headers:{Accept:'application/json'},signal:AbortSignal.timeout(8000)});
+    if(!response.ok)throw Error('GitHub counts unavailable');
+    const data=await response.json();
+    if(data.available!==true||data.fullName!==project.fullName||data.url!==project.url||[data.stars,data.forks].some(value=>!Number.isSafeInteger(value)||value<0))throw Error('Invalid GitHub counts');
+    githubState=data;
+  }catch{githubState={available:false};}
+  renderGithubStats();
+}

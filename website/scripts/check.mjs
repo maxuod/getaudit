@@ -3,6 +3,9 @@ import {resolve,join,dirname} from 'node:path';
 import {copy,tours} from '../src/content.mjs';
 import {siteConfig,configureContent} from '../src/config.mjs';
 import {buildStructuredData,serializeStructuredData} from '../src/schema.mjs';
+import {project} from '../src/project.js';
+import {desktopRelease} from '../src/release.mjs';
+import {isAvailableRelease} from '../src/download.js';
 
 const root=resolve('dist'),failures=[],pages=[];
 const scan=directory=>{for(const item of readdirSync(directory,{withFileTypes:true})){const file=join(directory,item.name);if(item.isDirectory())scan(file);else if(file.endsWith('.html'))pages.push(file);}};
@@ -15,6 +18,18 @@ const browserContent=await import('../dist/assets/content.js');
 const browserPolicy=(await import('../dist/assets/privacy-content.js')).policy;
 const origin=process.env.SITE_ORIGIN??siteConfig.origin;
 const publicSite=(process.env.SITE_PUBLIC??(siteConfig.publicIndexing?'1':'0'))==='1';
+assertion(source.includes('id="download"')&&source.includes('href="#download"')&&source.includes('data-download'),'The homepage must expose its dedicated download area.');
+assertion(source.includes(project.fullName)&&source.includes(`href="${project.url}"`),'The visible project must link to the exact public repository.');
+assertion(source.includes('data-github-count="stars">—</dd>')&&source.includes('data-github-count="forks">—</dd>'),'GitHub statistics must start without invented counts.');
+assertion(readFileSync('dist/assets/site.js','utf8').includes("fetch('/api/github'"),'Repository statistics must use the same-origin endpoint.');
+for(const file of ['project.js','download.js','release.mjs'])assertion(readFileSync('dist/assets/'+file,'utf8')===readFileSync('src/'+file,'utf8'),`The browser download/project module is stale: ${file}`);
+if(desktopRelease!==null){
+ assertion(isAvailableRelease(desktopRelease),'Download metadata must identify a real supported immutable release asset.');
+ assertion(source.includes(`data-download-link href="${desktopRelease.url}"`),'The public download action must match the verified release.');
+ assertion(source.includes(desktopRelease.sha256)&&source.includes(desktopRelease.version),'The release checksum and version must be visible.');
+ assertion(!desktopRelease.notarized||desktopRelease.signed,'A notarized app must also be signed.');
+ if(desktopRelease.signing==='ad-hoc')assertion(source.includes(copy.en.downloadAdHoc),'Ad-hoc signing must not imply an Apple Developer ID signature.');
+}else assertion(!source.includes('data-download-link'),'Do not advertise a download before its release metadata is configured.');
 assertion(copy.en.title==='getaudit — All-in-one GEO tools','The canonical English product name is wrong.');
 assertion(source.includes('<span>getaudit<span class="brand-domain">.si</span>'),'The getaudit.si wordmark is missing.');
 assertion(copy.en.sample==='Actual product interface · Fictional sample data','The fictional-data screenshot caption is missing.');

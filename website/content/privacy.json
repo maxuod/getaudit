@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "effectiveDate": "2026-10-16",
+  "effectiveDate": "2026-10-17",
   "primaryLocale": "en",
   "locales": {
     "en": {
@@ -17,7 +17,8 @@
           "title": "A small website footprint",
           "paragraphs": [
             "The website code does not add advertising trackers, analytics scripts, email collection forms, or marketing cookies. It stores your language choice in your browser's local storage so the next visit can use the same language. You can remove that preference through your browser settings.",
-            "Website hosting providers include Vercel and, for the earlier product preview, OpenAI Sites on Cloudflare infrastructure. Hosting providers may process technical request information, such as your IP address, requested page, time of access, and browser information, and use necessary access or security cookies to deliver and protect the website. Their services have their own privacy practices. Following an external link takes you to a separate service. Contact links open your own email app."
+            "Website hosting providers include Vercel and, for the earlier product preview, OpenAI Sites on Cloudflare infrastructure. Hosting providers may process technical request information, such as your IP address, requested page, time of access, and browser information, and use necessary access or security cookies to deliver and protect the website. Their services have their own privacy practices. Following an external link takes you to a separate service. Contact links open your own email app.",
+            "The GitHub project counts are requested through this website’s server. The server reads the public repository statistics from GitHub; the website does not send your project, Google, or research data in that request. Download links open a GitHub release, where GitHub’s own privacy practices apply."
           ]
         },
         {
@@ -177,7 +178,8 @@
           "title": "网站只留一点必要的信息",
           "paragraphs": [
             "网站代码没有添加广告追踪、访问统计脚本、邮件收集表单或营销 Cookie。网站只在浏览器本地保存语言选择，以便下次访问时使用同一语言。你可以通过浏览器设置清除这项偏好。",
-            "网站托管服务商包括 Vercel；早期产品预览由 OpenAI Sites 托管，使用 Cloudflare 基础设施。托管服务商可能处理 IP 地址、访问页面、访问时间和浏览器信息等技术请求数据，并使用交付、访问控制或安全所需的 Cookie，以提供和保护网站；这些服务也有各自的隐私规则。打开外部链接会前往其他服务。联系链接会打开你自己的邮件应用。"
+            "网站托管服务商包括 Vercel；早期产品预览由 OpenAI Sites 托管，使用 Cloudflare 基础设施。托管服务商可能处理 IP 地址、访问页面、访问时间和浏览器信息等技术请求数据，并使用交付、访问控制或安全所需的 Cookie，以提供和保护网站；这些服务也有各自的隐私规则。打开外部链接会前往其他服务。联系链接会打开你自己的邮件应用。",
+            "GitHub 项目统计通过本站服务器获取，服务器只向 GitHub 读取公开仓库信息；网站不会在这项请求中发送你的项目、Google 或研究数据。下载链接会前往 GitHub Release，相关处理适用 GitHub 自身的隐私规则。"
           ]
         },
         {
