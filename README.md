@@ -52,7 +52,7 @@ The interface supports English and 简体中文 in one click. Supported jobs can
 
 ## Download for Mac
 
-[Download getaudit](https://getaudit.si/#download) · [Release notes and checksums](https://github.com/maxuod/getaudit/releases/tag/v0.4.22-community.2)
+[Download getaudit](https://getaudit.si/#download) · [Release notes and checksums](https://github.com/maxuod/getaudit/releases/tag/v0.4.22-community.3)
 
 The early-access desktop package supports **Apple Silicon Macs running macOS 13 or newer**. It uses an ad-hoc signature and has **not been notarized by Apple**; macOS may block it at first launch. Follow the release notes for opening instructions and current limitations.
 

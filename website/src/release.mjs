@@ -1,14 +1,14 @@
 // Verified immutable public GitHub release metadata. No private user settings are bundled.
 export const desktopRelease = Object.freeze({
   "version": "0.4.22",
-  "tag": "v0.4.22-community.2",
+  "tag": "v0.4.22-community.3",
   "platform": "macOS",
   "architecture": "Apple Silicon",
   "minimumOS": "macOS 13+",
   "fileName": "getaudit-0.4.22-macos-arm64-early-access.zip",
-  "url": "https://github.com/maxuod/getaudit/releases/download/v0.4.22-community.2/getaudit-0.4.22-macos-arm64-early-access.zip",
-  "bytes": 135095853,
-  "sha256": "eac14bec8a37dbb8ff26bd82a6feee0342b8d561480874659df1c42fb37a0638",
+  "url": "https://github.com/maxuod/getaudit/releases/download/v0.4.22-community.3/getaudit-0.4.22-macos-arm64-early-access.zip",
+  "bytes": 135096085,
+  "sha256": "ce06939ef188fe5c1932e64bca8579c6078c8cdd25e4f60fe0eff433e1fe883f",
   "signed": true,
   "signing": "ad-hoc",
   "notarized": false

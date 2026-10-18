@@ -33,7 +33,7 @@ These data permissions are read-only. Google’s account grant can cover accessi
 ## User controls
 
 - The Google connection and Settings screens link to the public privacy policy before authorization.
-- Google sign-out clears the managed local session. It does not revoke Google’s grant, delete saved research or disable separately authorized Agents/shares.
+- A completed Google sign-out clears the managed local session. It does not revoke Google’s grant, delete saved research or disable separately authorized Agents/shares.
 - Remove the grant at [Google Account connections](https://myaccount.google.com/connections). Manage legacy GSC connections, Agent keys and shares separately.
 - Read the policy’s [deletion and retention controls](https://getaudit.si/privacy/#controls) before removing local application data or backups. No deletion is performed automatically by reading the policy.
 

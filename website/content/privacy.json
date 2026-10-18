@@ -33,42 +33,84 @@
           "id": "google-access",
           "title": "When you connect Google",
           "paragraphs": [
-            "Google sign-in opens in your browser. With your permission, getaudit receives your Google account identifier, name, and email to show the connected account and keep connections associated with the correct account. getaudit does not receive your Google password. The combined Google connection, including GA4 traffic analysis, is currently in testing.",
-            "The connection requests read-only access to Google Search Console and Google Analytics. Search Console data can include accessible properties and permission levels, queries and page URLs, clicks, impressions, click-through rates, average positions, dates, countries, devices, sitemaps, and URL inspection results. Analytics data can include accessible GA4 account and property details and aggregate reports such as active users, sessions, page views, key events, dates, and traffic sources.",
-            "You choose the properties to use in a project. Available features depend on the permissions you grant and the properties your Google account can access. These permissions do not let getaudit change your Search Console or Analytics configuration, and the connection does not request access to Gmail, Drive, or Contacts."
+            "Google sign-in opens in your browser. With your permission, getaudit receives your Google account identifier, name, and email to display the connected account and associate its connections with the right identity. The signed identity token can also contain other standard Google identity claims. getaudit does not receive your Google password. Google sign-in and GA4 remain in testing. The public Mac preview does not provide Google sign-in or GA4 connections.",
+            "Search Console reads can include accessible properties and permission levels, queries and page URLs, clicks, impressions, click-through rates, average positions, dates, countries, devices, sitemaps, and URL inspection results. GA4 reads can include accessible account and property details and aggregate active users, sessions, page views, key events, dates, and traffic sources.",
+            "These are Google account authorization scopes, not an OAuth grant restricted to one website. Access still depends on what you approve and which properties your account can access. You choose the property to associate with a getaudit project; that app-level choice does not narrow the Google grant itself. The requested permissions do not allow changing Search Console or Analytics settings and do not include Gmail, Drive, or Contacts.",
+            "Restoring an enabled connection, refreshing its token, and listing accessible properties can contact Google in the background. Managed connections use a project opt-in for automatic Search Console reads; older Search Console connections can retain their earlier automatic-read setting. GA4 report reads are started in its workspace. A refresh or cache interval is not a deletion period.",
+            "The combined Google data connection requests the following five permissions; identity-only and legacy Search Console sign-ins can request a smaller subset. Search Console and Analytics permissions are read-only:"
+          ],
+          "scopes": [
+            {
+              "scope": "openid",
+              "purpose": "Verify the Google identity used to sign in."
+            },
+            {
+              "scope": "email",
+              "purpose": "Identify and display the connected Google email address."
+            },
+            {
+              "scope": "profile",
+              "purpose": "Display basic account details such as your name."
+            },
+            {
+              "scope": "https://www.googleapis.com/auth/webmasters.readonly",
+              "purpose": "Read the Search Console information your account is allowed to access."
+            },
+            {
+              "scope": "https://www.googleapis.com/auth/analytics.readonly",
+              "purpose": "Read the Analytics account, property, and report information your account is allowed to access."
+            }
+          ],
+          "links": [
+            {
+              "id": "google-scopes",
+              "label": "Google OAuth scope reference",
+              "href": "https://developers.google.com/identity/protocols/oauth2/scopes"
+            }
           ]
         },
         {
           "id": "google-use",
           "title": "What we use Google data for",
           "paragraphs": [
-            "getaudit uses the Google data you authorize to show your search and analytics results, save dated evidence, help you identify research opportunities, and prepare the comparisons, analyses, and reports you request. Authorizing Google access alone does not start an AI analysis or publish your data.",
-            "Our handling of Google API data, including derived information, is subject to the Google API Services User Data Policy and its Limited Use requirements. We do not sell Google user data, use it for advertising or credit decisions, or use it to train or fine-tune general-purpose AI models. We do not give people access to read it except with your agreement to specific support access, when necessary for security, or when required by law. Optional transfers for the features below occur at your direction."
+            "getaudit uses authorized Google data to display your search and traffic results, save dated observations, identify research opportunities, and produce the comparisons, analyses, and reports you request. Connecting Google alone does not start external AI analysis, authorize an Agent, or publish your data.",
+            "We follow the Google API Services User Data Policy, including its Limited Use requirements, when using or transferring Google data and information derived from it. These limits also cover aggregated or anonymized derivatives. We do not sell this information, use or transfer it for advertising or credit decisions, or use it to train or fine-tune general-purpose AI models.",
+            "Selected Google-derived information is shared for the analysis you request or with an Agent you explicitly authorize, and only as needed for those disclosed features. Processing necessary for security or legal requirements is separate. Our team does not routinely read your Google data; access to specific data for support requires your agreement, except where security or law requires otherwise."
+          ],
+          "links": [
+            {
+              "id": "google-user-data",
+              "label": "Google API Services User Data Policy and Limited Use",
+              "href": "https://developers.google.com/terms/api-services-user-data-policy"
+            }
           ]
         },
         {
           "id": "research-services",
           "title": "Searches and research services you choose",
           "paragraphs": [
-            "When you run collection, the selected service receives the questions or search terms and the request settings needed to answer them. Optional API connections include OpenAI, Google Gemini, Anthropic, Perplexity, and DataForSEO. Public page research also sends requests to the websites being inspected. Those services receive normal connection information, such as your IP address, and process requests under their own terms and privacy policies.",
-            "Browser collection uses separate temporary browser sessions rather than your personal browser profile. Strict guest collection does not reuse a prepared signed-in session. If you choose a supported signed-in mode, you sign in within its separate session. The visited platforms can use cookies and session storage there. Their account, request retention, and training settings are separate from the getaudit website's cookie practices.",
-            "For applicable scans that verify egress country, the desktop app contacts Cloudflare’s /cdn-cgi/trace service. Cloudflare receives ordinary connection data, including the network IP address. The app uses the returned IP to derive a plan-specific fingerprint; the saved egress proof contains country, check time and fingerprint, rather than a raw IP field."
+            "When you run collection, the selected service receives the questions or search terms and the settings needed for your request. Optional API connections include OpenAI, Google Gemini, Anthropic, Perplexity, and DataForSEO. Public page research also contacts the websites you inspect. Those services receive ordinary connection information, such as your IP address, and apply their own terms and privacy practices.",
+            "Browser collection is separate from your personal Chrome profile. The public Mac Community 0.4.22 build uses job-specific temporary browser sessions. Some other getaudit builds support app-owned, per-platform saved sign-ins. In those builds, a saved profile can retain platform cookies and login state until you use Forget saved login for that platform.",
+            "Strict guest collection does not read saved signed-in profiles. A supported signed-in mode uses its own separate session. The visited platform can store cookies or session information there; its account, request-retention, and training settings are separate from the getaudit website cookie policy.",
+            "For scans that verify egress country, the desktop app contacts Cloudflare’s /cdn-cgi/trace service. Cloudflare receives ordinary connection data, including the network IP address. The app derives a plan-specific fingerprint from the returned IP; the saved egress proof contains country, check time, and fingerprint rather than a raw IP field."
           ]
         },
         {
           "id": "ai-analysis",
           "title": "Optional AI analysis",
           "paragraphs": [
-            "When you request an AI interpretation of collected answers, getaudit sends the selected questions, answer excerpts, and research context to the configured OpenAI API. Keyword audits send the selected search terms to DataForSEO and send the selected keywords, their Search Console average positions, relevant URLs, and page excerpts to your selected OpenAI or Anthropic model. Model inputs and outputs can also be saved in your local research history.",
-            "These requests provide the analysis you choose. getaudit does not operate a model-training service. A provider's processing, retention, location, and account settings can differ, and requests may be processed outside your country. Review them before sending confidential material. Use Google-derived data only with services and settings that keep its use within the disclosed analysis and Google's Limited Use requirements. A request setting that disables response storage does not establish that every provider log or retention period is disabled."
+            "When you request an AI interpretation of collected answers, getaudit sends selected questions, answer excerpts, and research context to the configured OpenAI API. Keyword audits send selected GSC-derived search terms and market, language, and device conditions to DataForSEO. For your chosen OpenAI or Anthropic analysis, the prompt can include the selected keywords, Search Console average positions, your relevant URLs, competitor URLs, and page excerpts. Model inputs and outputs can also remain in your local research history.",
+            "These requests provide the analysis you choose. External providers can have different processing locations, retention periods, and account or training settings, which getaudit has not verified for every user-selected provider or Agent. These differences do not permit using or transferring Google-derived information to train general-purpose models. A user opt-in or a provider’s policy does not replace the Limited Use restrictions. If a chosen provider or Agent cannot meet those restrictions, do not send Google-derived information to it. Check the provider and account settings before sending confidential material.",
+            "Where an OpenAI request uses store: false, that setting disables storage of the response object for that API feature. It does not establish that every provider log, security record, or retention period is disabled. Sending data to an external provider and removing the local copy are different actions."
           ]
         },
         {
           "id": "agents",
           "title": "Agents get the access you grant",
           "paragraphs": [
-            "You can explicitly authorize a compatible third-party agent or MCP client with a project-scoped access key. Its default permission is read-only and covers selected supported GSC/GEO findings and context, including saved Search Console performance, citation and coverage information. Current Agent tools do not expose GA4 data, full original captures, screenshots, artifacts or browser sessions. You can separately allow appending an analysis; through this connection, that permission does not allow changing source evidence, starting collection or paid work, editing your website, or publishing.",
-            "An Agent or MCP client may run locally. If it uses an external AI service, the selected findings it is authorized to read may be sent to that service under its data policies. Choose the client and its permissions carefully. You can revoke the key to stop further access; revocation does not remove information the client has already received."
+            "The project-scoped Agent interface uses an access key you explicitly create for selected projects. Its default permission is read-only and covers selected supported GSC/GEO findings and context, including saved Search Console performance, citation and coverage information. Current Agent tools do not expose GA4 data, full original captures, screenshots, artifacts or browser sessions. You can separately allow appending an analysis; through this connection, that permission does not allow changing source evidence, starting collection or paid work, editing your website, or publishing.",
+            "The local MCP interface returns supported findings you authorize; it does not itself call an external model. Your chosen Agent or MCP client may run locally and may call an external AI service according to its own configuration. If it does, selected findings it reads can leave your device under that service’s policies. Choose the client and permissions carefully. Revoking its key stops further access through that key, but does not remove copies already received.",
+            "A separate legacy GSC/MCP connection can expose a broader set of saved Search Console queries, pages, daily data, inspection results, and related notes or settings. Its key is separate from project-scoped Agent keys. Review which connection you are authorizing instead of assuming they have the same data scope."
           ]
         },
         {
@@ -83,24 +125,65 @@
           "title": "How local storage is protected",
           "paragraphs": [
             "The packaged desktop app uses operating-system-backed encryption for saved connection credentials and Google session tokens. Short-lived Google access tokens are used in memory for API requests. Google authorization uses a browser return to the local app, PKCE, state and nonce checks, and signed identity-token verification. External API requests use HTTPS.",
-            "The local evidence database, reports, screenshots, and database backups are not all encrypted by getaudit. Their protection also depends on your computer, user account, disk encryption, backup settings, and any location where you copy them. Do not share connection files, agent keys, passwords, or access tokens with a report or support request."
+            "The local evidence database, reports, screenshots, and database backups are not all encrypted by getaudit. Their protection also depends on your computer, user account, disk encryption, backup settings, and any location where you copy them. Do not share connection files, agent keys, passwords, or access tokens with a report or support request. Google account identifiers associated with project or GA4 selections can also remain in the ordinary SQLite ledger. Queries, URLs, names, and notes may themselves contain personal information; credential redaction is not a guarantee of anonymization."
           ]
         },
         {
           "id": "controls",
-          "title": "Disconnecting and deleting are different",
+          "title": "Sign out, revoke access, or delete data",
           "paragraphs": [
-            "Signing out of Google in getaudit removes the current Google session from the app's saved connection storage and stops that connection from making new reads. It does not erase saved research, exports, or backups, sign you out of Google in your browser, or revoke the grant held by Google. You can remove getaudit's access separately through your Google Account connections settings.",
-            "Deleting a project in the app is a restorable action that hides it from active work. It does not permanently erase its evidence history. Uninstalling the app may also leave local application data behind.",
-            "To erase a local workspace completely, its stored application data and any copies, exports, backups, or separately retained files need to be removed. Contact us if you need help locating those records. Removing local data does not delete the original data held by Google or another provider."
+            "When Sign out in getaudit succeeds, it clears the current managed Google identity and refresh session from saved connection storage. It does not revoke Google’s authorization, sign you out in your browser, or disconnect a separately saved legacy Search Console grant. Saved GSC and GA4 snapshots remain in the local ledger; hiding the signed-out GA4 view does not erase its stored records.",
+            "Google sign-out does not revoke Agent access keys, a legacy MCP key, or report share links. An Agent you previously authorized may still read supported saved GSC-derived findings. Those permissions and links must be managed separately.",
+            "Deleting a project in the app is restorable and does not permanently erase its evidence history. Removing the application itself can also leave local records behind. To remove access and records, choose the actions that apply below."
+          ],
+          "steps": [
+            {
+              "id": "revoke-google",
+              "title": "Remove Google access at Google",
+              "paragraphs": [
+                "If you connected Google, open your Google Account connections, review getaudit, and remove its Google-data access. Use Sign out in getaudit as well to clear the managed local session. Revoke any separately authorized legacy Search Console grant at Google too. Its saved local credentials may need separate cleanup; contact {{contactEmail}} if you need help identifying them. Revocation does not recall data already saved."
+              ],
+              "links": [
+                {
+                  "id": "google-connections",
+                  "label": "Open Google Account connections",
+                  "href": "https://myaccount.google.com/connections"
+                }
+              ]
+            },
+            {
+              "id": "revoke-other-access",
+              "title": "Review other keys, shares, and saved sign-ins",
+              "paragraphs": [
+                "Use Revoke key for each Agent key you no longer want to allow. The separate Revoke access control in legacy GSC/MCP settings manages a legacy MCP key; it is not Google authorization revocation. Disable report share links separately. In a build with saved browser sign-ins, use Forget saved login for each relevant platform. These actions do not delete copies already received by an Agent, recipient, or provider."
+              ]
+            },
+            {
+              "id": "remove-local-workspace",
+              "title": "Remove the local Mac Community workspace",
+              "paragraphs": [
+                "To confirm your build’s location first, use the Open data folder menu in getaudit. Decide whether to keep a private backup, finish your work, and Quit getaudit before copying or removing workspace files. Closing the window alone can leave background work running; use Quit.",
+                "The default data folder for the public Mac Community build is ~/Library/Application Support/getaudit Community/. In Finder, choose Go → Go to Folder, enter that path, and remove that folder if you want to remove its local workspace. For permanent removal, also delete that folder from the Trash when you are certain.",
+                "Remove any exports, reports, backups, or copies you saved elsewhere if you no longer want them retained; system or cloud backups need their own cleanup. Older installations and custom configurations may use a different data folder. Use Open data folder or contact {{contactEmail}} to confirm it before deleting anything."
+              ]
+            },
+            {
+              "id": "request-operator-deletion",
+              "title": "Ask us about information we hold",
+              "paragraphs": [
+                "Email {{contactEmail}} to request access, correction, or deletion of information we hold, such as support correspondence. We may need enough information to verify and locate the request. We cannot remotely erase files stored only on your computer or delete records held by Google or another provider. Removing your local workspace does not remove the original data at those services."
+              ]
+            }
           ]
         },
         {
           "id": "retention-support",
           "title": "Retention and support",
           "paragraphs": [
-            "Saved research is retained locally as an evidence history; the app does not apply an automatic expiry period to those records. Your own backups and copies have their own lifecycle. External providers and the website host apply their own retention practices.",
-            "If you email us, we receive the contact details and content you choose to send. We use them to respond and handle the request. Privacy questions and requests to access, correct, or delete information we hold can be sent to {{contactEmail}}. We may need enough information to verify and locate your request. We cannot remotely erase a workspace that exists only on your computer."
+            "Managed Google identity and refresh-session data are retained locally while that connection is saved. A successful Sign out clears that managed session, while a separately stored legacy Search Console grant needs its own disconnection. Revoking access at Google and removing local saved credentials are separate controls. Account identifiers stored with project or GA4 records may remain in the local ledger until the relevant local data is removed.",
+            "Search and analytics snapshots, the local SQLite ledger, answers, citations, reports, and research history have no automatic expiry in getaudit. Google sign-out or a restorable project deletion does not remove those records. Exports and backups have their own lifecycle and need to be removed separately.",
+            "Per-job temporary browser sessions in the public Community build are different from saved platform login profiles in builds that support them. A saved profile is retained until you explicitly forget it or remove the relevant local data. External providers and website hosts set their own retention practices.",
+            "If you email support, we receive the address and content you choose to send. We keep what is reasonably needed to respond, resolve the request, and meet applicable security or legal obligations. You can ask us to delete information we hold by emailing {{contactEmail}}. Do not send passwords, tokens, or private account exports."
           ]
         },
         {
@@ -162,7 +245,22 @@
           "label": "Email {{contributorLabel}} about privacy",
           "href": "mailto:{{contactEmail}}"
         }
-      ]
+      ],
+      "quickLinks": [
+        {
+          "id": "google-access",
+          "label": "Google data and permissions"
+        },
+        {
+          "id": "google-use",
+          "label": "Google data use"
+        },
+        {
+          "id": "controls",
+          "label": "Revoke access or delete data"
+        }
+      ],
+      "quickLinksLabel": "Privacy shortcuts"
     },
     "zh-CN": {
       "title": "隐私政策模板",
@@ -194,42 +292,84 @@
           "id": "google-access",
           "title": "连接 Google 时会读取什么",
           "paragraphs": [
-            "Google 登录在浏览器中完成。经你授权，getaudit 会收到 Google 账户标识、姓名和邮箱，用来显示当前账户，并让连接与正确的账户对应。getaudit 不会收到你的 Google 密码。 包括 GA4 流量分析在内的统一 Google 连接目前仍在测试。",
-            "连接会请求 Google Search Console 和 Google Analytics 的只读权限。Search Console 数据可能包括你可访问的资源及其权限级别、查询词和页面网址、点击量、展示量、点击率、平均排名、日期、国家或地区、设备、站点地图及网址检查结果。Analytics 数据可能包括你可访问的 GA4 账户和资源信息，以及活跃用户数、会话数、浏览量、关键事件、日期、流量来源等汇总报告。",
-            "你可以为项目选择要使用的资源。能用哪些功能，取决于你实际授予的权限和 Google 账户本身可访问的资源。这些权限不允许 getaudit 修改 Search Console 或 Analytics 配置，也不请求 Gmail、云端硬盘或通讯录权限。"
+            "Google 登录在浏览器中完成。经你授权，getaudit 会收到 Google 账户标识、姓名和邮箱，用来显示当前账户，并让连接与正确的身份对应。签名身份令牌中也可能包含其他标准 Google 身份字段。getaudit 不会收到你的 Google 密码。Google 登录与 GA4 仍在测试，公开 Mac 预览版暂不提供这两项连接。",
+            "Search Console 数据可能包括你可访问的资源及权限级别、查询词和页面网址、点击量、展示量、点击率、平均排名、日期、国家或地区、设备、站点地图和网址检查结果。GA4 数据可能包括可访问的账户与资源信息，以及活跃用户数、会话数、浏览量、关键事件、日期和流量来源等汇总报告。",
+            "这些是 Google 账户层面的授权范围，并非只针对某一个网站的 OAuth 授权。实际可读内容仍取决于你的授权，以及账户能访问哪些资源。你可以为 getaudit 项目选择资源，但这项程序内的选择不会缩小 Google 授权本身的范围。这些权限不允许修改 Search Console 或 Analytics 设置，也不包含 Gmail、云端硬盘或通讯录权限。",
+            "恢复已启用的连接、刷新令牌或列出可访问资源时，程序可能在后台请求 Google。统一连接的 Search Console 自动读取需要按项目开启；旧版 Search Console 连接可能保留以前的自动读取设置。GA4 报告由你在相应工作区发起读取。刷新或缓存间隔，不等于数据删除期限。",
+            "统一 Google 数据连接会请求以下五项权限；仅身份登录或旧版 Search Console 登录可能只请求其中一部分。Search Console 和 Analytics 权限均为只读："
+          ],
+          "scopes": [
+            {
+              "scope": "openid",
+              "purpose": "验证登录所用的 Google 身份。"
+            },
+            {
+              "scope": "email",
+              "purpose": "识别并显示当前连接的 Google 邮箱。"
+            },
+            {
+              "scope": "profile",
+              "purpose": "显示姓名等基本账户信息。"
+            },
+            {
+              "scope": "https://www.googleapis.com/auth/webmasters.readonly",
+              "purpose": "读取该账户有权访问的 Search Console 信息。"
+            },
+            {
+              "scope": "https://www.googleapis.com/auth/analytics.readonly",
+              "purpose": "读取该账户有权访问的 Analytics 账户、资源和报表信息。"
+            }
+          ],
+          "links": [
+            {
+              "id": "google-scopes",
+              "label": "Google OAuth 权限范围说明",
+              "href": "https://developers.google.com/identity/protocols/oauth2/scopes"
+            }
           ]
         },
         {
           "id": "google-use",
           "title": "Google 数据用在哪里",
           "paragraphs": [
-            "getaudit 使用你授权的 Google 数据来展示搜索与分析结果、保存带日期的证据、帮助寻找值得研究的机会，并生成你请求的对比、分析和报告。仅仅授权 Google 连接，不会自动启动 AI 分析或公开你的数据。",
-            "我们对 Google API 数据及其衍生信息的处理遵循《Google API 服务用户数据政策》及其中的“有限使用”要求。我们不出售 Google 用户数据，不将其用于广告或信用决策，也不用它训练或微调通用 AI 模型。除非你同意针对具体数据提供支持访问、确有安全需要，或法律要求，否则我们不会让人员读取这些数据。下文所述可选功能涉及的数据传输，由你选择发起。"
+            "getaudit 使用你授权的 Google 数据展示搜索和访问结果、保存带日期的观察记录、研究可改进的机会，并生成你请求的对比、分析和报告。连接 Google 本身，不会自动启动外部 AI 分析、授权 Agent 或公开你的数据。",
+            "我们在使用或传输 Google 数据及其衍生信息时，遵循《Google API 服务用户数据政策》及其中的“有限使用”（Limited Use）要求。这些限制也适用于汇总或匿名化后的衍生信息。我们不出售这些信息，不将其用于广告或信用决策，也不将其用于训练或微调通用 AI 模型。",
+            "选定的 Google 衍生信息，只为你发起的分析、你明确授权的 Agent，以及这些已披露功能所需的处理而传输。安全或法律要求下的必要处理另行适用。我们不会例行阅读你的 Google 数据；因支持问题查看具体内容，需要先征得你的同意，安全或法律另有要求的情况除外。"
+          ],
+          "links": [
+            {
+              "id": "google-user-data",
+              "label": "Google API 服务用户数据政策与有限使用要求",
+              "href": "https://developers.google.com/terms/api-services-user-data-policy"
+            }
           ]
         },
         {
           "id": "research-services",
           "title": "你选择的搜索与研究服务",
           "paragraphs": [
-            "你启动采集后，所选服务会收到相关问题或搜索词，以及完成请求所需的设置。可选 API 服务包括 OpenAI、Google Gemini、Anthropic、Perplexity 和 DataForSEO。读取公开网页时，也会向被研究的网站发出请求。这些服务会收到 IP 地址等正常连接信息，并按各自的条款和隐私政策处理请求。",
-            "浏览器采集使用独立的临时会话，不读取你的个人浏览器资料。严格免登录采集不会复用准备好的登录会话。如果你选择受支持的登录模式，需要在其独立会话中登录。访问的平台可能在该会话里使用 Cookie 和会话存储；其账户、请求保留和模型训练设置，与 getaudit 产品网站的 Cookie 做法是两回事。",
-            "需要核验网络出口国家的扫描，会由桌面程序请求 Cloudflare 的 /cdn-cgi/trace 服务。Cloudflare 会收到包括网络 IP 地址在内的常规连接信息。程序根据返回的 IP 计算该采集计划专属的指纹；保存的出口核验记录包含国家、核验时间和指纹，不含原始 IP 字段。"
+            "你启动采集后，所选服务会收到相关问题、搜索词和完成请求所需的设置。可选 API 服务包括 OpenAI、Google Gemini、Anthropic、Perplexity 和 DataForSEO。研究公开网页时，也会向相关网站发出请求。这些服务会收到 IP 地址等常规连接信息，并按各自的条款和隐私规则处理请求。",
+            "浏览器采集与个人 Chrome 资料分开。公开 Mac Community 0.4.22 版本为每项任务使用独立的临时浏览器会话。部分其他 getaudit 版本支持由程序独立管理的平台登录资料；这些版本可能保留该平台的 Cookie 和登录状态，直到你针对该平台选择“忘记已保存的登录”（Forget saved login）。",
+            "严格免登录采集不会读取已保存的登录资料。受支持的登录模式使用其独立会话。访问的平台可能在其中保存 Cookie 或会话信息；平台账户、请求保留和训练设置，与 getaudit 产品网站的 Cookie 做法是两回事。",
+            "需要核验网络出口国家的扫描，会由桌面程序请求 Cloudflare 的 /cdn-cgi/trace 服务。Cloudflare 会收到包括网络 IP 在内的常规连接信息。程序根据返回的 IP 计算该采集计划专属的指纹；保存的出口核验记录包含国家、核验时间和指纹，不含原始 IP 字段。"
           ]
         },
         {
           "id": "ai-analysis",
           "title": "按需使用 AI 分析",
           "paragraphs": [
-            "你请求 AI 解读已采集的回答时，getaudit 会将所选问题、回答摘录和研究上下文发送到已配置的 OpenAI API。关键词审计会将所选搜索词发送给 DataForSEO，并将所选关键词、对应的 Search Console 平均排名、相关网址和网页摘录发送给你选择的 OpenAI 或 Anthropic 模型。模型输入和输出也可能保存在本机研究记录中。",
-            "这些请求只为完成你选择的分析；getaudit 不提供模型训练服务。不同服务商的数据处理、保留期限、处理地点和账户设置可能不同，请求也可能在你所在国家或地区以外处理。发送机密内容前，请先了解相应规则。涉及 Google 衍生数据时，应选择将数据用途限定在已披露分析范围内、符合 Google“有限使用”要求的服务和设置。即使请求关闭了响应存储，也不代表服务商的所有日志或数据保留机制都已关闭。"
+            "你请求 AI 解读已采集的回答时，getaudit 会把选定的问题、回答摘录和研究上下文发送给配置好的 OpenAI API。关键词审计会把选定的 GSC 衍生搜索词，以及市场、语言和设备条件发送给 DataForSEO。你选择 OpenAI 或 Anthropic 进行分析时，提示内容可能包括选定关键词、Search Console 平均排名、你的网站相关网址、竞争页面网址和网页摘录。模型输入和输出也可能保存在本机研究历史中。",
+            "这些请求用于完成你选择的分析。外部服务商的处理地点、保留期限、账户设置和训练设置可能不同；getaudit 尚未核验所有用户自选的服务商或 Agent 配置。这些差异不代表可以使用或传输 Google 衍生信息来训练通用模型。用户勾选同意或服务商自身的政策，都不能替代有限使用要求。如果所选服务商或 Agent 无法满足这些限制，请不要向它发送 Google 衍生信息。发送机密内容前，请检查服务商与账户设置。",
+            "OpenAI 请求采用 store: false 时，只是关闭该 API 功能对响应对象的存储，并不代表服务商的全部日志、安全记录或数据保留期限都被关闭。向外部服务发送数据，与删除本地副本，是不同的操作。"
           ]
         },
         {
           "id": "agents",
           "title": "智能体按你授予的权限访问",
           "paragraphs": [
-            "你可以创建限定项目范围的访问密钥，明确授权兼容的第三方 Agent 或 MCP 客户端。默认权限为只读，范围限于选定且受支持的 GSC/GEO 研究结果和相关上下文，包括已保存的 Search Console 效果、引用及覆盖信息。当前 Agent 工具不提供 GA4 数据、完整原始采集内容、截图、采集附件或浏览器会话。你可以另外允许追加分析；通过这项连接，这项权限不允许修改原始证据、启动采集或付费任务、修改网站或发布内容。",
-            "Agent 或 MCP 客户端可以在本机运行。使用外部 AI 服务时，获准读取的内容可能按该服务的数据政策发送过去。请自行选择客户端并控制权限。撤销密钥可以阻止后续访问，但不会删除客户端已经收到的信息。"
+            "限定项目范围的 Agent 接口使用你明确创建的访问密钥，只授权选定项目。默认权限为只读，范围限于选定且受支持的 GSC/GEO 研究结果和相关上下文，包括已保存的 Search Console 效果、引用及覆盖信息。当前 Agent 工具不提供 GA4 数据、完整原始采集内容、截图、采集附件或浏览器会话。你可以另外允许追加分析；通过这项连接，这项权限不允许修改原始证据、启动采集或付费任务、修改网站或发布内容。",
+            "本地 MCP 接口只返回你授权读取且受支持的研究结果，本身不调用外部模型。你选择的 Agent 或 MCP 客户端可以在本机运行，也可能按自身配置调用外部 AI 服务。此时，它读取的选定结果可能按该服务的数据政策离开你的设备。请自行选择客户端并控制权限。撤销密钥会阻止继续通过该密钥访问，但不会删除已经收到的副本。",
+            "另有独立的旧版 GSC/MCP 连接，可提供范围更广的已保存 Search Console 查询、页面、每日数据、网址检查结果，以及相关笔记或设置。它的密钥与限定项目的 Agent 密钥不同。授权前请核对所用连接，不要把两者的数据范围视为相同。"
           ]
         },
         {
@@ -244,24 +384,65 @@
           "title": "本机数据如何受到保护",
           "paragraphs": [
             "打包的桌面应用通过操作系统提供的加密能力保存连接凭据和 Google 会话令牌。短期 Google 访问令牌在内存中用于 API 请求。Google 授权通过浏览器回到本机应用，并使用 PKCE、state 和 nonce 检查及身份令牌签名验证。外部 API 请求使用 HTTPS。",
-            "本机证据数据库、报告、截图和数据库备份，并非都由 getaudit 加密。它们的安全还取决于你的电脑、用户账户、磁盘加密、备份设置，以及你复制文件到的其他位置。分享报告或提交支持请求时，请勿附带连接文件、智能体密钥、密码或访问令牌。"
+            "本机证据数据库、报告、截图和数据库备份，并非都由 getaudit 加密。它们的安全还取决于你的电脑、用户账户、磁盘加密、备份设置，以及你复制文件到的其他位置。分享报告或提交支持请求时，请勿附带连接文件、智能体密钥、密码或访问令牌。与项目或 GA4 资源选择关联的 Google 账户标识，也可能保留在普通 SQLite 账本中。查询词、网址、姓名和笔记本身可能含有个人信息；隐藏已识别凭据，不代表全部内容都已匿名化。"
           ]
         },
         {
           "id": "controls",
-          "title": "断开连接，不等于删除历史",
+          "title": "退出登录、撤销授权与删除数据",
           "paragraphs": [
-            "在 getaudit 中退出 Google，会从应用保存的连接信息中移除当前 Google 会话，并停止使用该连接读取新数据。它不会清除已保存的研究、导出文件或备份，也不会让浏览器退出 Google，或撤销 Google 端保留的授权。你可以另外前往 Google 账户的连接设置，移除 getaudit 的访问权限。",
-            "在应用中删除项目，是可以恢复的操作：项目会从当前工作中隐藏，证据历史不会被永久擦除。卸载应用后，本机应用数据也可能仍然存在。",
-            "如需完整清除本机工作区，需要删除应用存储的数据，以及另行保留的副本、导出文件、备份等。找不到这些记录时，可以联系我们获取帮助。删除本机数据，不会删除 Google 或其他服务商持有的原始数据。"
+            "在 getaudit 中成功“退出登录”（Sign out）后，会从保存的连接信息中清除当前由程序管理的 Google 身份和刷新会话。它不会撤销 Google 端的授权、让浏览器退出 Google，或断开另行保存的旧版 Search Console 授权。本地账本仍保留 GSC 和 GA4 快照；退出后不再显示 GA4 页面，并不等于删除其中保存的记录。",
+            "退出 Google 不会撤销 Agent 访问密钥、旧版 MCP 密钥或报告分享链接。之前获准访问的 Agent，仍可能读取受支持的已保存 GSC 衍生结果。这些权限和链接需要分别管理。",
+            "程序内删除项目可以恢复，不会永久擦除证据历史。卸载应用也可能留下本地记录。如需移除访问或记录，请按实际需要完成以下操作。"
+          ],
+          "steps": [
+            {
+              "id": "revoke-google",
+              "title": "在 Google 端移除访问权限",
+              "paragraphs": [
+                "如果曾连接 Google，请打开 Google 账户连接页面，找到 getaudit，移除它读取 Google 数据的权限。同时在 getaudit 中“退出登录”，清除程序管理的本地会话。另行授权的旧版 Search Console 连接，也需要在 Google 端撤销；本地保存的旧凭据可能还需单独清理，找不到时可联系 {{contactEmail}} 协助核对。撤销授权不会收回已经保存的数据。"
+              ],
+              "links": [
+                {
+                  "id": "google-connections",
+                  "label": "打开 Google 账户连接",
+                  "href": "https://myaccount.google.com/connections"
+                }
+              ]
+            },
+            {
+              "id": "revoke-other-access",
+              "title": "分别检查密钥、分享和平台登录",
+              "paragraphs": [
+                "对不再需要的 Agent 密钥选择“撤销密钥”（Revoke key）。旧版 GSC/MCP 设置中的“撤销访问”（Revoke access），是管理旧版 MCP 密钥的独立控制项，不等于撤销 Google 授权。报告分享链接也需要单独停用。如果所用版本支持保存平台登录，还要为相应平台选择“忘记已保存的登录”（Forget saved login）。这些操作不会删除 Agent、接收者或服务商已经收到的副本。"
+              ]
+            },
+            {
+              "id": "remove-local-workspace",
+              "title": "删除本机 Mac Community 工作区",
+              "paragraphs": [
+                "如需先核对当前版本的数据位置，可使用 getaudit 菜单中的“打开数据文件夹”（Open data folder）。先决定是否保留私人备份，结束正在进行的工作，并退出 getaudit；复制或删除工作区文件前，请确保应用已退出。只关窗口可能仍有后台任务运行，请使用“退出”。",
+                "公开 Mac Community 版本的默认数据文件夹为 ~/Library/Application Support/getaudit Community/。在访达中选择“前往”→“前往文件夹”，输入这个路径；确定要移除本地工作区时，再删除该文件夹。需要永久移除时，请在确认后也从废纸篓中删除这个文件夹。",
+                "如果不想继续保留，另行删除存放在其他位置的导出文件、报告、备份和副本；系统或云端备份需要另外清理。旧安装和自定义配置可能使用不同的数据目录。删除前，请通过“打开数据文件夹”或联系 {{contactEmail}} 核对，避免误删。"
+              ]
+            },
+            {
+              "id": "request-operator-deletion",
+              "title": "申请删除我们持有的信息",
+              "paragraphs": [
+                "你可以发送邮件至 {{contactEmail}}，申请访问、更正或删除我们持有的信息，例如支持邮件。为核实并找到对应记录，我们可能需要必要的信息。我们无法远程擦除仅保存在你电脑上的文件，也不能删除 Google 或其他服务商持有的记录。移除本地工作区，不会删除这些服务中的原始数据。"
+              ]
+            }
           ]
         },
         {
           "id": "retention-support",
           "title": "数据保留与联系我们",
           "paragraphs": [
-            "已保存的研究会作为证据历史保留在本机，应用不会自动在固定期限后将其清除。你另行保存的备份和副本由你管理。外部服务商和网站托管方则采用各自的数据保留规则。",
-            "如果你发送邮件给我们，我们会收到你主动提供的联系方式和邮件内容，并用它们回复、处理相关请求。隐私问题，以及针对我们所持信息的访问、更正或删除请求，请发送至 {{contactEmail}}。为核实和定位请求，我们可能需要你提供必要的信息。仅保存在你电脑上的工作区，我们无法远程替你删除。"
+            "由程序管理的 Google 身份和刷新会话会随连接保存在本机。成功“退出登录”后会清除这部分会话；另行保存的旧版 Search Console 授权需要单独断开。在 Google 端撤销访问，与移除本地保存的凭据，是不同的控制项。随项目或 GA4 记录保存的账户标识，仍可能留在本地账本中，直到相应本地数据被移除。",
+            "搜索和流量快照、本地 SQLite 账本、回答、引用、报告及研究历史，在 getaudit 中没有自动过期机制。退出 Google 或可恢复的项目删除，不会移除这些记录。导出文件与备份有各自的保留周期，需要另外删除。",
+            "公开 Community 版本按任务创建的临时浏览器会话，与部分版本支持的平台登录资料不同。保存的登录资料会保留到你明确忘记该登录，或移除相关本地数据。外部服务商和网站托管方则适用各自的数据保留规则。",
+            "如果你联系支持，我们会收到你主动提供的邮箱和邮件内容，只保留回复、解决请求，以及履行适用安全或法律义务所合理需要的信息。你可以发送邮件至 {{contactEmail}}，申请删除我们持有的内容。请勿发送密码、令牌或私人账户导出文件。"
           ]
         },
         {
@@ -323,7 +504,22 @@
           "label": "通过邮件联系 {{contributorLabel}} 处理隐私问题",
           "href": "mailto:{{contactEmail}}"
         }
-      ]
+      ],
+      "quickLinks": [
+        {
+          "id": "google-access",
+          "label": "Google 数据与权限"
+        },
+        {
+          "id": "google-use",
+          "label": "Google 数据用途"
+        },
+        {
+          "id": "controls",
+          "label": "撤销访问或删除数据"
+        }
+      ],
+      "quickLinksLabel": "隐私快捷导航"
     }
   }
 }

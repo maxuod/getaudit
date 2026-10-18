@@ -69,6 +69,35 @@ assertion(privacy.includes('Google API Services User Data Policy'),'The Google p
 for(const field of ['title','intro','sections','links'])assertion(policy.locales.en[field]&&policy.locales['zh-CN'][field],`Missing policy field: ${field}`);
 assertion(JSON.stringify(policy.locales.en.sections.map(s=>s.id))===JSON.stringify(policy.locales['zh-CN'].sections.map(s=>s.id)),'Policy section IDs differ between languages.');
 assertion(JSON.stringify(policy.locales.en.links.map(l=>l.href))===JSON.stringify(policy.locales['zh-CN'].links.map(l=>l.href)),'Policy resource links differ between languages.');
+const expectedGoogleScopes=['openid','email','profile','https://www.googleapis.com/auth/webmasters.readonly','https://www.googleapis.com/auth/analytics.readonly'];
+assertion(readFileSync('src/policy.js','utf8')===readFileSync('dist/assets/policy.js','utf8'),'The static and language-switch privacy renderer must stay identical.');
+const policyRenderer=await import('../src/policy.js');
+assertion(JSON.stringify(Object.keys(policy.locales.en).sort())===JSON.stringify(Object.keys(policy.locales['zh-CN']).sort()),'Privacy locale structures must match.');
+for(const lang of ['en','zh-CN']){
+ const document=policy.locales[lang],byId=Object.fromEntries(document.sections.map(section=>[section.id,section]));
+ assertion(document.sections.length===12,`Keep the established privacy section identities: ${lang}`);
+ assertion(JSON.stringify(byId['google-access'].scopes.map(item=>item.scope))===JSON.stringify(expectedGoogleScopes),`The combined Google scopes must be exact, complete, and read-only: ${lang}`);
+ assertion(byId['google-access'].scopes.every(item=>typeof item.purpose==='string'&&item.purpose.length>5),`Every Google scope needs a localized purpose: ${lang}`);
+ assertion(JSON.stringify(byId.controls.steps.map(step=>step.id))===JSON.stringify(['revoke-google','revoke-other-access','remove-local-workspace','request-operator-deletion']),`Revocation and local removal must remain separate executable steps: ${lang}`);
+ assertion(byId.controls.steps.every(step=>step.title&&step.paragraphs?.length),`Removal steps need complete localized instructions: ${lang}`);
+ assertion(byId.controls.steps[0].links.some(link=>link.href==='https://myaccount.google.com/connections'),`The Google removal step needs its official direct link: ${lang}`);
+ assertion(byId['google-use'].links.some(link=>link.href==='https://developers.google.com/terms/api-services-user-data-policy'),`Limited Use needs its official source link: ${lang}`);
+ assertion(JSON.stringify(byId.controls).includes('~/Library/Application Support/getaudit Community/'),`Mac Community removal must name the real default data folder: ${lang}`);
+ assertion(JSON.stringify(byId['research-services']).includes('0.4.22')&&JSON.stringify(byId['research-services']).includes('Forget saved login'),`Session handling must distinguish the public preview and saved-profile builds: ${lang}`);
+ assertion(JSON.stringify(byId['ai-analysis']).includes('store: false')&&JSON.stringify(byId['ai-analysis']).includes('DataForSEO'),`The policy must disclose provider transmission and the store:false limit: ${lang}`);
+ assertion(!/\b30\s+days\b|30\s*天/i.test(JSON.stringify(document)),`Do not invent a fixed 30-day deletion period: ${lang}`);
+ assertion(document.quickLinks.every(link=>byId[link.id])&&document.quickLinks.some(link=>link.id==='controls'),`Privacy shortcuts must reach actual sections and removal steps: ${lang}`);
+ for(const section of document.sections){
+  assertion(section.paragraphs?.length&&section.paragraphs.every(text=>typeof text==='string'&&text.length>0),`Privacy paragraphs must be complete: ${lang}/${section.id}`);
+  const matching=policy.locales[lang==='en'?'zh-CN':'en'].sections.find(item=>item.id===section.id);
+  assertion(JSON.stringify(Object.keys(section).sort())===JSON.stringify(Object.keys(matching).sort()),`Privacy section fields must remain paired: ${section.id}`);
+  for(const link of [...(section.links??[]),...(section.steps??[]).flatMap(step=>step.links??[])])assertion(/^https:\/\//.test(link.href),`Privacy action links must use HTTPS: ${lang}/${section.id}`);
+ }
+ const markup=policyRenderer.renderPolicySections(document);
+ assertion(markup.includes('class="policy-scopes"')&&markup.includes('class="policy-steps"')&&markup.includes('https://myaccount.google.com/connections'),`Scopes, removal steps and official links must render in both languages: ${lang}`);
+ if(lang==='en')assertion(privacy.includes(markup)&&privacy.includes(policyRenderer.renderPolicyQuickLinks(document)),'The complete English policy must exist in static HTML without waiting for JavaScript.');
+}
+
 assertion(JSON.stringify(Object.keys(copy.en).sort())===JSON.stringify(Object.keys(copy['zh-CN']).sort()),'Website locale keys differ.');
 for(const lang of ['en','zh-CN']){
  assertion(tours[lang].length===3,`Three tour views are required: ${lang}`);

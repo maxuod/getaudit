@@ -45,7 +45,7 @@ getaudit 是一个在本地运行的集成式 SEO 与 GEO 系统。连接 Google
 
 ## 下载 Mac 版
 
-[下载 getaudit](https://getaudit.si/#download) · [版本说明与文件校验值](https://github.com/maxuod/getaudit/releases/tag/v0.4.22-community.2)
+[下载 getaudit](https://getaudit.si/#download) · [版本说明与文件校验值](https://github.com/maxuod/getaudit/releases/tag/v0.4.22-community.3)
 
 抢先体验版支持 **macOS 13 或更新系统的 Apple 芯片 Mac**。安装包采用临时签名，**尚未经过 Apple 公证**；首次打开时可能被 macOS 阻止。打开方式与当前限制见版本说明。
 
