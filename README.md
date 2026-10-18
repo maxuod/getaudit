@@ -5,7 +5,7 @@
 <p align="center">
   <strong>getaudit</strong><br>
   All-in-one GEO tools.<br>
-  <strong>An integrated SEO and GEO system for your local workspace.</strong><br>
+  <strong>Open-source GEO monitoring, on your own computer.</strong><br>
   English · <a href="README.zh-CN.md">简体中文</a>
 </p>
 
@@ -13,7 +13,13 @@
 
 ## Meet getaudit
 
-getaudit brings search data, local GEO scans, and Agent analysis into one desktop workspace. Connect your Google data and run configured scans across supported AI platforms. Give a compatible Agent access to selected findings to help prioritize your next SEO improvements.
+getaudit is open-source GEO auditing software for people who need to track how AI platforms mention and cite their brand. Run it on your own computer, configure supported platforms and research questions, and inspect the answers and evidence they return.
+
+Keep your research in local storage, export the findings, or let a compatible Agent analyze selected saved results. Optional Google Search Console and GA4 connections add SEO context to your GEO research.
+
+## Who it is for
+
+For brand owners, marketers, SEO/GEO practitioners, and agencies who want to check their visibility in AI answers and keep control of the evidence. Start with the questions that matter to your audience, then repeat configured scans to compare recorded results over time.
 
 <img src="docs/assets/search-desk.webp" alt="getaudit Search desk, showing fictional Northstar search data and a dated chart with a Synthetic demo badge" width="880">
 
@@ -21,19 +27,19 @@ getaudit brings search data, local GEO scans, and Agent analysis into one deskto
 
 ## What you get
 
-### SEO: connect your search and traffic data
-
-Use your Google account to connect Google Search Console (GSC) and Google Analytics 4 (GA4). Review search queries, page performance, and website traffic within your project to investigate which areas need attention. GSC average positions describe a reporting window; they are not a fresh live rank check.
-
-Google Search Console and GA4 are the current SEO data integrations. The combined Google sign-in and GA4 workflow are still in testing. **Bing Webmaster Tools and other data connections are planned.**
-
 ### GEO: scan supported AI platforms from your Mac
 
 Run getaudit locally, configure the platforms and research conditions, and start a multi-platform GEO scan. Review captured answers, brand mentions, and citations alongside the conditions under which they were collected. Blocked or incomplete attempts remain visible.
 
 Your project keeps the collected answers, citations, research records, and reports in local storage. Platform access, region, login requirements, and rate limits still affect what can be captured.
 
-### Agent analysis: turn saved findings into your next SEO priorities
+### Optional SEO context: connect your search and traffic data
+
+Use your Google account to connect Google Search Console (GSC) and Google Analytics 4 (GA4). Review search queries, page performance, and website traffic within your project to investigate which areas need attention. GSC average positions describe a reporting window; they are not a fresh live rank check.
+
+Google Search Console and GA4 are the current SEO data integrations. The combined Google sign-in and GA4 workflow are still in testing. **Bing Webmaster Tools and other data connections are planned.**
+
+### Agent analysis: turn saved findings into your next steps
 
 Authorize a compatible third-party Agent to read selected SEO/GEO findings and evidence context from your project. Use its analysis to investigate which pages to improve, which questions need coverage, and what to check next. Review the recommendations before making changes.
 
@@ -41,10 +47,10 @@ The current Agent interface provides selected GSC and GEO context. It does not e
 
 ## How the workflow fits together
 
-1. **Set up your project.** Choose your website, Google properties, research questions, and supported platforms.
-2. **Collect and review.** Bring in authorized search data and run configured GEO scans from your computer.
-3. **Choose what the Agent can read.** Grant access to selected saved findings for analysis; keep the original evidence available in the app.
-4. **Plan the next improvements.** Review the suggestions, prioritize SEO work, and collect fresh evidence when you are ready to compare.
+1. **Configure your GEO project.** Add your brand, research questions, and supported platforms. Connect Google properties only if you want the extra SEO context.
+2. **Run a scan locally.** Review captured answers, brand mentions, citations, and any access limits together.
+3. **Use your results.** Export saved findings, or authorize a compatible Agent to read selected results.
+4. **Decide what to improve.** Review the recommendations and run another configured scan when you are ready to compare.
 
 Your work is saved locally. Google reads, AI-platform scans, and optional provider calls still contact their respective services. Evidence you authorize an external Agent to read can leave your device for analysis.
 
@@ -142,3 +148,4 @@ Questions, feedback, and private security reports: [deeyoung_ma@maxuod.com](mail
 ## License
 
 Project source: [MIT License](LICENSE). Third-party components, the bundled font, and retained upstream legal material keep their own licenses and required attribution; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
