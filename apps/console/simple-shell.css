@@ -54,3 +54,4 @@
 .audit-app .home-data-switch button { border:0;background:transparent;color:var(--muted);padding:8px 13px;font-size:12px; }
 .audit-app .home-data-switch button[aria-pressed="true"] { background:var(--accent-soft);color:var(--accent-hover);font-weight:600; }
 .audit-app .page-google .google-connection { max-width:900px; }
+.audit-app .settings-privacy{margin:18px 0 0}.audit-app .settings-privacy a{display:inline-flex;align-items:center;min-height:38px;color:var(--accent);font-size:14px;text-decoration:underline;text-underline-offset:3px}.audit-app .settings-privacy a:hover{color:var(--accent-hover)}.audit-app .settings-privacy a:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}

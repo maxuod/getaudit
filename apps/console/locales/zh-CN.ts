@@ -33,6 +33,8 @@ export const zhCN = {
   "google.auth.step": "步骤",
   "google.auth.diagnosticCode": "诊断代码",
 
+  "privacy.policyLink": "隐私政策",
+
   "google.connectionTitle": "连接 Google 数据",
   "google.connectionDescription": "选择 Google 账号，允许只读访问，再为当前项目选择网站资源。",
   "google.readOnly": "只读访问",

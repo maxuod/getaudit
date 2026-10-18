@@ -15,3 +15,4 @@
 @media(max-width:650px){.google-connection__intro h2{font-size:23px}.google-connection__intro .dot-helper{display:none}.google-connection__fields{grid-template-columns:1fr;gap:18px}.google-connection__permission{padding:16px}.google-connection__identity{flex-wrap:wrap}.google-connection__identity .google-connection__text{margin-left:42px}.google-signin{white-space:normal;text-align:center}}
 
 .audit-app .google-connection__save:hover:not(:disabled){background:var(--accent-hover);border-color:var(--accent-hover);color:#fff}
+.google-connection__privacy{display:inline-flex;align-items:center;min-height:38px;padding:4px 2px;color:var(--accent);font-size:13px;text-decoration:underline;text-underline-offset:3px}.google-connection__privacy:hover{color:var(--accent-hover)}.google-connection__privacy:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}

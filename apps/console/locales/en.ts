@@ -31,6 +31,8 @@ export const en = {
   "google.auth.step": "Step",
   "google.auth.diagnosticCode": "Diagnostic code",
 
+  "privacy.policyLink": "Privacy policy",
+
   "google.connectionTitle": "Connect your Google data",
   "google.connectionDescription": "Choose your Google account, approve read-only access, then pick the sites for this project.",
   "google.readOnly": "Read-only access",

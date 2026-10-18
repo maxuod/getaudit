@@ -12,6 +12,7 @@ export function WorkspaceSettings({projectCount,onNavigate,onConnections,onSearc
       <button data-nav="questions" onClick={()=>onNavigate('questions')}><ListChecks size={19}/><span><strong>{t('simple.questions')}</strong><small>{t('simple.questionsHint')}</small></span><ChevronRight size={16}/></button>
       <button data-nav="agents" onClick={()=>onNavigate('agents')}><Link2 size={19}/><span><strong>{t('simple.agentAccess')}</strong><small>{t('simple.agentAccessHint')}</small></span><ChevronRight size={16}/></button>
     </div>
+    <p className="settings-privacy"><a href="https://getaudit.si/privacy/" target="_blank" rel="noopener noreferrer">{t('privacy.policyLink')}</a></p>
     <details className="simple-advanced"><summary>{t('simple.advancedTools')}</summary><div className="settings-list"><button data-nav="lab" onClick={()=>onNavigate('lab')}><FlaskConical size={19}/><span><strong>{t('simple.diagnostics')}</strong><small>{t('simple.diagnosticsHint')}</small></span><ChevronRight size={16}/></button></div></details>
     <p className="settings-local-note">{t('simple.backgroundHint')}</p>
   </section>;

@@ -4,6 +4,7 @@ import { createRoot } from 'react-dom/client';
 import { parseHTML } from 'linkedom';
 import { GoogleConnectionPanel, type GoogleResources } from '../../apps/console/google-connection-panel.tsx';
 import { Ga4Panel, type Ga4Report } from '../../apps/console/ga4-panel.tsx';
+import { WorkspaceSettings } from '../../apps/console/workspace-settings.tsx';
 import { request } from '../../apps/console/api.ts';
 import { setUiLanguage } from '../../apps/console/i18n.tsx';
 import { AccountChip, refreshAccountStatus } from '../../apps/console/account-chip.tsx';
@@ -45,6 +46,29 @@ const report: Ga4Report = {
 };
 
 describe('Google read-only connection', () => {
+  it.each(['en', 'zh-CN'] as const)('opens the privacy policy independently of Google authorization and Settings actions in %s', async language => {
+    setUiLanguage(language);
+    vi.mocked(request).mockResolvedValue({ status: 'setup_required', configured: false });
+    const onNavigate = vi.fn(), onConnections = vi.fn(), onSearchSetup = vi.fn();
+    const ui = await mount(<GoogleConnectionPanel brandId="project-a"/>);
+    const checkLink = async () => {
+      const link = ui.document.querySelector('a[href="https://getaudit.si/privacy/"]');
+      expect(link?.textContent).toBe(language === 'en' ? 'Privacy policy' : '隐私政策');
+      expect(link?.getAttribute('target')).toBe('_blank');
+      expect(link?.getAttribute('rel')).toBe('noopener noreferrer');
+      await act(async () => link!.dispatchEvent(new ui.window.Event('click', { bubbles: true })));
+      expect(vi.mocked(request).mock.calls).toEqual([['account/status']]);
+      expect(onNavigate).not.toHaveBeenCalled();
+      expect(onConnections).not.toHaveBeenCalled();
+      expect(onSearchSetup).not.toHaveBeenCalled();
+    };
+    try {
+      await checkLink();
+      await ui.render(<WorkspaceSettings projectCount={1} onNavigate={onNavigate} onConnections={onConnections} onSearchSetup={onSearchSetup}/>);
+      await checkLink();
+    } finally { await ui.close(); }
+  });
+
   it('starts the unified browser authorization only after a click, never asking an end user for technical fields', async () => {
     let pending = false;
     vi.mocked(request).mockImplementation(async path => {
@@ -58,7 +82,7 @@ describe('Google read-only connection', () => {
       expect(ui.document.body.textContent).toContain('Read-only access');
       await ui.click('Continue with Google');
       expect(vi.mocked(request).mock.calls).toContainEqual(['account/data-start', {}]);
-      expect(ui.document.querySelector('a')?.getAttribute('href')).toContain('https://accounts.google.com/o/oauth2/v2/auth');
+      expect(ui.document.querySelector('a[href^="https://accounts.google.com/o/oauth2/v2/auth"]')?.getAttribute('href')).toContain('https://accounts.google.com/o/oauth2/v2/auth');
       expect(ui.document.body.textContent).toContain('Your browser has the next step');
     } finally { await ui.close(); }
   });
