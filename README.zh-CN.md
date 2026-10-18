@@ -1,12 +1,18 @@
 <p align="center"><img src="docs/assets/getaudit-evidence-cloud.png" alt="getaudit 研究伙伴与来源卡片，放在云朵形桌面收纳托盘中。" width="320"></p>
 
-<p align="center"><strong>getaudit</strong><br>All-in-one GEO tools.<br><strong>把 SEO 数据、本地 GEO 扫描和 Agent 分析整合到一个系统。</strong><br><a href="README.md">English</a> · 简体中文</p>
+<p align="center"><strong>getaudit</strong><br>All-in-one GEO tools.<br><strong>在自己电脑上运行的开源 GEO 监测软件。</strong><br><a href="README.md">English</a> · 简体中文</p>
 
 > **早期源码版本 · MIT。** 保留接口集成代码，使用者自行配置账号和凭据。不包含生产凭据、客户记录或原始开发 Git 历史。
 
 ## 认识 getaudit
 
-getaudit 是一个在本地运行的集成式 SEO 与 GEO 系统。连接 Google 数据，配置并运行多平台 GEO 扫描，再授权兼容的 Agent 分析选定的研究结果，帮助你确定下一步 SEO 优化的重点。
+getaudit 是一款开源 GEO 检测软件，面向需要追踪 AI 平台如何提及和引用自己品牌的用户。在自己的电脑上运行，配置支持的平台和研究问题，就能检查采集到的回答及其依据。
+
+研究记录保存在本地，可以导出结果，也可以授权兼容的 Agent 分析选定的已保存数据。需要结合 SEO 表现时，再选择连接 Google Search Console 和 GA4。
+
+## 适合谁使用
+
+适合希望了解品牌在 AI 回答中如何出现、并自行保管证据的品牌方、营销人员、SEO/GEO 从业者和代理机构。从受众关心的问题开始，配置扫描，再通过后续扫描比较不同时间记录的结果。
 
 <img src="docs/assets/search-desk.webp" alt="getaudit 搜索工作台，展示虚构的 Northstar 搜索数据，界面保留 Synthetic demo 标记" width="880">
 
@@ -14,19 +20,19 @@ getaudit 是一个在本地运行的集成式 SEO 与 GEO 系统。连接 Google
 
 ## 可以为你带来什么
 
-### SEO：把搜索表现和网站访问数据接起来
-
-通过 Google 账号连接 Google Search Console（GSC）和 Google Analytics 4（GA4），在项目中查看搜索查询、页面表现和网站访问情况，找出值得进一步分析的地方。GSC 平均排名反映所选时间段，不等于实时搜索排名。
-
-目前 SEO 数据集成围绕 Google 展开。连接器已经实现，统一 Google 登录和 GA4 流程仍在测试。**Bing Webmaster Tools 和其他数据平台的连接属于后续规划**，当前快照尚未提供。
-
 ### GEO：在自己的 Mac 上运行多平台扫描
 
 在本地运行 getaudit，配置平台和研究条件后，即可发起多平台 GEO 扫描。把采集到的回答、品牌提及、引用和采集条件放在一起检查，受限或未完成的记录也会保留。
 
 回答、引用、研究记录和报告保存在本地项目中。实际能采集到什么，仍取决于平台权限、地区、登录要求和频率限制。
 
-### Agent 分析：确定下一步 SEO 优化的重点
+### 可选的 SEO 数据：连接搜索表现和网站访问情况
+
+通过 Google 账号连接 Google Search Console（GSC）和 Google Analytics 4（GA4），在项目中查看搜索查询、页面表现和网站访问情况，找出值得进一步分析的地方。GSC 平均排名反映所选时间段，不等于实时搜索排名。
+
+目前 SEO 数据集成围绕 Google 展开。连接器已经实现，统一 Google 登录和 GA4 流程仍在测试。**Bing Webmaster Tools 和其他数据平台的连接属于后续规划**，当前快照尚未提供。
+
+### Agent 分析：确定下一步该做什么
 
 按项目授权兼容的第三方 Agent，读取选定的 SEO/GEO 发现及相关证据上下文。通过它的分析，研究哪些页面值得改进、哪些问题需要补充内容，以及下一轮该验证什么，再由你决定如何执行。
 
@@ -34,10 +40,10 @@ getaudit 是一个在本地运行的集成式 SEO 与 GEO 系统。连接 Google
 
 ## 实际使用流程
 
-1. **配置项目。** 选择网站、Google 属性、研究问题和支持的平台。
-2. **采集并检查。** 读取已授权的搜索数据，在本机发起配置好的 GEO 扫描。
-3. **选择 Agent 可读的内容。** 授权读取选定的已保存结果进行分析，原始证据仍可在程序内查看。
-4. **安排下一步优化。** 审查建议、确定 SEO 优先级，再在合适的时间采集新证据进行比较。
+1. **配置 GEO 项目。** 添加品牌、研究问题和支持的平台；需要补充 SEO 数据时，再连接 Google 属性。
+2. **在本机发起扫描。** 一起检查采集到的回答、品牌提及、引用和访问限制。
+3. **使用结果。** 导出已保存的发现，也可以授权兼容的 Agent 读取选定的结果。
+4. **决定下一步。** 审查建议，在需要比较时再次运行配置好的扫描。
 
 工作记录保存在本地。Google 数据读取、AI 平台扫描和可选供应商调用仍会连接对应服务；授权外部 Agent 读取的内容，也可能离开设备用于分析。
 
@@ -135,3 +141,4 @@ npm run review:scan
 ## 许可证
 
 项目源码采用 [MIT 许可证](LICENSE)。第三方组件、字体及保留的上游法律文件遵循各自许可证与署名要求，详见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
