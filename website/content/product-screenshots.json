@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "captureDate": "2026-10-17",
+  "uiLocale": "en",
+  "syntheticData": true,
+  "badge": "Synthetic demo",
+  "source": "Actual public Console 0.4.22 interface; isolated synthetic workspace",
+  "assets": [
+    {
+      "file": "search-desk.webp",
+      "width": 1600,
+      "height": 1200,
+      "sha256": "8092f0f26c036cf11afc6e82fa7dc7a55d31853baf27060292c1435ef26b6305",
+      "bytes": 226274,
+      "originalCaptureSha256": "c839489e351ca38b078f2fd184b7119038cbfd3542ca809718acc86ca248e0f0",
+      "originalCaptureFormat": "JPEG",
+      "encoding": "lossless WebP; exact RGB preservation of decoded browser capture; no crop, resize or retouch"
+    },
+    {
+      "file": "ai-visibility.webp",
+      "width": 1600,
+      "height": 1200,
+      "sha256": "2ca683e1c6cff19f7f3ba7abbb2b8182439a3881565316fe0b9e3ebf5b0eb649",
+      "bytes": 256848,
+      "originalCaptureSha256": "74fe4aa2d01855dea326ef60a8cb0473e405594ad62c00edd167f089f2b788bd",
+      "originalCaptureFormat": "JPEG",
+      "encoding": "lossless WebP; exact RGB preservation of decoded browser capture; no crop, resize or retouch"
+    },
+    {
+      "file": "keyword-opportunities.webp",
+      "width": 1600,
+      "height": 1200,
+      "sha256": "640b499ce550e6d411490ab31bd95732228d322c770088cec1cb4d29048cc617",
+      "bytes": 230930,
+      "originalCaptureSha256": "2491d4891cdebaed9d676a02314c68079536f864536a68b0028b4cabb341823b",
+      "originalCaptureFormat": "JPEG",
+      "encoding": "lossless WebP; exact RGB preservation of decoded browser capture; no crop, resize or retouch"
+    }
+  ]
+}

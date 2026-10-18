@@ -1,6 +1,6 @@
-<p align="center"><img src="docs/assets/readme-banner.svg" alt="getaudit — All-in-one GEO tools" width="880"></p>
+<p align="center"><img src="docs/assets/getaudit-evidence-cloud.png" alt="getaudit 研究伙伴与来源卡片，放在云朵形桌面收纳托盘中。" width="320"></p>
 
-<p align="center"><strong>把 SEO 数据、本地 GEO 扫描和 Agent 分析整合到一个系统。</strong><br><a href="README.md">English</a> · 简体中文</p>
+<p align="center"><strong>getaudit</strong><br>All-in-one GEO tools.<br><strong>把 SEO 数据、本地 GEO 扫描和 Agent 分析整合到一个系统。</strong><br><a href="README.md">English</a> · 简体中文</p>
 
 > **早期源码版本 · MIT。** 保留接口集成代码，使用者自行配置账号和凭据。不包含生产凭据、客户记录或原始开发 Git 历史。
 
@@ -45,7 +45,7 @@ getaudit 是一个在本地运行的集成式 SEO 与 GEO 系统。连接 Google
 
 ## 下载 Mac 版
 
-[下载 getaudit](https://getaudit.si/#download) · [版本说明与文件校验值](https://github.com/maxuod/getaudit/releases/tag/v0.4.22-community.1)
+[下载 getaudit](https://getaudit.si/#download) · [版本说明与文件校验值](https://github.com/maxuod/getaudit/releases/tag/v0.4.22-community.2)
 
 抢先体验版支持 **macOS 13 或更新系统的 Apple 芯片 Mac**。安装包采用临时签名，**尚未经过 Apple 公证**；首次打开时可能被 macOS 阻止。打开方式与当前限制见版本说明。
 

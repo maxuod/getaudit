@@ -1,0 +1,12 @@
+.git/
+.vercel/
+.env*
+.openai/
+.sites-local/
+.site-workflow/
+out/
+content/*.md
+!content/sample-report-provenance.md
+!content/brand-illustration-provenance.md
+*.log
+.DS_Store

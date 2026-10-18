@@ -1,8 +1,10 @@
 <p align="center">
-  <img src="docs/assets/readme-banner.svg" alt="getaudit — All-in-one GEO tools. Connect SEO data, local GEO scans, and Agent analysis." width="880">
+  <img src="docs/assets/getaudit-evidence-cloud.png" alt="The getaudit research companion with source cards in a cloud-shaped desk tray." width="320">
 </p>
 
 <p align="center">
+  <strong>getaudit</strong><br>
+  All-in-one GEO tools.<br>
   <strong>An integrated SEO and GEO system for your local workspace.</strong><br>
   English · <a href="README.zh-CN.md">简体中文</a>
 </p>
@@ -50,7 +52,7 @@ The interface supports English and 简体中文 in one click. Supported jobs can
 
 ## Download for Mac
 
-[Download getaudit](https://getaudit.si/#download) · [Release notes and checksums](https://github.com/maxuod/getaudit/releases/tag/v0.4.22-community.1)
+[Download getaudit](https://getaudit.si/#download) · [Release notes and checksums](https://github.com/maxuod/getaudit/releases/tag/v0.4.22-community.2)
 
 The early-access desktop package supports **Apple Silicon Macs running macOS 13 or newer**. It uses an ad-hoc signature and has **not been notarized by Apple**; macOS may block it at first launch. Follow the release notes for opening instructions and current limitations.
 

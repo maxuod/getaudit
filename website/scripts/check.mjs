@@ -1,3 +1,4 @@
+import {createHash} from 'node:crypto';
 import {readFileSync,readdirSync,existsSync,statSync} from 'node:fs';
 import {resolve,join,dirname} from 'node:path';
 import {copy,tours} from '../src/content.mjs';
@@ -30,6 +31,21 @@ if(desktopRelease!==null){
  assertion(!desktopRelease.notarized||desktopRelease.signed,'A notarized app must also be signed.');
  if(desktopRelease.signing==='ad-hoc')assertion(source.includes(copy.en.downloadAdHoc),'Ad-hoc signing must not imply an Apple Developer ID signature.');
 }else assertion(!source.includes('data-download-link'),'Do not advertise a download before its release metadata is configured.');
+const approvedBrandSha='532915a5b5d8c80c22712601b85076acf04e97c6571c241679fa9c458b1d0092';
+for(const path of ['public/assets/getaudit-evidence-cloud.png','dist/assets/getaudit-evidence-cloud.png'])assertion(existsSync(path)&&createHash('sha256').update(readFileSync(path)).digest('hex')===approvedBrandSha,`The approved evidence-scout PNG must remain byte-identical: ${path}`);
+for(const [html,label] of [[source,'home'],[readFileSync('dist/404.html','utf8'),'404']]){
+ assertion(html.includes('/assets/getaudit-evidence-cloud.png'),`The approved evidence scout must render on ${label}.`);
+ assertion(!/\/assets\/dot\.svg|closing-flower|hero-dot/.test(html),`A rejected mascot remains on ${label}.`);
+}
+assertion(source.includes('class="hero-scout"')&&source.includes('class="privacy-scout"')&&source.includes('class="closing-scout"'),'Hero, privacy and closing scenes must use the approved artwork.');
+assertion(!readFileSync('src/site.css','utf8').includes('infinite'),'The brand scene must not add endless idle animation.');
+assertion(existsSync('content/brand-illustration-provenance.md'),'The approved image needs public provenance.');
+const screenshotManifest=JSON.parse(readFileSync('content/product-screenshots.json','utf8'));
+assertion(screenshotManifest.syntheticData===true&&screenshotManifest.badge==='Synthetic demo'&&screenshotManifest.assets.length===3,'Current product screenshots must retain explicit synthetic provenance.');
+for(const asset of screenshotManifest.assets){
+ assertion(asset.width===1600&&asset.height===1200&&tours.en.some(tour=>tour.image===asset.file),`Unexpected current screenshot: ${asset.file}`);
+ for(const prefix of ['public/assets/','dist/assets/'])assertion(existsSync(prefix+asset.file)&&createHash('sha256').update(readFileSync(prefix+asset.file)).digest('hex')===asset.sha256,`A current product screenshot is stale or differs from its reviewed capture: ${prefix+asset.file}`);
+}
 assertion(copy.en.title==='getaudit — All-in-one GEO tools','The canonical English product name is wrong.');
 assertion(source.includes('<span>getaudit<span class="brand-domain">.si</span>'),'The getaudit.si wordmark is missing.');
 assertion(copy.en.sample==='Actual product interface · Fictional sample data','The fictional-data screenshot caption is missing.');

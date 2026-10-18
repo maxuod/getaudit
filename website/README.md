@@ -55,3 +55,10 @@ The project source code is licensed under [MIT](../LICENSE). The bundled Bricola
 The homepage links to the public `maxuod/getaudit` repository and fetches its star/fork counts through a same-origin endpoint. Missing or rate-limited counts remain dashes with a working GitHub link; zero is a real value. The local preview serves the same endpoint. No browser GitHub credentials, tracking or star action is added.
 
 `src/release.mjs` holds verified immutable GitHub release metadata. A valid release enables the direct Mac ZIP link, version, architecture, size and SHA-256. Without metadata the page links to Releases and advertises no fake download. English and Chinese distinguish ad-hoc signing, Developer ID signing and notarization. Current Apple Silicon early-access builds require macOS 13+ and Google Chrome for GEO scans; the Google/GA4 connection remains in testing. A fork must use its own verified repository/release configuration before publication.
+
+
+## Approved brand illustration
+
+The website uses the owner-approved Rounded Paper evidence scout in the hero, privacy illustration, closing invitation and 404. `public/assets/getaudit-evidence-cloud.png` is copied unchanged to the runtime assets. Its source, SHA-256 and visual meaning are recorded in `content/brand-illustration-provenance.md`. The existing favicon and wordmark remain unchanged. The illustration has one brief entrance and supports reduced motion; it never represents real task progress or a verified connection.
+
+The current three product screenshots and their conversion fingerprints are recorded in `content/product-screenshot-provenance.md` and `content/product-screenshots.json`. They show the updated real interface with the visible Synthetic demo badge.
